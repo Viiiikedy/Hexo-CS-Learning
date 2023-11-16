@@ -4,6 +4,51 @@ tags: Note笔记
 
 ---
 
+## SEO后续优化
+
+VIRA网站的源码
+
+```
+<title>VIRA | An Education Social Enterprise in China</title>
+```
+
+
+
+```
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Author -->
+    <meta name="author" content="Themes Industry">
+    <!-- description -->
+    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
+    <!-- keywords -->
+    <meta name="keywords" content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
+    <!-- Page Title -->
+    <title>VIRA | An Education Social Enterprise in China</title>
+    <!-- Favicon -->
+    <link href="http://www.fusinnovations.com/uploadfile/202205/d16b7ff08ea7eb.png" rel="icon" />
+    <!-- Bundle -->
+    <link href="http://www.fusinnovations.com/static/skin/css/bundle.min.css" rel="stylesheet">
+    <!-- Plugin Css -->
+    <link href="http://www.fusinnovations.com/static/skin/css/LineIcons.min.css" rel="stylesheet">
+    <link href="http://www.fusinnovations.com/static/skin/css/revolution-settings.min.css" rel="stylesheet">
+    <link href="http://www.fusinnovations.com/static/skin/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="http://www.fusinnovations.com/static/skin/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="http://www.fusinnovations.com/static/skin/css/cubeportfolio.min.css" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link href="http://www.fusinnovations.com/static/skin/css/style.css" rel="stylesheet">
+</head>
+```
+
+## 总结：现在可以建站的工具
+飞致云Halo：https://www.fit2cloud.com/index.html
+合集链接：https://www.zhihu.com/question/36861553
+建站系统合集：https://blog.csdn.net/JunyouYH/article/details/119215315
+
+
 ## 待解决问题：
 
 - 如何配置站点统计功能：https://lizhening.github.io/posts/b467327c/
@@ -16,7 +61,43 @@ tags: Note笔记
 
   
 
-## 方法一：python中的三大网页开发框架
+## 方法一：Github Page
+
+### 1.如果想要用github page生成页面
+
+则一定要用和自己的username一样的仓库名
+
+比如我叫Viiiikey,我的仓库名就必须是Viiiikey.github.io
+
+如果不用本地github app单纯用git 推送的话，步骤是
+
+```
+*cd到文件夹
+cd 123 
+git add .
+git commit -m 123
+
+git push
+```
+
+### 2.不是非要用github生成页面，github只是作为托管
+
+- 随意名字新建仓库
+
+- 复制 url到本地
+- 在github desktop里面直接进行push
+- 将github仓库部署到类似vercel和netlify这样的第三方平台即可
+
+### 3.通过宝塔进行托管
+
+外网面板地址:  https://39.106.85.178:26377/b8238d5c
+内网面板地址:  https://172.21.41.150:26377/b8238d5c
+username: gqib6xwz
+password: Bt110011
+
+登录内网面板，选择网站，选择下面两个已经备案的网址操作即可
+
+## 方法二：python中的三大网页开发框架
 
 ### 一、Streamlit开发
 
@@ -258,7 +339,7 @@ st.write('分类结果：' + iris.target_names[prediction][0])
 
 
 
-## 方法二：现有建站工具
+## 方法二：现有代码建站工具
 
 - bt宝塔：需要服务器：https://www.bt.cn/new/index.html
 - 开源建站：https://demo.halo.run/
@@ -465,6 +546,12 @@ hexo server
 
 ### 六、一些网站模板整理：
 
+其它类型：
+- 非常酷炫的计算机Hacker网址：https://github.com/akiritsu/pRoJEct-VeXEd
+- 非常完美的notebook，适合之后内容多了使用：https://themes.yhz610.com/demo/theme/gatsby-gitbook-starter/；网站二：https://themes.yhz610.com/demo/theme/hexo-theme-3-hexo/
+- 做旧的jekyll风格，旧书：https://themes.yhz610.com/demo/theme/jekyll-marat-theme/
+- 旧报纸风格的网站：https://github.com/ohduran/the-interesting-times
+
 1. Hexo:
    - 适合做艺术家作品集归纳的网站：https://aflasio.netlify.app/
    - 适合做金融笔记本的网站：https://github.com/wujun234/hexo-theme-tree
@@ -525,7 +612,7 @@ hexo server
 2. 电脑项目管理：http://jekyllthemes.org/themes/windows-95/；Coolviiiiiikey ;dwksdmndb@gmail.com;coolviiiiiikey.github.io 
 3. 视频管理：2467761235dwk@gmail.com；viiikedy.github.io；https://viiickkkkkky.github.io/
 4. 学术档案管理：vickydu1213@gmail.com；Viiiikedy.github.io；https://viiiikedy.github.io/
-   1.后续步骤：服务器
+   
 
 ### 八、阿里云服务器：
 
@@ -536,5 +623,19 @@ hexo server
     5. 账号ID：1163393224916527
     6. 服务器链接：https://ecs.console.aliyun.com/server/i-2zegnmc2e3ibs9qeoc0r/detail?regionId=cn-beijing
     7. 阿里云购买域名地址：https://wanwang.aliyun.com/domain/1yuan?spm=5176.8048432.308878.d.2dda2cf8a1nkFF
-  8. 腾讯服务器：https://cloud.tencent.com/
-     相关发布链接文章：https://www.sulvblog.cn/posts/blog/hugo_deploy/
+1. 腾讯服务器：https://cloud.tencent.com/
+   相关发布链接文章：https://www.sulvblog.cn/posts/blog/hugo_deploy/
+
+## 方法三、拖拽式无代码网站生成平台
+
+- 模板精美，操作简单：[Choose a Starting Point - My Sites - Dashboard - Carrd](https://carrd.co/dashboard/add#sectioned)
+- 时尚模板居多，硬照模特：[XPRS Templates (wpagency.io)](https://wpagency.io/themes/vbid-63d9ad0f782a4a11bc2cd0f5fbc53e87/vbid-594b8-gbcdj8hpef)
+- 拖拽式，面板较为复杂：[Webydo ID 9613366](https://studio8.webydo.com/studio.aspx?PrivateToken=9881d550-f2ee-4b9b-892e-dadbe6a7ac3a)
+- 一个WP的简易模板：[WP One Pager - WordPress theme | WordPress.org](https://wordpress.org/themes/wp-one-pager/)
+- 可以涉及APP的平台：[Fintech | Bubble Editor](https://bubble.io/page?name=index&id=fintech-72985&tab=tabs-1)
+- 简易网页平台：[Downloads | Grav CMS (getgrav.org)](https://getgrav.org/downloads)
+- 拖拽式最方便：wix
+- 较为丰富的网站模板：[Examples · Bootstrap (getbootstrap.com)](https://getbootstrap.com/docs/4.0/examples/)
+
+
+
