@@ -42,5 +42,6 @@ date: 2023-09-02 10:15:38
 
 ## Note 注释
 <div id="note">[1]本网站基于hexo-book主题搭建</div>
-
-[2]PKU大佬的自学[网站]([CS自学指南 (csdiy.wiki)](https://csdiy.wiki/#))
+[1]This site is based on the hexo-book template
+[2]PKU大佬的自学网站([CS自学指南 (csdiy.wiki)](https://csdiy.wiki/#))
+[2]The self-learning [guidance](https://csdiy.wiki/#) from PKU 
