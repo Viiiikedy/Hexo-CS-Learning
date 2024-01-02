@@ -4,8 +4,7 @@ tags: Note笔记
 
 ---
 
-## SEO后续优化
-## SEO Follow-Up Optimization
+## SEO后续优化 SEO Follow-Up Optimization
 
 VIRA网站的源码
 
