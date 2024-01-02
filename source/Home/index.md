@@ -3,7 +3,7 @@ title: 👋Hello,everyone.
 date: 2023-09-02 10:15:38
 ---
 <div align=center>
-<img src="/picture/author.jpg" width = "400" height = "400"/>  
+<img src="/picture/author.jpg" width = "350" height = "350"/>  
 
 **<font size=5>Self-Introduction</font>**
 **<font face="KN6" font size=6>自我介绍</font>**
@@ -24,7 +24,7 @@ class Me:
         self.undergrad_school = "Maine, Management Information System"
         self.undergrad_school = "RUC, Intelligent Accounting"
 ```
-<br />
+
 
 ## Background
 📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), and [R](https://www.rstudio.com/categories/rstudio-ide/)
@@ -44,7 +44,7 @@ class Me:
 
 ***
 
-<br />
+
 
 ## Contact
 
