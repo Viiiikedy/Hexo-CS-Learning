@@ -5,7 +5,7 @@ date: 2023-09-02 10:15:38
 <div align=center>
 <img src="/picture/author.jpg" width = "500" height = "500"/>  
 
-**<font face="cursive" font size=5>Self-Introduction</font>**
+**<font size=5>Self-Introduction</font>**
 **<font face="KN6" font size=6>自我介绍</font>**
 <br />
 
@@ -52,6 +52,6 @@ date: 2023-09-02 10:15:38
         <a href="https://www.instagram.com/viii.iiicky/">- Instagram</a>
          <br />
         <img src="/picture/bachelor-cap.png" width = "20" height = "20"/>
-        <a href="https://viiiikedy-academy.vercel.app/">- Instagram</a>
+        <a href="https://viiiikedy-academy.vercel.app/">- Academic Website</a>
     </body>
 </html>
