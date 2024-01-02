@@ -4,11 +4,11 @@
 ##### Note笔记
 
 - [Web Development](/2023/09/11/Note笔记/Web-Development/index.html)
-- [Game游戏设计类](/2023/09/11/Note笔记/Game-Design/index.html)
-- [APP应用开发](/2023/09/11/Note笔记/APP-Development/index.html)
-- [Tools工具插件推荐](/2023/09/11/Note笔记/Tool-Plugin-Recommendation/index.html)
-- [Operation计算机基础操作](/2023/09/11/Note笔记/CS-Basic-Operation/index.html)
-- [Knowledge计算机基础知识](/2023/09/11/Note笔记/CS-Basic-Knowledge/index.html)
+- [Game Design](/2023/09/11/Note笔记/Game-Design/index.html)
+- [APP Development](/2023/09/11/Note笔记/APP-Development/index.html)
+- [Tools Plugin Recommendation](/2023/09/11/Note笔记/Tool-Plugin-Recommendation/index.html)
+- [CS Basic Operation](/2023/09/11/Note笔记/CS-Basic-Operation/index.html)
+- [CS Basic Knowledge](/2023/09/11/Note笔记/CS-Basic-Knowledge/index.html)
 
 ##### Project项目
 
