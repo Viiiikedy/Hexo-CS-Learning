@@ -12,6 +12,17 @@ date: 2023-09-02 10:15:38
 </div>
 
 ***
+class Me:
+    def __init__(self):
+        self.name = "Wenke Du"
+        self.prefer_name = "Vicky"
+        self.born_year = 2001
+        self.MBTI = ENTJ
+        self.hometown = "Kaizhou, Chongqing, CN"
+        self.curr_location = "Haidian, Beijing, CN"
+        self.grad_school = "Universidad Isabel I, Big Data and Intelligence"
+        self.undergrad_school = "Maine, Management Information System"
+        self.undergrad_school = "RUC, Intelligent Accounting"
 
 <br />
 
