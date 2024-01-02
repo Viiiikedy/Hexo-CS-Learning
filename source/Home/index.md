@@ -3,11 +3,10 @@ title: 👋Hello,everyone.
 date: 2023-09-02 10:15:38
 ---
 <div align=center>
-<img src="/picture/author.jpg" width = "500" height = "500"/>  
+<img src="/picture/author.jpg" width = "400" height = "400"/>  
 
 **<font size=5>Self-Introduction</font>**
 **<font face="KN6" font size=6>自我介绍</font>**
-<br />
 
 </div>
 
@@ -25,7 +24,6 @@ class Me:
         self.undergrad_school = "Maine, Management Information System"
         self.undergrad_school = "RUC, Intelligent Accounting"
 ```
-
 <br />
 
 ## Background
