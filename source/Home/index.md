@@ -24,6 +24,7 @@ class Me:
         self.grad_school = "Universidad Isabel I, Big Data and Intelligence"
         self.undergrad_school = "Maine, Management Information System"
         self.undergrad_school = "RUC, Intelligent Accounting"
+```
 
 <br />
 
