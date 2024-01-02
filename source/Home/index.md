@@ -12,12 +12,13 @@ date: 2023-09-02 10:15:38
 </div>
 
 ***
+```python
 class Me:
     def __init__(self):
         self.name = "Wenke Du"
         self.prefer_name = "Vicky"
         self.born_year = 2001
-        self.MBTI = ENTJ
+        self.MBTI = "ENTJ"
         self.hometown = "Kaizhou, Chongqing, CN"
         self.curr_location = "Haidian, Beijing, CN"
         self.grad_school = "Universidad Isabel I, Big Data and Intelligence"
