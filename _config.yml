@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Computer-Science
-subtitle: ''
+title: '|  Vicky DS Shop'
+subtitle: 
 description: ''
 keywords:
 author: Vicky Du
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://cs-book.netlify.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

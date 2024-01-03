@@ -1,9 +1,9 @@
 ---
-title: 👋Hello,everyone.
+title: 👋Hello Everyone
 date: 2023-09-02 10:15:38
 ---
 <div align=center>
-<img src="/picture/homepage.png" width = "400" height = "400"/>  
+<img src="/picture/homepage.png" width = "300" height = "300"/>  
 </div>
 
 

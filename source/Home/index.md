@@ -1,12 +1,12 @@
 ---
-title: 👋Hello,everyone.
+title: 👋Hello Everyone
 date: 2023-09-02 10:15:38
 ---
 <div align=center>
 <img src="/picture/author.jpg" width = "350" height = "350"/>  
 
 **<font size=5>Self-Introduction</font>**
-**<font face="KN6" font size=6>自我介绍</font>**
+**<font size=6>自我介绍</font>**
 
 </div>
 

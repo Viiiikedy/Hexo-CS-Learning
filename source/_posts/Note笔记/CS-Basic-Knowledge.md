@@ -1,26 +1,56 @@
 ---
-title: Knowledge计算机基础知识
-tags: Note笔记
+title: CS Basic Knowledge
+tags: Note
 ---
+*<small>[Note](/tags/Note/index.html) > [CS Basic Knowledge](/2023/09/11/Note笔记/CS-Basic-Knowledge/index.html)</small>*
 
-## 一、计算机构成
+### Useful Tool Plugins
+#### 1. Markdown Editor of the [Public Account](https://wechatwiki.com/wechat-resources/wechat-official-account-marketing-platform-epic-tutorial-guide/)
+- https://md.openwrite.cn/
+- https://prod.zkqiang.cn/wxeditor/index.html
+- http://md.aclickall.com/
+- https://md.qikqiak.com/
 
-- GPU,图形处理器(Graphic Processing Unit)：一个专门的图形核心处理器。GPU是显示卡的“大脑”，决定了该显卡的档次和大部分性能，同时也是2D显示卡和3D显示卡的区别依据。
-- CPU,中央处理器(Central Processing Unit)是一台计算机的运算核心和控制核心。CPU、内部存储器和输入/输出设备是电子计算机三大核心部件。
-- CMS是Content Management System的缩写，意为“**内容管理系统**”。 开源CMS即为开放源代码的网站内容管理系统。
+#### 2. Use [Deform](https://github.com/deforum-art/deforum-stable-diffusion) under [Stable Diffusion](https://stablediffusionweb.com/) to generate the [animination video](https://zhuanlan.zhihu.com/p/624487125)
 
-  - 硬件
-    - 运算器：CPU中央处理器
-    - 控制器：计算机的大脑
-    - 存储器：内存和硬盘；内存是临时存储；硬盘是永久存储
-    - 输入设备：鼠标和键盘
-    - 输出设备：显示器和打印机
-  - 软件
-    - 分类1：
-      - 系统软件
-      - 应用软件
-    - 分类2：
-      - C/S:Client/Server 客户端/服务器端
-        - 本地有客户端程序，远程有服务端程序（QQ）
-      - B/S:Browser/Server浏览器/服务器端
-        - 只需要一个浏览器，用户通过不同网址访问不同服务器端程序（淘宝/天猫）
+Deforum has a JSON input format for prompts, featuring 4 separate scene descriptions. Each scene description is an independent prompt. 
+
+> <span style="background-color:#e3f6f9;"> Our Team Explaniation: XA Capstone22 - [Invincible Abstract - Movie Design](https://u0b0rmsz9b8.feishu.cn/file/T0pYbPPH0opGFxxSDKNcPYTbnxh?from=from_copylink)</span>.
+
+
+#### 3. Connect Chatgpt with Wechat 
+```
+1. Open the directory at E:\github\chatgpt-on-wechat.
+2. Enter "cmd" in the command prompt.
+3. Type "python app.py".
+4. Scan the WeChat QR code to log in.
+5. The bot will start, and you can begin chatting in the conversation window.
+```
+*Note: To modify the API key, navigate to the "config.json" file located in E:\github\chatgpt-on-wechat.*
+
+### Computer Components:
+1. GPU, Graphic Processing Unit: A dedicated graphics core processor. The GPU is the "brain" of a graphics card, determining its level and most of its performance. It is also the differentiating factor between 2D and 3D graphics cards.
+2. CPU, Central Processing Unit: The computational and control core of a computer. The CPU, internal memory, and input/output devices are the three core components of an electronic computer.
+3. CMS, Content Management System: An abbreviation for "Content Management System." An open-source CMS refers to a website content management system that is open-source.
+   1. Hardware
+      1. ALU (Arithmetic Logic Unit): Part of the CPU responsible for arithmetic and logic operations.
+      2. Control Unit: The computer's "brain" responsible for controlling operations.
+      3. Memory: Includes RAM (temporary storage) and hard disk (permanent storage).
+      4. Input Devices: Such as mice and keyboards.
+      5. Output Devices: Such as monitors and printers.
+   2. Software
+      1. Category 1:System Software+Application Software
+      2. Category 2:
+         1. C/S: Client/Server:Local client programs with remote server programs (e.g., QQ).
+         2. B/S: Browser/Server:Requires only a web browser; users access different server-side programs through different URLs (e.g., Taobao/Tmall).
+
+### Computer Operation:
+1. Ctrl + C: Stops the backend program from running.
+2. When using Visual Studio, if you need to run "conda XX," you should change it to "conda.bat XX."
+3. Task Manager: You can use it to view CPU and GPU processes.
+4. Command Prompt: You can open it by pressing Win + R and typing "cmd."
+5. "dir": To view the contents of the current directory.
+6. "cls": To clear the screen.
+7. "exit": To exit the Command Prompt window.
+8. To open QQ, you can use the following command: "start D:"Program Files (x86)"\Tencent\QQ\Bin\QQ.exe".
+
