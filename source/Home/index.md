@@ -41,6 +41,49 @@ class Me:
 🎮- 我最近在学习的计算机知识包括游戏设计[Unity](https://unity.com/)和Ios软件开发[Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
 💻- 我的常用电脑为Windows[惠普](https://www.hp.com/ca-en/home.html)系列
 
+## Other Website
+<style>
+.button-container {
+  text-align: center; /* Center aligns the contents */
+}
+
+.button {
+  background-color: rgba(0, 123, 255, 0.8);
+  border: 1px solid transparent;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 15px;
+  display: inline-block;
+  font-size: 17px;
+  color: white !important;
+  text-decoration: none;
+  margin: 15px; /* Increased margin */
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+</style>
+
+<div class="button-container">
+  <a href="https://vicky-post-site.vercel.app/" class="button">My Chinese Finance Blog</a>
+  <a href="https://jekyll-typing-artist.vercel.app/" class="button">My Art Design Website</a>
+  <a href="https://korean-book.netlify.app" class="button">My Korean Learning Book</a>
+  <a href="https://viiiikedy-academy.vercel.app/" class="button">My Academic Site</a>
+  <a href="https://vicky-youtube-video.netlify.app" class="button">My Video Site</a>
+</div>
+<div class="button-container">
+  <a href="https://vicky-post-site.vercel.app/" class="button">我的金融博客</a>
+  <a href="https://jekyll-typing-artist.vercel.app/" class="button">我的艺术天地</a>
+  <a href="https://korean-book.netlify.app" class="button">我的语言学习指南</a>
+  <a href="https://viiiikedy-academy.vercel.app/" class="button">我的学术辑</a>
+  <a href="https://vicky-youtube-video.netlify.app" class="button">我的视频站</a>
+</div>
+
+
+
+
 
 ***
 

@@ -3,10 +3,10 @@
 
 ##### Note
 
-- [Web Development](/2023/09/11/Note笔记/Web-Development/index.html)
-- [Game Design](/2023/09/11/Note笔记/Game-Design/index.html)
-- [APP Development](/2023/09/11/Note笔记/APP-Development/index.html)
-- [CS Basic Knowledge](/2023/09/11/Note笔记/CS-Basic-Knowledge/index.html)
+- [Web Development](/2023/09/11/Note/Web-Development/index.html)
+- [Game Design](/2023/09/11/Note/Game-Design/index.html)
+- [APP Development](/2023/09/11/Note/APP-Development/index.html)
+- [CS Basic Knowledge](/2023/09/11/Note/CS-Basic-Knowledge/index.html)
 
 ##### Project
 
@@ -17,11 +17,14 @@
 
 ##### Interview 
 
-- [剑指Offer系列](/2023/09/11/Interview面试/剑指Offer系列/index.html)
-- [Q&A常问题目](/2023/09/11/Interview面试/Q&A常问题目/index.html)
+- [CS Tutorial](/2023/09/11/Interview/CS-Tutorial/index.html)
+- [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)
+
+
 
 ##### Post
  
-- [Feelings感想](/2023/09/11/Post博文/Feelings感想/index.html)
-- [Lessons教训](/2023/09/11/Post博文/Lessons教训/index.html)
+- [Young](/2023/09/11/Post/Young/index.html)
+- [Middle-Aged](/2023/09/11/Post/Middle-Aged/index.html)
+- [Old](/2023/09/11/Post/Old/index.html)
 
