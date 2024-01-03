@@ -10,6 +10,23 @@ tags: Project
   </div>
 </a>
 
+<div style="display: flex; justify-content: center;">
+    <div style="text-align: center; margin: 25px;">
+        <span>BigDog</span>
+        <img src="/picture/Big-Dog.png" width="280" height="387" style="border-radius: 20px;">
+    </div>
+    <div style="text-align: center; margin: 25px;">
+        <span>Car Chain</span>
+        <img src="/picture/Car-Chain.png" width="280" height="387" style="border-radius: 20px;">
+    </div>
+    <div style="text-align: center; margin: 25px;">
+        <span>Power BI Visualization</span>
+        <img src="/picture/powerbi.png" width="280" height="387" style="border-radius: 20px;">
+    </div>
+</div>
+
+
+
 
 ## Title
 
