@@ -51,6 +51,28 @@ date: 2023-09-11 10:15:38
 
 ---
 
+### Project2: Financial Valuation by [VBA](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office) 
+Visual Basic for Applications (VBA) is an implementation of Microsoft's event-driven programming language Visual Basic 6.0 built into most desktop Microsoft Office applications
+> Project Address:[here](/zip/Full-Financial-Model.xls)
+### Project3: JP Morgan Private Bank
+**Quantitaive Asset Allocation Strategy**
+We applied statistical analysis, risk management techniques, and portfolio optimization models. Utilizing algorithms, macroeconomic analysis, and asset class research, we made informed investment decisions, adhering to legal and regulatory standards.
+
+- Team Introduction
+- Strategic Allocation
+- Tactical Allocation
+- Scenario Analysis
+- Investment Implementation
+- Requirements Achievement
+
+
+
+> Project Address:[here](/pdf/Asset-Allocation-Proposal-JP-Private-Bank-Competition.pdf)
+
+Here I will recommend some quant platforms that I always use:
+- [Portfolio123](https://www.portfolio123.com/)
+- [Ricequant](https://www.ricequant.com/welcome/)
+- [Bigquant](https://bigquant.com/)
 
 
 量化资产管

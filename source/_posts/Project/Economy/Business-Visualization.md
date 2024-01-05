@@ -27,7 +27,15 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
 
 ### 2. [Thinkcell](https://www.think-cell.com/en) and [Tableau](https://www.tableau.com/en-gb)
 
-#### 2.1 SHARE Case Competition:
+#### 2.2 Goldman Sachs Stock Pitch:
+> Bilibili Valuation:[project address](/pdf/Group6_BILI_Stock_Pitch.pdf)
+
+<div style="display: flex; justify-content: center;">
+    <img src="https://s2.loli.net/2024/01/05/cYTeUGmha5yONR7.png" style="width: 50%; height: auto; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/grAUdcLNnChQkJf.png" style="width: 50%; height: auto;">
+</div>
+
+#### 2.2 SHARE Case Competition:
 > Sustainable Vehicle Macro Overview:[project address](/zip/ShARE-Sustainable-vehicle-development.pdf)
 
 <div style="display: flex; justify-content: center;">
@@ -35,7 +43,7 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
     <img src="https://s2.loli.net/2024/01/05/oxBV7ZkjNPuDzG3.png" style="width: 50%; height: auto;">
 </div>
  
-#### 2.2 Roland Berger Consulting Challenge: 
+#### 2.3 Roland Berger Consulting Challenge: 
 > Airport Mode Analysis:[project address](/zip/Airport-Planning-Roland-Berger-Challenge.pdf)
 
 <div style="display: flex; justify-content: center;">
@@ -43,7 +51,7 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
     <img src="https://s2.loli.net/2024/01/05/Ng1PesoS7zwmFBD.png" style="width: 50%; height: auto;">
 </div>
 
-#### 2.3 Food Ingedient Industry: 
+#### 2.4 Food Ingedient Industry: 
 > MA Report:[project address](/zip/Food-Ingredient-MA-targeted-Report.pdf)
 
 <div style="display: flex; justify-content: center;">
