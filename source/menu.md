@@ -10,9 +10,9 @@
 
 ##### Project
 
-- [Economy Business](/2023/09/11/Project/Economy/index.html)
-- [Social Science](/2023/09/11/Project/Social-Science/index.html)
-- [Education](/2023/09/11/Project/Education/index.html)
+- [Economy Business](/2023/09/11/Project/Economy/Economy/index.html)
+- [Social Science](/2023/09/11/Project/Social-Science/Social-Science/index.html)
+- [Design](/2023/09/11/Project/Design/Design/index.html)
 
 
 ##### Interview 

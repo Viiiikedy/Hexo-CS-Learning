@@ -4,7 +4,31 @@ tags: Interview
 date: 2023-09-11 10:15:38
 ---
 *<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Post/Quant-Tutorial/Quant-Tutorial/index.html)</small>*
-<img src="https://s2.loli.net/2023/09/11/h7EBdNkvPV21Ly4.jpg" alt="1" style="zoom: 33%;" />
+
+<style>
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+    .shake-on-hover:hover {
+        animation: shake 1.5s;
+        animation-iteration-count: infinite;
+    }
+</style>
+
+<img src="https://s2.loli.net/2023/09/11/h7EBdNkvPV21Ly4.jpg" class="shake-on-hover" style="zoom: 33%;" />
+
+
 In this series, I will mainly cover the following parts of Quantitative Interview and you can jump to the link:
 - [Logic Reasoning](/2023/09/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html)
 - [Statistical Mathematics](/2023/09/11/Interview/Quant-Tutorial/Statistics-and-Mathematics/index.html)

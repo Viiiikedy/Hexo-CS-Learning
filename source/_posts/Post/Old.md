@@ -1,5 +1,5 @@
 ---
-title: What is the biggest lesson to learn computer science
+title: Close to End
 tags: Post
 date: 2023-09-11 10:15:38
 ---

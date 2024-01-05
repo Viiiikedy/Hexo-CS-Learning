@@ -2,47 +2,25 @@
 title: 👋Hello Everyone
 date: 2023-09-02 10:15:38
 ---
-<div align=center>
-<img src="/picture/author.jpg" width = "350" height = "350"/>  
-
-**<font size=5>Self-Introduction</font>**
-**<font size=6>自我介绍</font>**
-
-</div>
-
-***
-```python
-class Me:
-    def __init__(self):
-        self.name = "Wenke Du"
-        self.prefer_name = "Vicky"
-        self.born_year = 2001
-        self.MBTI = "ENTJ"
-        self.hometown = "Kaizhou, Chongqing, CN"
-        self.curr_location = "Haidian, Beijing, CN"
-        self.grad_school = "Universidad Isabel I, Big Data and Intelligence"
-        self.undergrad_school = "Maine, Management Information System"
-        self.undergrad_school = "RUC, Intelligent Accounting"
-```
-
-
-## Background
-📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), and [R](https://www.rstudio.com/categories/rstudio-ide/)
-🖨️- The software I use includes [Office Three Piece Set](https://www.office.com/), [STATA](https://www.stata.com/), [Anaconda](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), and [Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
-🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Python](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
-📈- I'm familiar with applying data science techniques to fix real-world problems in economy and social science.
-🎮- I'm recently learning game design [Unity](https://unity.com/) and IOS software development [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
-💻- My commonly used computer is the Windows [HP](https://www.hp.com/ca-en/home.html) series
-
-📟- 我擅长的计算机语言包括[Python](https://www.w3schools.com/python/)，[My SQL](https://www.mysql.com/)，[HTML](https://www.w3schools.com/html/)，[CSS](https://www.w3schools.com/Css/)，[Javascript](https://www.w3schools.com/js/DEFAULT.asp)，[Matlab](https://www.mathworks.com/products/matlab.html)，[R](https://www.rstudio.com/categories/rstudio-ide/)
-🖨️- 我经常使用的计算机软件包括[Office三件套](https://www.office.com/)，[STATA](https://www.stata.com/),[Anaconda](https://www.anaconda.com/),[Visual Studio Code](https://code.visualstudio.com/),[Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
-🖱️- 我比较熟悉的计算机框架包括[Deep Learning](https://en.wikipedia.org/wiki/Deep_learning)，[Node.js](https://nodejs.org/en)，[React](https://react.dev/),[Pytorch](https://pytorch.org/),[Numpy](https://numpy.org/)和[UIUX交互](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)等
-📈- 我熟悉通过应用数据科学方法在例如社会科学和金融领域解决复杂的现实问题
-🎮- 我最近在学习的计算机知识包括游戏设计[Unity](https://unity.com/)和Ios软件开发[Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
-💻- 我的常用电脑为Windows[惠普](https://www.hp.com/ca-en/home.html)系列
-
-## Other Website
 <style>
+.shake-image:hover {
+  animation: shake 2s; /* 增加动画持续时间 */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-2deg); }
+  20% { transform: translate(-4px, 0px) rotate(2deg); }
+  30% { transform: translate(4px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 4px) rotate(-2deg); }
+  60% { transform: translate(-4px, 2px) rotate(0deg); }
+  70% { transform: translate(4px, 2px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 4px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-2deg); }
+}
 .button-container {
   text-align: center; /* Center aligns the contents */
 }
@@ -66,6 +44,41 @@ class Me:
 }
 </style>
 
+<div align=center>
+  <img src="/picture/author.jpg" width = "350" height = "350" class="shake-image"/>  
+  <br>
+  <strong><font size=5>Self-Introduction</font></strong>
+  <br>
+  <strong><font size=6>自我介绍</font></strong>
+</div>
+
+***
+```python
+class Me:
+    def __init__(self):
+        self.name = "Wenke Du"
+        self.prefer_name = "Vicky"
+        self.born_year = 2001
+        self.MBTI = "ENTJ"
+        self.hometown = "Kaizhou, Chongqing, CN"
+        self.curr_location = "Haidian, Beijing, CN"
+        self.grad_school = "Universidad Isabel I, Big Data and Intelligence"
+        self.undergrad_school = "Maine, Management Information System"
+        self.undergrad_school = "RUC, Intelligent Accounting"
+```
+<p align="center">&#8595;</p>
+
+## Background
+📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), and [R](https://www.rstudio.com/categories/rstudio-ide/)
+🖨️- The software I use includes [Office Three Piece Set](https://www.office.com/), [STATA](https://www.stata.com/), [Anaconda](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), and [Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
+🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Python](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
+📈- I'm familiar with applying data science techniques to fix real-world problems in economy and social science.
+🎮- I'm recently learning game design [Unity](https://unity.com/) and IOS software development [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
+💻- My commonly used computer is the Windows [HP](https://www.hp.com/ca-en/home.html) series
+
+## Other Website
+
+
 <div class="button-container">
   <a href="https://vicky-post-site.vercel.app/" class="button">My Chinese Finance Blog</a>
   <a href="https://jekyll-typing-artist.vercel.app/" class="button">My Art Design Website</a>
@@ -73,22 +86,8 @@ class Me:
   <a href="https://viiiikedy-academy.vercel.app/" class="button">My Academic Site</a>
   <a href="https://vicky-youtube-video.netlify.app" class="button">My Video Site</a>
 </div>
-<div class="button-container">
-  <a href="https://vicky-post-site.vercel.app/" class="button">我的金融博客</a>
-  <a href="https://jekyll-typing-artist.vercel.app/" class="button">我的艺术天地</a>
-  <a href="https://korean-book.netlify.app" class="button">我的语言学习指南</a>
-  <a href="https://viiiikedy-academy.vercel.app/" class="button">我的学术辑</a>
-  <a href="https://vicky-youtube-video.netlify.app" class="button">我的视频站</a>
-</div>
-
-
-
-
 
 ***
-
-
-
 ## Contact
 
 <html>
