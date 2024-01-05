@@ -4,6 +4,14 @@ tags: Project
 date: 2023-09-11 10:15:38
 ---
 <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+        hover ~ img {
+        filter: blur(100000px); /* 鼠标碰到按钮后，图片变模糊 */
+        }
+    }
     .menu-item {
         display: inline-block; /* Ensure elements are horizontally aligned */
         margin-right: 20px;
@@ -63,6 +71,12 @@ I took the related exercising for this pricing [here](https://colab.research.goo
 ### 2. Barrier Option Return Strategy
 It's a type of exotic option where the payoff depends on whether the underlying asset's price reaches a certain level, or barrier, during its life. For this internship exercise, here I will cover the mathematical Principles, for detailed algorithm structure, refer to my GitHub Repository
 > Github: https://github.com/Viiiikedy/Barrier-option-returns-issue
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/06/FVxCeRfK4zSpjNs.png" style="width: 30%; height: auto;">
+    <img src="https://s2.loli.net/2024/01/06/SA9FNqhtyzVafGv.png" style="width: 30%; height: auto;">
+    <img src="https://s2.loli.net/2024/01/06/lHg8AWBTh1C9Uwf.png" style="width: 30%; height: auto;">
+</div>
+
 
 #### 2.1 Basic Steps for Exotic Option Pricing
 1. Start with some financial product
@@ -85,7 +99,7 @@ It's a type of exotic option where the payoff depends on whether the underlying 
         p=X\exp^{-r(T-t)}(H/S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H/S)^{2\lambda}N(-y)
         $$
 
-whereas $r$ is market return, $q$ is dividend rate and $r_f$ is risk free rate. And:
+whereas r is market return, q is dividend rate and r_f is risk free rate. And:
 $$
 \lambda = \frac{r-r_f+\sigma^2/2}{\sigma^2}
 $$
@@ -99,8 +113,9 @@ $$
 
 For the original case, S < K < H, up and in put option the formula is:
 
-$p=K\exp^{-r(T-t)}(H/S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H/S)^{2\lambda}N(-y)
-$
+$$
+p=K\exp^{-r(T-t)}(H/S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H/S)^{2\lambda}N(-y)
+$$
 
 using the common formalism. If we assume the underlying asset does not pay dividends we can a simplification:
 
@@ -121,7 +136,7 @@ $$
 dS_t = (r-r_J)S_t dt + \sigma S_t dZ_t +J_tS_tdN_t
 $$
 
-Here, $S_t$ is the spot price at t; $r_t$ is constant short rate; $r_J$ is drift correction term of the jump; $Z_t$ Wiener process; $J_t$ jump magnitude, it follows a normal distribution of $N(\mu, \delta^2)$; $N_t$ is Poisson process $\sim P(\lambda)$
+Here, S_t is the spot price at t; r_t is constant short rate; r_J is drift correction term of the jump; Z_t Wiener process; J_t jump magnitude, it follows a normal distribution of $$N(\mu, \delta^2)$$ N_t is Poisson process $$\sim P(\lambda)$$
 
 Needless to say, the Poisson process isn't correlated with the Wiener process. To simulate such a price dynamic, the Euler discretization:
 

@@ -60,8 +60,77 @@ We led the team,hoping to experiement how technology like AI can revolutionize t
 > - NFT Web:[here](https://doggo-nfts.com/)
 > - Social Media:[Youtube](https://www.youtube.com/watch?v=WmO4I-_g07U);[Twitter](https://twitter.com/Big_Dog_Token);[Telegram](https://t.me/bigdogofficial)
 <div align="center">
-    <img src="https://s2.loli.net/2024/01/05/auYjBOGRCVDS74N.png" style="width: 70.7%; height: auto;"/>
+    <img src="https://s2.loli.net/2024/01/05/auYjBOGRCVDS74N.png" style="width: 50%; height: auto;"/>
 </div>
+
+### Island Craft Project Overview
+The Island Craft project aims to create a decentralized Gamefi 2.0 aggregator, focusing on merging Gamefi with Defi to foster community engagement and sustainable development in the virtual world.
+
+### Decentralized and Product Structures
+#### 1.1 Conceptual Framework
+- Integration of gaming and decentralized finance.
+- Emphasis on user-generated content and community governance.
+
+#### 1.2 Project Flowchart
+- Detailed breakdown of the project's operational process.
+
+### Challenges and Solutions
+- Analysis of potential challenges in the implementation phase and proposed solutions.
+
+### Actions and Tokenomics
+- Overview of strategic actions for project deployment.
+- Explanation of the token economic model.
+
+### Business Model and Value Proposition
+- Detailed description of the project's business model.
+- Key value propositions for stakeholders and participants.
+
+### Organizational Aspects
+#### 3.1 DAO's Role
+- Explanation of DAO's governance and decision-making process in the project.
+#### 3.2 Token Models
+- Description of various token models utilized in the project.
+#### 3.3 Eco-Governance Token DAOGO
+- Role and functionality of the DAOGO token in the ecosystem.
+
+### Strategic Integration of Gamefi and Defi
+- Strategies for integrating gaming aspects with decentralized finance.
+- Focus on bridging Web2 and Web3 technologies.
+
+### Community Empowerment
+- Initiatives for empowering the user community.
+- Mechanisms for user engagement and participation.
+
+### Sustainable Development in the Virtual World
+- Strategies for ensuring long-term growth and sustainability in the virtual gaming environment.
+
+### Key Milestones and Roadmap
+- Outline of major milestones and the project's developmental roadmap.
+
+### Technical Infrastructure
+- Details on the technical architecture and infrastructure supporting the project.
+
+### Marketing and User Acquisition
+- Strategies for marketing and attracting users to the platform.
+
+### Future Expansion and Scalability
+- Plans for future growth and scalability of the project.
+
+### Risk Management and Security Protocols
+- Discussion of risk management strategies and security measures implemented in the project.
+
+### Community and Social Impact
+- The impact of the project on the gaming community and broader social aspects.
+
+### Financial Projections and Funding
+- Detailed financial projections for the project and information on funding sources.
+
+### Legal Compliance and Regulations
+- Overview of legal and regulatory considerations relevant to the project.
+
+### Conclusion and Final Remarks
+- Summarizing the key aspects and final thoughts on the Island Craft project.
+
 
 1. Project introduction/mission
 
