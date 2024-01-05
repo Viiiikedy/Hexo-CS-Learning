@@ -46,27 +46,28 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/System-Design/index.html) > [RPA(Robot Processing Automation)](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) > [RPA(Robot Processing Automation)](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) </small>*
 
 <ol class="menu-list">
     <div>
         <li><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" class="menu-item">RPA(Robotic Process Automation)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
-        <a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/System-Design/Vehicle-to-Everything/index.html" class="menu-item">Vehicle to Everything&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 
 ---
 
-> Github:https://github.com/Viiiikedy/RPA 
-> Financial Website:http://www.cninfo.com.cn/new/index
-
 ### Designing Background
 I developed an [automated process](https://www.uipath.com/rpa/robotic-process-automation) to acquire and analyze financial data from annual reports and understand business operations. This process caters to the growing need for financial data processing and analysis in today's digital and information-driven context. 
 It enables businesses to effectively gather and analyze financial data from the last three years. The process fetches annual report data, analyzes data, generates analytical reports, and computes financial figures.
+
+> Github:https://github.com/Viiiikedy/RPA 
+> Financial Website:http://www.cninfo.com.cn/new/index
+
+### Designing Procedure
 <p align="center">
   <img src="https://s2.loli.net/2024/01/05/qHsTQK6Na8vBzWy.png">
 </p>
-### Designing Procedure
 #### 1.	Annual Report Download
 Access the annual report download page by logging into the Juchao website and selecting the appropriate time, report type, etc. Based on URL analysis, the reports are efficiently and accurately downloaded locally through HTTP requests.
 #### 2.	Data Acquisition

@@ -45,7 +45,7 @@ date: 2023-09-11 10:15:38
 
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Design/Game-Design/index.html" class="menu-item">Game Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <li><a href="/2023/09/11/Project/Design/Game-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Game-Design/index.html" class="menu-item">Game Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
         <a href="/2023/09/11/Project/Design/Educational-Platform/index.html" class="menu-item">Educational Platformn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>

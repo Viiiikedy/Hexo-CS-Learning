@@ -16,7 +16,7 @@ date: 2023-09-11 10:15:38
 </style>
 
 ### 1. [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi/)
-It's a business analytics tool by Microsoft, offers a wide range of applications in the business world.
+Power BI offers a wide range of applications in the business world.Here I analyzed the performance of various groups within a gym over the past two years, including different regions, stores, and types of coaches, conducting a correlational analysis.
 > Project Address: [here](/zip/Business-Visualization-Case.pbix)
 
 
@@ -28,6 +28,7 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
 ### 2. [Thinkcell](https://www.think-cell.com/en) and [Tableau](https://www.tableau.com/en-gb)
 
 #### 2.2 Goldman Sachs Stock Pitch:
+Here we select Bilibili as the target company within an industry and forecast its revenue and other metrics by analyzing the macro environment post-pandemic recovery and the rising trend of Bilibili's game business.
 > Bilibili Valuation:[project address](/pdf/Group6_BILI_Stock_Pitch.pdf)
 
 <div style="display: flex; justify-content: center;">
@@ -36,6 +37,7 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
 </div>
 
 #### 2.2 SHARE Case Competition:
+This case offers us more opportunities to analyze the nascent new energy industry and the synergistic effects with upstream parts manufacturers, downstream B2C and B2B consumers, plus internet companies.
 > Sustainable Vehicle Macro Overview:[project address](/zip/ShARE-Sustainable-vehicle-development.pdf)
 
 <div style="display: flex; justify-content: center;">
@@ -44,6 +46,8 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
 </div>
  
 #### 2.3 Roland Berger Consulting Challenge: 
+I analyzed the infrastructure industry for this case, offering constructive suggestions for airports' unseen strategies, such as expansion or outsourcing, based on linear metrics like passenger flow.
+
 > Airport Mode Analysis:[project address](/zip/Airport-Planning-Roland-Berger-Challenge.pdf)
 
 <div style="display: flex; justify-content: center;">
@@ -51,7 +55,8 @@ It's a business analytics tool by Microsoft, offers a wide range of applications
     <img src="https://s2.loli.net/2024/01/05/Ng1PesoS7zwmFBD.png" style="width: 50%; height: auto;">
 </div>
 
-#### 2.4 Food Ingedient Industry: 
+#### 2.4 Food Ingedient Industry:
+I focused particularly on the disruptive impact of technologies like genetic engineering on traditional sectors. It explores industry development patterns and ROI through data mining, data cleansing, and regression analysis.
 > MA Report:[project address](/zip/Food-Ingredient-MA-targeted-Report.pdf)
 
 <div style="display: flex; justify-content: center;">

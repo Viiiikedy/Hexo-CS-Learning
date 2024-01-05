@@ -165,13 +165,13 @@ _<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Econom
     <div class="image-box">
         <img src="/picture/Big-Dog.png">
         <span class="like-count">❤️ 49</span>
-        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Automation-and-Cryptocurrency/index.html" 
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" 
            class="button-container">Automatical Trade; CryptoCurrency</a>
     </div>
     <div class="image-box">
         <img src="/picture/Car-Chain.png">
         <span class="like-count">❤️ 28</span>
-        <a href="/2023/09/11/Project/Economy/System-Design/System-Design/index.html" 
+        <a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" 
            class="button-container">System Design</a>
     </div>
     <div class="image-box">
