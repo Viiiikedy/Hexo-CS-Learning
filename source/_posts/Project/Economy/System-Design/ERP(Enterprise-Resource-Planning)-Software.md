@@ -71,8 +71,10 @@ The final step involves sending emails using the SMTP protocol.
 1.	Open the software, select "project.json," and install the extension for Edge in the tools section.
 2.	Delete the already executed .docx, .pdf, and .xlsx files for Shanghai Airport, 2022, and Fujian Expressway. The specific company codes can be found in the "企业列表.xlsx" (Company List.xlsx) file, formatted as follows:
 3.	Select the "Main. xaml" file and click "run the file." The annual report download data source is the Juchao website, and the data template is located in "word模板.docx" (word template.docx), formatted as follows: 
-Company Code	Company Name	Quick Ratio
-[Company Code]	[Company Name]	[Quick Ratio]
+| Company Code  | Company Name  | Quick Ratio  |
+|---------------|---------------|--------------|
+| [Company Code]| [Company Name]| [Quick Ratio]|
+
 4.	Start the process; below is a screenshot of part of the running code.
 
 
@@ -84,15 +86,3 @@ Company Code	Company Name	Quick Ratio
 
 
 
-
-
-
-
-
-
-
-word1&nbsp;&nbsp;&nbsp;&nbsp;word2
-
-
-[Link text](URL)
----
