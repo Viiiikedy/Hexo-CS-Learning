@@ -4,6 +4,8 @@ tags: Project
 date: 2023-09-11 10:15:38
 ---
 
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html)</small>*
+
 <style>
     .menu-item {
         display: inline-block; /* Ensure elements are horizontally aligned */
@@ -41,30 +43,47 @@ date: 2023-09-11 10:15:38
         white-space: nowrap; /* Prevent wrapping of list items */
     }
     figcaption:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     font-weight: bold;
+    }
+     .image-shake:hover {
+        transform: translateX(-2px); /* Adjust the amount of movement as needed */
+        animation: shake 1s ease infinite; /* Apply a simple shake animation */
+    }
+
+    @keyframes shake {
+        0% { transform: translateX(-2px); }
+        25% { transform: translateX(2px); }
+        50% { transform: translateX(-2px); }
+        75% { transform: translateX(2px); }
+        100% { transform: translateX(-2px); }
     }
     
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html)</small>*
 
-
+### Column:
 <div style="text-align: center;">
-  <figure style="display: inline-block; margin-right: 10px;">
-    <img src="https://s2.loli.net/2024/01/05/iTgFthBM7dlORoD.png" style="border-radius: 50%; width: 300px; height: 300px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
+  <figure class="image-shake" style="display: inline-block; margin-right: 10px;">
+      <img src="https://s2.loli.net/2024/01/05/R21fK6jxM5L97Ba.png" style="border-radius: 50%; width: 210px; height: 210px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
+      <figcaption style="text-align: center; font-size: 20px; transition: transform 0.3s, font-weight 0.3s;">
+          <a href="/2023/09/11/Project/Design/System-Design/index.html" style="color: inherit; text-decoration: none;">System Design</a>
+      </figcaption>
+  </figure>
+  <figure class="image-shake" style="display: inline-block; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/iTgFthBM7dlORoD.png" style="border-radius: 50%; width: 210px; height: 210px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
     <figcaption style="text-align: center; font-size: 20px; transition: transform 0.3s, font-weight 0.3s;">
       <a href="/2023/09/11/Project/Design/Game-Design/index.html" style="color: inherit; text-decoration: none;">Game Design</a>
     </figcaption>
   </figure>
-  <figure style="display: inline-block; margin-right: 10px;">
-    <img src="https://s2.loli.net/2024/01/05/AYbfuXmCcrgIsBT.png" style="border-radius: 50%; width: 300px; height: 300px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
+  <figure class="image-shake" style="display: inline-block; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/AYbfuXmCcrgIsBT.png" style="border-radius: 50%; width: 210px; height: 210px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
     <figcaption style="text-align: center; font-size: 20px; transition: transform 0.3s, font-weight 0.3s;">
       <a href="/2023/09/11/Project/Design/Educational-Platform/index.html" style="color: inherit; text-decoration: none;">Educational Platform</a>
     </figcaption>
   </figure>
-  <figure style="display: inline-block;">
-    <img src="https://s2.loli.net/2024/01/05/LRuwUh9Fcjode7s.png" style="border-radius: 50%; width: 300px; height: 300px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
+  <figure class="image-shake" style="display: inline-block; margin-right: 10px;">
+    <img src="https://s2.loli.net/2024/01/05/LRuwUh9Fcjode7s.png" style="border-radius: 50%; width: 210px; height: 210px; object-fit: cover; box-shadow: 0 8px 15px rgba(0,0,0,0.3);" />
     <figcaption style="text-align: center; font-size: 20px; transition: transform 0.3s, font-weight 0.3s;">
       <a href="/2023/09/11/Project/Design/Art-Design/index.html" style="color: inherit; text-decoration: none;">Art Design</a>
     </figcaption>
@@ -72,6 +91,3 @@ date: 2023-09-11 10:15:38
 </div>
 
 ---
-More about My Design:
-- [Vicky Typing Artiest](https://jekyll-typing-artist.vercel.app/)
-- [Vicky Gallery Design](https://vicky-gallery-site.vercel.app/)

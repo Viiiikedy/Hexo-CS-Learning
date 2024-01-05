@@ -56,6 +56,8 @@ Game Design
 
 交互设计
 
+You may also refer to my [tutorial](/2023/09/11/Interview/CS-Tutorial/index.html) where I cover something about the game design tricks
+
 Tutorial有涉及
 
 

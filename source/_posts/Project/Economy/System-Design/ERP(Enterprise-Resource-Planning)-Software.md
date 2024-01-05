@@ -42,41 +42,73 @@ date: 2023-09-11 10:15:38
 </style>
 
 *<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/System-Design/index.html) > [ERP(Enerprise Resource Planning) Software](/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html) </small>*
+
 <ol class="menu-list">
     <div>
         <li><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" class="menu-item">RPA(Robotic Process Automation)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
-        <a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/System-Design/Vehicle-to-Everything" class="menu-item">Vehicle to Everything&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/System-Design/Vehicle-to-Everything/index.html" class="menu-item">Vehicle to Everything&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 
 ---
+[ERP(Enterprise Resource Planning) Software](https://dynamics.microsoft.com/en-us/erp/what-is-erp/#:~:text=Enterprise%20resource%20planning%20%28ERP%29%20is%20a%20type%20of,of%20truth%20and%20streamlining%20operations%20across%20the%20enterprise) is a type of software system that helps organizations automate and manage core business processes for optimal performanc
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/05/s5uLoZqvyla6NxF.png">
+</p>
 
+### Toothpaste Factory Project
+> project zip [here](https://drive.google.com/file/d/1b5ZwZSjZ5Y5_YvLi745sAnNqAJ38S-u2/view?usp=sharing)
 
-### Designing Background
-I developed an automated process to acquire and analyze financial data from annual reports and understand business operations. This process caters to the growing need for financial data processing and analysis in today's digital and information-driven context. 
-It enables businesses to effectively gather and analyze financial data from the last three years. The process fetches annual report data, analyzes data, generates analytical reports, and computes financial figures.
-### Designing Procedure
-#### 1.	Annual Report Download
-Access the annual report download page by logging into the Juchao website and selecting the appropriate time, report type, etc. Based on URL analysis, the reports are efficiently and accurately downloaded locally through HTTP requests.
-#### 2.	Data Acquisition
-The annual reports are in editable PDF format, allowing for direct text extraction for processing. This involves using a suitable PDF parsing library to extract text from PDF files, which can be achieved by loading the PDFs into memory and utilizing specific functions or methods.
-#### 3.	Financial Statement Data Extraction
-Considering potential inconsistencies, missing values, and anomalies in annual report formats, it's essential to analyze the text format of the reports. The goal is to locate the compelling text "Section II, Financial Statements" and remove irrelevant text from the beginning and end of the reports using substring and split functions.
-#### 4.	Financial Analysis
-The extracted financial statement data is cleaned using functions like substring and split. This cleaned data is then used for calculations and written into Word.
-#### 5.	Email Sending
-The final step involves sending emails using the SMTP protocol.
+#### 1. Procurement Management:
+##### 1.1 Simulate a procurement transaction
+Purchase Order → Purchase Invoice → Goods Receipt Note (Inventory Management Subsystem) 
+→ Payment Order (Pay 50% of the amount).
 
-### Designing Execution
-1.	Open the software, select "project.json," and install the extension for Edge in the tools section.
-2.	Delete the already executed .docx, .pdf, and .xlsx files for Shanghai Airport, 2022, and Fujian Expressway. The specific company codes can be found in the "企业列表.xlsx" (Company List.xlsx) file, formatted as follows:
-3.	Select the "Main. xaml" file and click "run the file." The annual report download data source is the Juchao website, and the data template is located in "word模板.docx" (word template.docx), formatted as follows: 
-| Company Code  | Company Name  | Quick Ratio  |
-|---------------|---------------|--------------|
-| [Company Code]| [Company Name]| [Quick Ratio]|
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/05/scmyE7FtjZPWfAN.png">
+</p>
 
-4.	Start the process; below is a screenshot of part of the running code.
+##### 1.2 Procurement Management 
+(hide non-key columns, retain key columns)
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/05/y9e5nwLr7qUiFKh.png">
+</p>
 
+- **Purchase Order Execution Statistics**
+- **Purchase Invoice List**
+- **Purchase Settlement List**
+- **Accounts Payable Management**
+  - Payment Order List (Payment Processing - Receipt and Payment Order Query)
+  - Voucher Processing - Voucher List
+  - Business Ledger - Detailed Business Account
+
+#### 2. Inventory Management:
+
+- **Journal**
+- **Receipts and Issues Summary** 
+(hide blank data columns through format settings)
+- **Inventory Accounting - Voucher List**
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/05/oCWhwkmAf2ysiVB.png">
+</p>
+
+#### 3. Sales Management:
+
+- **Sales Order Execution Statistics**
+- **Sales Invoice List**
+- **Accounts Receivable Management**
+  - Receipt Order List (Receipt Processing - Receipt and Payment Order Query)
+  - Voucher Processing - Voucher List
+  - Business Ledger - Detailed Business Account
+
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/05/dgnuZKfHSDoCOYl.png">
+</p>
+
+### More about Yonyou
+> Yonyou:https://u8.yonyou.com/
+
+As a crucial software for applying data science to solve business problems, Yonyou U8+ integrates deeply with cloud applications in enterprise cloud migration, offering one-stop "end + cloud" services in finance, marketing, manufacturing, procurement, design, collaboration, HR, and more. It employs a strategy of integrated software and hardware and ecosystem collaboration to empower growth-oriented enterprises in innovation and upgrading in R&D, supply chain, production, finance, and marketing. Yonyou U8+ provides a new platform for business collaboration, online transactions, and intelligent operations based on the Internet.
 
 
 
