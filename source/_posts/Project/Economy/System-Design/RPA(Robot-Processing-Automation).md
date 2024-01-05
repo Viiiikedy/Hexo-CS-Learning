@@ -46,7 +46,7 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/System-Design/index.html) > [RPA(Robot Processing Automation)](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/System-Design/index.html) > [RPA(Robot Processing Automation)](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) </small>*
 
 <ol class="menu-list">
     <div>

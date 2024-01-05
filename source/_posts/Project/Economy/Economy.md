@@ -4,7 +4,7 @@ tags: Project
 date: 2023-09-11 10:15:38
 ---
 
-_<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy](/2023/09/11/Project/Economy/index.html)</small>_
+_<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/index.html)</small>_
 
 ## Projects
 

@@ -41,7 +41,7 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Automation-and-Cryptocurrency/index.html) > [Derivative Mathematical Pricing](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Automation-and-Cryptocurrency/index.html) > [Derivative Mathematical Pricing](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html) </small>*
 <ol class="menu-list">
     <div>
         <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
@@ -50,196 +50,91 @@ date: 2023-09-11 10:15:38
 </ol>
 
 ---
-   
 
-### 1. Pair Trading Strategy
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
 
-```python
-import numpy as np
-import pandas as pd
-from jqdata import *
+### 1. Plain Vanilla
+I took the related exercising for this pricing [here](https://colab.research.google.com/drive/18y8GSmrwECzgv3c385CnVVefUjEXtWaj?usp=sharing).
+### 2. Barrier Option Return Strategy
+It's a type of exotic option where the payoff depends on whether the underlying asset's price reaches a certain level, or barrier, during its life. For this internship exercise, here I will cover the mathematical Principles, for detailed algorithm structure, refer to my GitHub Repository
+> Github: https://github.com/Viiiikedy/Barrier-option-returns-issue
 
-# Industry ID
-instruments_code_bank = get_industry_stocks('I64')[0:15]
-prices_temp = pd.DataFrame()
-start_date = '2020-01-01'
-end_date = '2022-04-29'
-for c in instruments_code_bank:
-    c_daily = get_price(c, start_date, end_date)
-    c_daily['code'] = c
-    prices_temp = pd.concat([prices_temp, c_daily])
+#### 2.1 Basic Steps for Exotic Option Pricing
+1. Start with some financial product
+2. Model asset prices involved (SDEs)
+3. Calibrate the model to market data (numerics, optimization)
+4. Model product price correspondingly (P(I)DE or integral)
+5. Price the derivative product of interest (numerics, MC)
+6. Set up a hedge to remove the risk to the derivative product (optimization)
 
-prices_temp_code_close = prices_temp[['code', 'close']]
-# prices_temp_code_close
-mode_num = np.argmax(np.bincount([len(i) for i in [prices_temp_code_close[prices_temp_code_close.code == c] for c in instruments_code_bank]]))
-# Create a dictionary to index the closing price of this year by ts_code
-price_dict_all = dict(list(prices_temp_code_close.groupby('code')['close']))
-# Filter out the stocks in the dictionary whose trading dates equal the mode number, so as to analyze more pairs with high correlation in the stock pool
-price_dict = dict(filter(lambda x: len(x[1]) == mode_num, price_dict_all.items()))
-instruments_code = list(price_dict.keys())
+#### 2.2 Mathematical Deduction
 
-import matplotlib.pyplot as plt
-import statsmodels.api as sm
-import seaborn as sns
+<body>
+    <p>
+       European Down and In Call (Under the condition of GBM)
+        \[
+        c = S \exp^{-q(T-t)} \left( \frac{H}{S} \right)^{2 \lambda} N(y) - X \exp^{-r(T-t)} \left( \frac{H}{S} \right)^{2 \lambda - 2} N(y - \sigma \sqrt{T-t})
+        \]
+        European Up and In Put:
+        $$
+        p=X\exp^{-r(T-t)}(H/S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H/S)^{2\lambda}N(-y)
+        $$
 
-# Calculate correlation
-def get_pearson_r(price_dict):
-    n = len(price_dict)
-    keys = list(price_dict.keys())
-    r_matrix = np.ones((n, n))
-    for i in range(n):
-        stock1 = price_dict[keys[i]]
-        for j in range(i+1, n):
-            stock2 = price_dict[keys[j]]
-            r = stock1.corr(stock2)
-            r_matrix[i, j] = r
-    return r_matrix
+whereas $r$ is market return, $q$ is dividend rate and $r_f$ is risk free rate. And:
+$$
+\lambda = \frac{r-r_f+\sigma^2/2}{\sigma^2}
+$$
+$$
+y = \frac{\log{[H^2/(SX)]}}{\sigma \sqrt{T-t}} + \lambda \sigma \sqrt{T-t}
+$$
 
-# Input is a price_dict, each column is the price of a stock on each day
-def find_cointegrated_pairs(price_dict):
-    # Get the length of price_dict
-    n = len(price_dict)
-    # Initialize the p-value matrix
-    pvalue_matrix = np.ones((n, n))
-    # Extract column names
-    keys = list(price_dict.keys())
-    mode_num = np.argmax(np.bincount([len(i) for i in list(price_dict.values())]))
-    # print("keys:",keys)
-    # Initialize strong cointegration group
-    pairs = []
-    # For every i
-    for i in range(n):
-        # For j greater than i
-        stock1 = price_dict[keys[i]]
-        if len(stock1) != mode_num:
-            continue
-        for j in range(i+1, n):
-            # Get the price Series of the respective two stocks
-            stock2 = price_dict[keys[j]]
-            if len(stock2) != mode_num:
-                continue
-            # Analyze their cointegration relationship
-            result = sm.tsa.stattools.coint(stock1, stock2)
-            # Extract and record the p-value
-            pvalue = result[1]
-            pvalue_matrix[i, j] = pvalue
-            # If the p-value is less than 0.05
-            if pvalue < 0.05:
-                # Record the stock pair and the corresponding p-value
-                pairs.append((keys[i], keys[j], pvalue))
-    # Return the result
-    return pvalue_matrix, pairs
+**Theorem**
+> Down: H < S
+> Up: H>S
 
-pvalues, pairs = find_cointegrated_pairs(price_dict)
-pairs_df = pd.DataFrame(pairs, index=range(0, len(pairs)), columns=list(['comp1', 'comp2', 'pvalue']))
-# The smaller the pvalue, the greater the correlation, ranking by ascending pvalue gets the stock pairs with high correlation from high to low
-pairs_df = pairs_df.sort_values(by='pvalue')
-pairs_df
+For the original case, S < K < H, up and in put option the formula is:
 
-# %matplotlib inline
-plt.rcParams['figure.figsize'] = [15, 8]
-sns.heatmap(1-pvalues, xticklabels=instruments_code, yticklabels=instruments_code, cmap='RdYlGn_r', mask=(pvalues == 1))
+$p=K\exp^{-r(T-t)}(H/S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H/S)^{2\lambda}N(-y)
+$
 
-# The redder in the heatmap, the higher the correlation, indicating the smaller the p-value.
+using the common formalism. If we assume the underlying asset does not pay dividends we can a simplification:
 
-company_choose = [pairs_df.iloc[0].comp1, pairs_df.iloc[0].comp2]
-print(company_choose)
-x = price_dict[company_choose[0]]
-y = price_dict[company_choose[1]]
-x = np.log(x)
-X = sm.add_constant(x)
-y = np.log(y)
-result = (sm.OLS(y, X)).fit()
-result.summary()
+$$
+p=K\exp^{-r(T-t)}(H/S_0)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S_0 (H/S_0)^{2\lambda}N(-y)
+$$
+where
+$$
+\lambda = \frac{r+\sigma^2/2}{\sigma^2}
+$$
+$$
+y = \frac{\log{[H^2/(S_0K)]}}{\sigma \sqrt{T-t}} + \lambda \sigma \sqrt{T-t}
+$$
 
-import matplotlib.pyplot as plt
-p1 = get_price('000676.XSHE', start_date, end_date, fields='close')
-# Drawing the fitting line:
+We will do **Jump Diffusion model**
 
-st = np.log(y) - np.log(x) * 1.3584    
-fig, ax = plt.subplots(figsize=(8,6))
-ax.plot(x, y, 'o', label="data")
-ax.plot(x, result.fittedvalues, 'r', label="OLS")
-ax.legend(loc='best')
+$$
+dS_t = (r-r_J)S_t dt + \sigma S_t dZ_t +J_tS_tdN_t
+$$
 
-# Set the thresholds for opening and closing positions, here using multiples of standard deviation as an example
-open_num = 1.5 # Opening threshold, open positions when the residual is more than 1.5 standard deviations above the mean
-close_num = 0.5 # Closing threshold, close positions when the residual is less than 0.5 standard deviations below the mean
+Here, $S_t$ is the spot price at t; $r_t$ is constant short rate; $r_J$ is drift correction term of the jump; $Z_t$ Wiener process; $J_t$ jump magnitude, it follows a normal distribution of $N(\mu, \delta^2)$; $N_t$ is Poisson process $\sim P(\lambda)$
 
-# Determine trading signals based on the residual series and record daily position and profit situations
-position = 0 # Initial position is 0, indicating no holdings; a position of 1 indicates going long on x and short on y; a position of -1 indicates going short on x and long on y.
-capital = 1000000 # Initial capital of 1 million
-fee_rate = 0.0005 # Transaction fee rate of 0.0005
+Needless to say, the Poisson process isn't correlated with the Wiener process. To simulate such a price dynamic, the Euler discretization:
 
-trade_log = [] # Record trade log
+$$
+S_t = S_{t-\Delta t}\Big( e^{(r-r_J-\sigma^2/2)\Delta t+\sigma \sqrt{\Delta t}z_t^1}+\Big(e^{\mu_J+\delta z_t^2}-1\Big)\Big)
+$$
 
-for i in range(len(resid)):
-    if position == 0: # When there are no holdings, determine whether to open positions
-        
-        if resid[i] > mean + open_num * std: # If the residual is above the upper limit, go short on x and long on y
-            
-            position = -1 # Position changes to -1
-            
-            x_price = x[i] * (1 + fee_rate) # Calculate the purchase price of x (considering transaction fees)
-            y_price = y[i] * (1 - fee_rate) # Calculate the selling price of y (considering transaction fees)
-            
-            x_amount = capital / 2 / x_price # Calculate the quantity of x to buy
-            y_amount = capital / 2 / y_price # Calculate the quantity of y to sell
-            
-            trade_log.append([i, 'Open', -1, x_price, y_price, x_amount, y_amount]) # Record trade log
-            
-        elif resid[i] < mean - open_num * std: # If the residual is below the lower limit, go long on x and short on y
-            
-            position = 1 # Position changes to 1
-            
-            x_price = x[i] * (1 - fee_rate) # Calculate the selling price of x (considering transaction fees)
-            y_price = y[i] * (1 + fee_rate) # Calculate the purchase price of y (considering transaction fees)
-            
-            x_amount = capital / 2 / x_price # Calculate the quantity of x to sell
-            y_amount = capital / 2 / y_price # Calculate the quantity of y to buy
-            
-            trade_log.append([i, 'Open', 1, x_price, y_price, x_amount, y_amount]) # Record trade log
-    
-    elif position == -1: # When short on x and long on y, determine whether to close positions
-        
-        if resid[i] < mean + close_num * std: # If the residual is below the closing threshold, close positions
-            
-            position = 0 # Position changes to 0
-            
-            x_price = x[i] * (1 - fee_rate) # Calculate the selling price of x (considering transaction fees)
-            y_price = y[i] * (1 + fee_rate) # Calculate the purchase price of y (considering transaction fees)
-            
-            trade_log.append([i, 'Close', 0, x_price, y_price]) # Record trade log
-    
-    elif position == 1: # When long on x and short on y, determine whether to close positions
-        
-        if resid[i] > mean - close_num * std: # If the residual is above the closing threshold, close positions
-            
-            position = 0 # Position changes to 0
-            
-            x_price = x[i] * (1 + fee_rate) # Calculate the purchase price of x (considering transaction fees)
-            y_price = y[i] * (1 - fee_rate) # Calculate the selling price of y (considering transaction fees)
-            
-            trade_log.append([i, 'Close', 0, x_price, y_price]) # Record trade log
+$$
+r_J \equiv \lambda\Big(e^{\mu_J+\delta^2/2}-1\Big)
+$$
 
-# Convert the trade log into DataFrame format and calculate the profit and cumulative profit for each transaction
-trade_log = pd.DataFrame(trade_log, columns=['Date', 'Operation', 'Position', 'x Price', 'y Price', 'x Quantity', 'y Quantity'])
-trade_log['Profit'] = 0
-trade_log['Cumulative Profit'] = 0
-for i in range(1, len(trade_log)):
-    if trade_log.loc[i, 'Operation'] == 'Close':
-        trade_log.loc[i, 'Profit'] = (trade_log.loc[i-1, 'x Price'] - trade_log.loc[i, 'x Price']) * trade_log.loc[i-1, 'x Quantity'] + (trade_log.loc[i, 'y Price'] - trade_log.loc[i-1, 'y Price']) * trade_log.loc[i-1, 'y Quantity']
-        trade_log.loc[i, 'Cumulative Profit'] = trade_log.loc[i-1, 'Cumulative Profit'] + trade_log.loc[i, 'Profit']
-    else:
-        trade_log.loc[i, 'Cumulative Profit'] = trade_log.loc[i-1, 'Cumulative Profit']
-
-# Print trade log
-print(trade_log)
-
-# Plotting Cumulative Return Curve
-plt.plot(trade_log['Date'], trade_log['Cumulative Profit'])
-plt.xlabel('Date')
-plt.ylabel('Cumulative Return')
-plt.title('Market Neutral Strategy')
-plt.show()
-```
+### 3. Extension
+You could aslo refer to my [tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) where I introduced more based on the most classical books in the financial engineering.
+    </p>
+</body>
+</html>
