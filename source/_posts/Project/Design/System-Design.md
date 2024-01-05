@@ -67,8 +67,8 @@ date: 2023-09-11 10:15:38
 
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Game-Design/index.html" class="menu-item">Game Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
-        <a href="/2023/09/11/Project/Design/Educational-Platform/index.html" class="menu-item">Educational Platformn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <li><a href="/2023/09/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html" class="menu-item">Educational Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 
@@ -153,3 +153,9 @@ We have also conducted research on the life stories of these poets, enriching th
 
 
 ### 2. Blockchain Shared Charging Piles
+
+I once conducted a system design analysis for smart contracts in the Internet of Vehicles (IoV) car chain to examine the characteristics of the IoV car chain, evaluates blockchain-based smart contract solutions across industries like automotive and retail, and details application logic and solutions for IoV using smart contracts. I also explored multi-chain V2G security certification schemes, including design and performance test approaches, leveraging tools like Python in VS Code and the Remix online editor before provoding more recommendations.
+
+> Local Performance Test Code:[here](https://drive.google.com/file/d/19qyxWdwQtnwCPXyXwo9OpRb3ldoaANRk/view?usp=sharing)
+> Cloud package:[here]([git@github.com:Viiiikedy/Blockchain-Shared-Charging-Piles.git](https://github.com/Viiiikedy/Blockchain-Shared-Charging-Piles))
+> Report:[here](/pdf/Blockchain-Shared-Charging-Piles.pdf)
