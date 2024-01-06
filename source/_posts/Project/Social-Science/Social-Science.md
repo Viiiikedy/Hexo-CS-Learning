@@ -140,7 +140,7 @@ date: 2023-09-11 10:15:38
 <div style="display: flex; position: relative;">
   <div class="image-container">
     <img src="https://s2.loli.net/2024/01/05/jgQ7kof6xbC5Rqc.webp" style="width: 100%; height: auto;" />
-    <a class="image-link" href="/2023/09/11/Project/Social-Science/Machine-Learning/Machine-Learning/index.html">
+    <a class="image-link" href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html">
       <span>Machine Learning</span>
     </a>
   </div>

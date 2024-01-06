@@ -42,7 +42,7 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Social Science](/2023/09/11/Project/Social-Science/index.html) > [Machine Learning](/2023/09/11/Project/Social-Science/Machine-Learning/Machine-Learning/index.html) > [Text Analysis](/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Social Science](/2023/09/11/Project/Social-Science/index.html) > [Machine Learning](/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html) > [Text Analysis](/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html)</small>*
 
 <ol class="menu-list">
     <div>
