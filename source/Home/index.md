@@ -26,7 +26,7 @@ date: 2023-09-02 10:15:38
 }
 
 .button {
-  background-color: rgba(0, 123, 255, 0.8);
+  background-color: black;
   border: 1px solid transparent;
   text-align: center;
   border-radius: 5px;
@@ -39,10 +39,46 @@ date: 2023-09-02 10:15:38
 }
 
 .button:hover {
-  background-color: black;
-  color: white;
-}
+        background-color: rgba(0, 100, 200, 0.8);
+        color: white;
+    }
+
+    .bubble-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .bubble {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: rgba(240, 240, 255, 0.8);
+        color: white; /* Changed from black to white */
+        text-decoration: none;
+        font-size: 14px;
+        transition: transform 0.3s;
+    }
+    .bubble:hover {
+        transform: scale(1.2);
+        animation: shake 1s;
+    }
+    /* You can add specific styles for each bubble to vary their sizes */
+    #python {
+        font-size: 16px; /* Larger font size for larger bubble */
+    }
 </style>
+<script>
+  document.querySelectorAll('.bubble').forEach(bubble => {
+      bubble.addEventListener('mouseenter', () => {
+          bubble.classList.add('shake');
+      });
+      bubble.addEventListener('mouseleave', () => {
+          bubble.classList.remove('shake');
+      });
+  });
+</script>
 
 <div align=center>
   <img src="/picture/author.jpg" width = "350" height = "350" class="shake-image"/>  
@@ -71,10 +107,43 @@ class Me:
 ## Background
 📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), and [R](https://www.rstudio.com/categories/rstudio-ide/)
 🖨️- The software I use includes [Office Three Piece Set](https://www.office.com/), [STATA](https://www.stata.com/), [Anaconda](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), and [Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
-🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Python](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
+🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Pytorch](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
 📈- I'm familiar with applying data science techniques to fix real-world problems in economy and social science.
 🎮- I'm recently learning game design [Unity](https://unity.com/) and IOS software development [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
 💻- My commonly used computer is the Windows [HP](https://www.hp.com/ca-en/home.html) series
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Bubbles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="bubble-container">
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html#python-section" class="bubble" id="python">Python</a>
+        <a href="/2023/09/11/Project/Design/System-Design/index.html#my-sql-section" class="bubble" id="my-sql">My SQL</a>        
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange/index.html#c++-section" class="bubble" id="c++">C++</a>
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html#matlab-section" class="bubble" id="matlab">MATLAB</a>
+        <a href="/2023/09/11/Project/Social-Science/General-Application/index.html#stata-section" class="bubble" id="stata">STATA</a>        
+        <a href="/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html#r-section" class="bubble" id="r">R</a>     
+        <a href="/2023/09/11/Project/Design/System-Design/index.html#java-section" class="bubble" id="java">Java</a>
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html#html-section" class="bubble" id="html">HTML</a>        
+        <a href="/2023/09/11/Project/Design/Art-Design/index.html#css-section" class="bubble" id="css">CSS</a>
+        <a href="/2023/09/11/Note/Web-Development/index.html#javascript-section" class="bubble" id="javascript">Javascript</a>
+        <a href="/2023/09/11/Project/Economy/Business-Visualization/index.html#thinkcell-section" class="bubble" id="thinkcell">Thinkcell</a>        
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html#vba-section" class="bubble" id="vba">VBA</a>   
+        <a href="/2023/09/11/Project/Economy/Business-Visualization/index.html#tableau-section" class="bubble" id="tableau">Tableau</a>
+        <a href="/2023/09/11/Project/Economy/Business-Visualization/index.html#power-bi-section" class="bubble" id="power-bi">Power BI</a>        
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html#figma-section" class="bubble" id="figma">Figma</a>
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html#unity-section" class="bubble" id="unity">Unity</a>
+        <a href="/2023/09/11/Interview/CS-Tutorial/index.html#swfit-section" class="bubble" id="swift">Swift</a>        
+        <a href="/2023/09/11/Post/Young/index.html#visual-studio-code-section" class="bubble" id="visual-studio-code">Visual Studio Code</a>     
+        <a href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html#machine-learning-section" class="bubble" id="machine-learning">Machine Learning</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
 ## Other Website
 

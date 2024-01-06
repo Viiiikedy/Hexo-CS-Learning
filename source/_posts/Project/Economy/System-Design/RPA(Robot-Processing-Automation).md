@@ -1,6 +1,6 @@
 ---
-title: Economy-Sysmtem Design
-tags: Project
+title: RPA(Robot Processing Automation)
+tags: System Design
 date: 2023-09-11 10:15:38
 ---
 <style>
@@ -46,11 +46,11 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) > [RPA(Robot Processing Automation)](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [System Design](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html) > **[RPA(Robot Processing Automation)](/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html)</small>***
 
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" class="menu-item">RPA(Robotic Process Automation)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <li><strong><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" class="menu-item">RPA(Robotic Process Automation)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
         <a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>

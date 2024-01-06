@@ -1,9 +1,9 @@
 ---
-title: Quant Tutorial-Statistical Mathematics
-tags: Interview
+title: Statistical Mathematics
+tags: Quant Tutorial
 date: 2023-09-11 10:15:38
 ---
-*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > [Statistics and Mathematics](/2023/09/11/Interview/Quant-Tutorial/Statistics-and-Mathematics/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > **[Statistics and Mathematics](/2023/09/11/Interview/Quant-Tutorial/Statistics-and-Mathematics/index.html)</small>***
 
 Firstly I will introduce one book about [Maximum likelihood estimation.pdf](/pdf/Milk-and-Cola-Economics..pdf) 
 

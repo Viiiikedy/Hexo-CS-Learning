@@ -1,6 +1,6 @@
 ---
-title: Economy-Automatic Trading & Cryptocurrency-Derivative Mathematical Pricing
-tags: Project
+title: Derivative Mathematical Pricing
+tags: Automatic Trading & Cryptocurrency
 date: 2023-09-11 10:15:38
 ---
 <style>
@@ -49,7 +49,7 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > [Derivative Mathematical Pricing](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > **[Derivative Mathematical Pricing](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html)</small>***
 <ol class="menu-list">
     <div>
         <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
@@ -66,8 +66,9 @@ date: 2023-09-11 10:15:38
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-### 1. Plain Vanilla
+<h3 id="matlab-section">Plain Vanilla</h3>
 I took the related exercising for this pricing [here](https://colab.research.google.com/drive/18y8GSmrwECzgv3c385CnVVefUjEXtWaj?usp=sharing).
+
 ### 2. Barrier Option Return Strategy
 It's a type of exotic option where the payoff depends on whether the underlying asset's price reaches a certain level, or barrier, during its life. For this internship exercise, here I will cover the mathematical Principles, for detailed algorithm structure, refer to my GitHub Repository
 > Github: https://github.com/Viiiikedy/Barrier-option-returns-issue

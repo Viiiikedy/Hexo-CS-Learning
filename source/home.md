@@ -2,6 +2,7 @@
 title: 👋Hello Everyone
 date: 2023-09-02 10:15:38
 ---
+
 <style>
 .shake-image:hover {
   animation: shake 2s; /* 增加动画持续时间 */
@@ -10,7 +11,6 @@ date: 2023-09-02 10:15:38
 .highlight-on-hover:hover {
   color: red; /* 鼠标悬浮时变为红色 */
 }
-
 @keyframes shake {
   0% { transform: translate(2px, 2px) rotate(0deg); }
   10% { transform: translate(-2px, -4px) rotate(-2deg); }
@@ -25,6 +25,8 @@ date: 2023-09-02 10:15:38
   100% { transform: translate(2px, -4px) rotate(-2deg); }
 }
 </style>
+
+
 
 <div align=center>
   <img src="/picture/homepage.png" width = "300" height = "300" class="shake-image"/>  

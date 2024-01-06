@@ -2,7 +2,7 @@
 title: Web Development
 tags: Note
 ---
-*<small>[Home](/Home/index.html) > [Note](/tags/Note/index.html) > [Web Development](/2023/09/11/Note笔记/Web-Development/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Note](/tags/Note/index.html) > **[Web Development](/2023/09/11/Note笔记/Web-Development/index.html)**</small>*
 
 ## Web Development Method
 ### 1. [Github Page](https://github.com/)
@@ -272,7 +272,6 @@ hexo cl,hexo g,hexo s
 hexo server -p 5000
 ```
 #### 3.3 [Jekyll(Ruby)](https://jekyllrb.com/)
-Create Empty Site Locally:
 (1) Download the latest edition of Ruby+Devkit officially
 (2) Input <u>ruby -v</u> and <u>gem -v</u> to check whether the installment is successful
 (3) Install Jekyll 和 Bundler gems:
@@ -300,6 +299,7 @@ git clone https://github.com/cotes2020/
 bundle install
 bundle exec jekyll serve
 ```
+
 #### 3.4 [gitbook](https://www.gitbook.com/)
 > You need to change the edition of nvm: node 14 for hexo,node 10 for gitbook:
 ```
@@ -342,13 +342,18 @@ Source Code of [VIRA](https://fusiedtech.com/) Website
     <link href="http://www.fusinnovations.com/static/skin/css/style.css" rel="stylesheet">
 </head>
 ```
+
 ### Note
 #### 1. Tools for Website Developing:
 - [Halo](https://www.fit2cloud.com/index.html)
 - [Collection](https://www.zhihu.com/question/36861553)
 - [System Collection](https://blog.csdn.net/JunyouYH/article/details/119215315)
+
 #### 2. Questions Not Solved
 - [How to Configure Website Analytics](https://lizhening.github.io/posts/b467327c/)
 - [Connect Notion Page with Current Web Page](https://embednotion.com/)
 - [Style Extension:Minimalist](https://theme-next.js.org/)
 - [Vue Learning Address](https://cn.vuejs.org/guide/quick-start.html#using-vue-from-cdn)
+
+### My simple Project
+> Link:[here](https://drive.google.com/drive/folders/1xQMxR7qYJCzHp7G-CDh55OyQKoC-eyPb?usp=sharing)

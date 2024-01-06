@@ -133,7 +133,7 @@ date: 2023-09-11 10:15:38
 
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Social Science](/2023/09/11/Project/Social-Science/Social-Science/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > **[Social Science](/2023/09/11/Project/Social-Science/Social-Science/index.html)</small>***
 
 ## Projects
 
@@ -146,8 +146,8 @@ date: 2023-09-11 10:15:38
   </div>
   <div class="image-container" style="width: 52.5%;">
     <img src="https://s2.loli.net/2024/01/05/IFJZ8l2yebunfdB.png" style="width: 100%; height: auto;" />
-    <a class="image-link" href="/2023/09/11/Project/Social-Science/Gender-Equality/index.html">
-      <span>Gender Equality</span>
+    <a class="image-link" href="/2023/09/11/Project/Social-Science/General-Application/Gender-Difference-on-Family-Satisfaction/index.html">
+      <span>General Application</span>
     </a>
   </div>
 </div>

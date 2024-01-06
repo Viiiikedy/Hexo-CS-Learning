@@ -1,9 +1,9 @@
 ---
-title: Economy-Business Visualization
+title: Economy & Business Visulization
 tags: Project
 date: 2023-09-11 10:15:38
 ---
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Business Visualization](/2023/09/11/Project/Economy/Business-Visualization/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > **[Business Visualization](/2023/09/11/Project/Economy/Business-Visualization/index.html)</small>***
 <style>
 .image-container {
         display: flex;
@@ -15,8 +15,9 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-### 1. [Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi/)
-Power BI offers a wide range of applications in the business world.Here I analyzed the performance of various groups within a gym over the past two years, including different regions, stores, and types of coaches, conducting a correlational analysis.
+<h3 id="power-bi-section">1. Power BI</h3>
+
+[Power BI](https://www.microsoft.com/en-us/power-platform/products/power-bi/) offers a wide range of applications in the business world.Here I analyzed the performance of various groups within a gym over the past two years, including different regions, stores, and types of coaches, conducting a correlational analysis.
 > Project Address: [here](/zip/Business-Visualization-Case.pbix)
 
 
@@ -27,8 +28,9 @@ Power BI offers a wide range of applications in the business world.Here I analyz
 
 ### 2. [Thinkcell](https://www.think-cell.com/en) and [Tableau](https://www.tableau.com/en-gb)
 
-#### 2.2 Goldman Sachs Stock Pitch:
+<h4 id="tableau-section">2.1 Goldman Sachs Stock Pitch:</h4> 
 Here we select Bilibili as the target company within an industry and forecast its revenue and other metrics by analyzing the macro environment post-pandemic recovery and the rising trend of Bilibili's game business.
+
 > Bilibili Valuation:[project address](/pdf/Group6_BILI_Stock_Pitch.pdf)
 
 <div style="display: flex; justify-content: center;">
@@ -45,7 +47,7 @@ This case offers us more opportunities to analyze the nascent new energy industr
     <img src="https://s2.loli.net/2024/01/05/oxBV7ZkjNPuDzG3.png" style="width: 50%; height: auto;">
 </div>
  
-#### 2.3 Roland Berger Consulting Challenge: 
+<h4 id="thinkcell-section">2.3 Roland Berger Consulting Challenge:</h4> 
 I analyzed the infrastructure industry for this case, offering constructive suggestions for airports' unseen strategies, such as expansion or outsourcing, based on linear metrics like passenger flow.
 
 > Airport Mode Analysis:[project address](/zip/Airport-Planning-Roland-Berger-Challenge.pdf)

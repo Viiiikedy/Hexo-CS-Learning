@@ -1,6 +1,6 @@
 ---
-title: Design-Education
-tags: Project
+title: Design
+tags: System Design
 date: 2023-09-11 10:15:38
 ---
 
@@ -62,20 +62,19 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html) > [System Design](/2023/09/11/Project/Design/System-Design/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html) > **[System Design](/2023/09/11/Project/Design/System-Design/index.html)</small>***
 
 
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <li><strong><a href="/2023/09/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
         <a href="/2023/09/11/Project/Design/Educational-Game/index.html" class="menu-item">Educational Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 
 ---
 
-### 1. Panoramic Poet's Footsteps GPS
-
+<h3 id="java-section">1. Panoramic Poet's Footsteps GPS</h3>
 Maps have a long and rich history as a scientific expression. 
 From ancient times to the modern era, the integration of maps and technology has been a gradual yet significant progression. Out of a deep love for Chinese culture, we have transformed ancient paths into 3D maps, vividly showcasing the footsteps of poets. 
 We have also conducted research on the life stories of these poets, enriching the presentation content.
@@ -151,8 +150,7 @@ We have also conducted research on the life stories of these poets, enriching th
 ```
 
 
-
-### 2. Blockchain Shared Charging Piles
+<h3 id="sql-section">2. Blockchain Shared Charging Piles</h3>
 
 I once conducted a system design analysis for smart contracts in the Internet of Vehicles (IoV) car chain to examine the characteristics of the IoV car chain, evaluates blockchain-based smart contract solutions across industries like automotive and retail, and details application logic and solutions for IoV using smart contracts. I also explored multi-chain V2G security certification schemes, including design and performance test approaches, leveraging tools like Python in VS Code and the Remix online editor before provoding more recommendations.
 

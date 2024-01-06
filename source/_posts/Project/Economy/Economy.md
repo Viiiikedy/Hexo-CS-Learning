@@ -1,12 +1,10 @@
 ---
-title: Economy
+title: Economy & Business
 tags: Project
 date: 2023-09-11 10:15:38
 ---
 
-_<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/index.html)</small>_
-
-## Projects
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > **[Economy&Business](/2023/09/11/Project/Economy/index.html)</small>***
 
 <style>
     .image-container {
@@ -161,6 +159,7 @@ _<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Econom
 
 </style>
 
+## Projects
 <div class="image-container">
     <div class="image-box">
         <img src="/picture/Big-Dog.png">
@@ -183,7 +182,6 @@ _<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Econom
 </div>
 
 ## Publication
-
 <div class="papers-container">
     <div class="paper-box-with-buttons">
         <a href="/pdf/Tokyo.pdf" class="paper-button">PDF</a>
@@ -222,3 +220,14 @@ _<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Econom
         </div>
     </div>
 </div>
+
+## Paper
+I once analyzed on Progress and Practices of Internationalization of Chinese Multinational Enterprises (MNEs)
+
+**Abstract**:
+The history of international entrepreneurship in China dates to the Reform and Opening-up policy in 1978. Academically, there has been sizable academic research on the international entrepreneurship of Chinese companies (e.g., Deng 2014), focusing on both qualitative and quantitative analysis. In this article, we analyze the historical, political, and economic factors of Chinese internationalization. We also explore the statistical relationship between multiple indicators for internationalization in MNEs, ranging from the MNEs’ brands to R&D, Human Resources, to Asset Distribution. The results show that the location and sector differences matter the most for MNEs’ internationalization. Our findings may provide some implications for Chinese MNEs when developing internationalization strategies and plans for the future. 
+
+**Key Words**: Internationalization Strategy, Regression Analysis, Entrepreneurship, Outward FDI  
+
+> Project report(word):[here](/zip/Progress.docx)
+> Project Report(pdf):[here](/zip/Progress.pdf)

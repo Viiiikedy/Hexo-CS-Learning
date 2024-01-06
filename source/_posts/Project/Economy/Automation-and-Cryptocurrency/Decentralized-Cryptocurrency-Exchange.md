@@ -1,9 +1,14 @@
 ---
-title: Economy-Automatic Trading & Cryptocurrency-Decentralized Exchange
-tags: Project
+title: Decentralized Exchange
+tags: Automatic Trading & Cryptocurrency
 date: 2023-09-11 10:15:38
 ---
 <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
     .menu-item {
         display: inline-block; /* Ensure elements are horizontally aligned */
         margin-right: 20px;
@@ -41,18 +46,19 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > [Decentralized Cryptocurrency Excahnge](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Excahnge/index.html) </small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > **[Decentralized Cryptocurrency Excahnge](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Excahnge/index.html)</small>***
 <ol class="menu-list">
     <div>
         <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
-        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange/index.html" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 
 ---
 
-I established BigDog with Joy, who currently lives in New York.We led the team,hoping to experiement how technology like AI can revolutionize the current market.This project combines my passion for <u>finance, data-driven solution and designing</u> together.
+I established Bigdog with Joy, who currently lives in New York.We led the team,hoping to experiement how technology like AI can revolutionize the current market.This project combines my passion for <u>finance, data-driven solution and designing</u> together.
 Here I will cover the principle of this project here,for more detailed information, refer to the following link:
+
 > - BigDog Metaverse Proposal:[here](/pdf/Big-Dog-Metaverse-Proposal.pdf)
 > - Island Craft Deck V3:[here](/pdf/Island-Craft-DECK-V3.pdf)
 > - Bigdog Deck V4:[here](/pdf/Bigdog-Deck-V4.pdf)
@@ -61,8 +67,10 @@ Here I will cover the principle of this project here,for more detailed informati
 > - Social Media:[Youtube](https://www.youtube.com/watch?v=WmO4I-_g07U);[Twitter](https://twitter.com/Big_Dog_Token);[Telegram](https://t.me/bigdogofficial)
 > - Bigdog White Paper:[here](https://ojfjyn2myz.feishu.cn/docx/P9EQdEtBNoPErHxFrp4c9pdjnbc?from=from_copylink)
 > - Bigdog Demo Game:[here](https://ojfjyn2myz.feishu.cn/docx/P9EQdEtBNoPErHxFrp4c9pdjnbc#CQQSdacMYoSmECx8VQUckLGongQ)
-<div align="center">
-    <img src="https://s2.loli.net/2024/01/05/auYjBOGRCVDS74N.png" style="width: 50%; height: auto;"/>
+
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/05/auYjBOGRCVDS74N.png" width="40%" height="40%">
+    <img src="https://s2.loli.net/2024/01/06/pEoMkC7IcurBhxz.png" width="50%" height="50%">
 </div>
 
 ### 1. [Introduction](https://www.youtube.com/watch?v=BrKZnWZ3BCo)

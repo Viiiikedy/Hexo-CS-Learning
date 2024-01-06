@@ -1,9 +1,14 @@
 ---
-title: Economy-Automatic Trading & Cryptocurrency-Quantitative Portfolio Trading
-tags: Project
+title: Quantitative Portfolio Trading
+tags: Automatic Trading & Cryptocurrency
 date: 2023-09-11 10:15:38
 ---
 <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
     .menu-item {
         display: inline-block; /* Ensure elements are horizontally aligned */
         margin-right: 20px;
@@ -41,23 +46,32 @@ date: 2023-09-11 10:15:38
     }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > [Quantitative Portfolio Trading](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Economy&Business](/2023/09/11/Project/Economy/Economy/index.html) > [Automatical Trading and Cryptocurrency](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html) > **[Quantitative Portfolio Trading](/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html)</small>***
 <ol class="menu-list">
     <div>
-        <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <li><strong><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
         <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
 
 ---
-### Project1: Quantitative Factor Mining, Tracking, and Prediction
-In the fast-paced financial environment,quantitative analysis plays an important role on both <u>monitoring and predicting the timely data</u> from the secondary markets. Here I include two of my past projects on the related topics:
->- [Fundamental Market Forecast Using Talib](https://drive.google.com/file/d/1BHi_7FbfDPFedQQLFEoSrbZ8DUURodWr/view?usp=sharing)
->- [Real Time Monitoring of Secondary Market Information](https://drive.google.com/file/d/12_vKPmFFMUEwPwJRzPLZxfWnLWUt9V4l/view?usp=sharing)
 
-### Project2: Financial Valuation by [VBA](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office) 
-This application is important particularly in linking multiple financial statements and conducting valuations involving a series of formulas, such as DCF, LBO, and M&A, familiarity with Excel programs and functions can significantly enhance efficiency.
+<h3 id="python-section">Project1: Quantitative Factor Mining, Tracking, and Prediction</h3>
+
+In the fast-paced financial environment,quantitative analysis plays an important role on both <u>monitoring and predicting the timely data</u> from the secondary markets. Here I include 3 of my past projects on the related topics:
+>- Project 1:[Fundamental Market Forecast Using Talib](https://drive.google.com/file/d/1BHi_7FbfDPFedQQLFEoSrbZ8DUURodWr/view?usp=sharing)
+>- Project 2:[Real Time Monitoring of Secondary Market Information](https://drive.google.com/file/d/12_vKPmFFMUEwPwJRzPLZxfWnLWUt9V4l/view?usp=sharing)
+>- Project 3:[Factor-based Trading and Hedging on Quantitative Platforms](/pdf/Quants-in-Chinese.pdf)
+
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/06/NRwxXyhQ1AngIfp.png" width="40%" height="40%">
+    <img src="https://s2.loli.net/2024/01/06/Kue3R7ykWsiNvH9.png" width="40%" height="40%">
+</div>
+<h3 id="vba-section">Project2: Financial Valuation by VBA</h3>
+
+[VBA](https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office) is important particularly in linking multiple financial statements and conducting valuations involving a series of formulas, such as DCF, LBO, and M&A, familiarity with Excel programs and functions can significantly enhance efficiency.
 > Project Address:[here](/zip/Full-Financial-Model.xls)
+
 ### Project3: JP Morgan Private Bank:Quantitaive Asset Allocation Strategy
 We applied statistical analysis, risk management techniques, and portfolio optimization models. Utilizing algorithms, macroeconomic analysis, and asset class research, we made informed investment decisions, adhering to legal and regulatory standards.
 > Project Report:[here](/pdf/Asset-Allocation-Proposal-JP-Private-Bank-Competition.pdf)

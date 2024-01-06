@@ -1,6 +1,6 @@
 ---
-title: Design-Education
-tags: Project
+title: Art Design
+tags: Design
 date: 2023-09-11 10:15:38
 ---
 
@@ -65,16 +65,17 @@ date: 2023-09-11 10:15:38
   }
 </style>
 
-*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html) > [Art Design](/2023/09/11/Project/Design/Art-Design/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > [Design](/2023/09/11/Project/Design/Design/index.html) > **[Art Design](/2023/09/11/Project/Design/Art-Design/index.html)</small>***
 
 
 ### Column
 <!-- 标题和跳转链接 -->
 <div style="text-align: left; margin-bottom: 10px;">
-  <a href="https://vicky-gallery-site.vercel.app/article/Outdoor" style="text-decoration: none; font-size: 24px; color: black;">
+  <a href="https://vicky-gallery-site.vercel.app/article/Outdoor" style="text-decoration: none; font-size: 24px; color: black;"id="sql-section">
     🏔️Mountain Series
   </a>
 </div>
+
 
 ---
 

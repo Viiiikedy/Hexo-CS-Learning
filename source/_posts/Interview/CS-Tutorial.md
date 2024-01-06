@@ -2,10 +2,11 @@
 title: CS Tutorial
 tags: Interview
 ---
-*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [CS Tutorial](/2023/09/11/Interview/CS-Tutorial/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > **[CS Tutorial](/2023/09/11/Interview/CS-Tutorial/index.html)</small>***
 
 In this series, I primarily update real-time records of solving problems from ["剑指Offer"](剑指Offer) (Sword Point to Offer) when recommending practice. It's recommended to use either C++ or Java, with a preference for Java.
-## Question 1:Find the duplicate number 
+
+<h2 id="swift-section">Question 1:Find the duplicate number </h2>
 ```
 class Solution:
     def findRepeatNumber(self, nums: List[int]) -> int:

@@ -1,9 +1,9 @@
 ---
-title: Quant Tutorial-Financial Modeling
-tags: Interview
+title: Financial Modeling
+tags: Quant-Tutorial
 date: 2023-09-11 10:15:38
 ---
-*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > [Financial Modeling](/2023/09/11/Interview/Quant-Tutorial/Financial-Modeling/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html) > **[Financial Modeling](/2023/09/11/Interview/Quant-Tutorial/Financial-Modeling/index.html)</small>***
 
 <head>
     <script type="text/javascript" async

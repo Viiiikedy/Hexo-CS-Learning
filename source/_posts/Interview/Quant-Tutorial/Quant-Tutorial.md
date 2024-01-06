@@ -1,9 +1,9 @@
 ---
 title: Quant Tutorial
-tags: Interview
+tags: Interview 
 date: 2023-09-11 10:15:38
 ---
-*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Post/Quant-Tutorial/Quant-Tutorial/index.html)</small>*
+*<small>[Home](/Home/index.html) > [Interview](/tags/Interview/index.html) > **[Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Post/Quant-Tutorial/Quant-Tutorial/index.html)</small>***
 
 <style>
     @keyframes shake {
