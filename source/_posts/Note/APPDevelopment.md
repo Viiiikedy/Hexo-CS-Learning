@@ -4,7 +4,7 @@ tags: Note
 ---
 *<small>[Home](/Home/index.html) > [Note](/tags/Note/index.html) > **[APP Development](/2023/09/11/Note笔记/APP-Development/index.html)**</small>*
 
-Here I just record some useful tutorial for APP Development
+Here  I just record some useful tutorial for APP Development Now
 ## 1. IOS Application
 - [Tutorial](https://blog.csdn.net/daleiwang/article/details/31347387) on uploading local Mac ios to github
 - Application for Reference: Turbo Wallet
