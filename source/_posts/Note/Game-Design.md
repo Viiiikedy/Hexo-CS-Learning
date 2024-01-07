@@ -1,6 +1,7 @@
 ---
 title: Game Design
 tags: Note
+date: 2023-09-11 10:15:38
 ---
 *<small>[Home](/Home/index.html) > [Note](/tags/Note/index.html) > **[Game Design](/2023/09/11/Note笔记/Game-Design/index.html)**</small>*
 
