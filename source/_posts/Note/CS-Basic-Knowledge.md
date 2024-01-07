@@ -3,7 +3,7 @@ title: CS Basic Knowledge
 tags: Note
 date: 2023-09-11 
 ---
-*<small>[Home](/Home/index.html) > [Note](/tags/Note/index.html) > **[CS Basic Knowledge](/2023/09/11/Note笔记/CS-Basic-Knowledge/index.html)**</small>*
+*<small>[Home](/Home/index.html) > [Note](/tags/Note/index.html) > **[CS Basic Knowledge](/2023/09/11/Note笔记/CS-Basic-Knowledge/index.html)</small>***
 
 ### Useful Tool Plugins
 #### 1. Markdown Editor of the [Public Account](https://wechatwiki.com/wechat-resources/wechat-official-account-marketing-platform-epic-tutorial-guide/)
