@@ -58,16 +58,16 @@ date: 2023-09-11 10:15:38
 
 <h3 id="stata-section"></h3>
 
-#### 1. Abstract
+### 1. Abstract
 Based on Chen and Hu's (2021) research, exploring the impact of traditional gender perspectives on marital and personal satisfaction. Research has found that in traditional marriage, gender division of labor and gender attitudes have an impact on the satisfaction of both spouses. By studying the behavioral outcomes of wives who earn more than their husbands, researchers found that traditional gender attitudes have an impact on the marital satisfaction of both spouses. The wife is more concerned about her husband's economic contribution than his household contribution, while the husband is the opposite. In addition, when the wife's income is higher compared to the husband, the husband is often more dissatisfied with the marriage, while the wife's marital satisfaction is not affected by income differences. This indicates that other factors in the marriage allow wives to maintain a satisfactory attitude towards marriage even if they break traditional gender norms.
 
-#### 2. Data Processing
+### 2. Data Processing
 Utilizing the original dataset from the research and the CFPS 2014 dataset, which includes information about adults, family relationships, and household economics.
 > Data Address:[here](https://drive.google.com/drive/folders/1GXpJa1XN2CGR2pLfJG-Ht2wONfk5kA11?usp=sharing)
 > Project Report Address(word):[here](/zip/Gender.docx)
 > Project Report Address(pdf):[here](/zip/Gender.pdf)
 
-#### 3. Results Brief
+### 3. Results Brief
 | lag | LL       | LR      | df | p    | FPE     | AIC    | HQIC   | SBIC   |
 |-----|----------|---------|----|------|---------|--------|--------|--------|
 | 0   | -193.635 |         |    |      | 1.40E+08| 2.16E+01 | 2.16E+01 | 21.6755 |

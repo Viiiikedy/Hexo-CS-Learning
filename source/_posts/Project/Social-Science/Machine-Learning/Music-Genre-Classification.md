@@ -51,10 +51,10 @@ date: 2023-09-11 10:15:38
 
 <ol class="menu-list">
     <div>
-        <li><strong><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html" class="menu-item">Music Genre Classification&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
-        <a href="/2023/09/11/Project/Social-Science/Machine-Learning/Handwritten-Digit-Recognition/index.html" class="menu-item">Handwritten Digit Recognition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html"  class="menu-item">Text Analysis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Twitter-Comment- Crawling/index.html" class="menu-item">Twitter Comment Crawling&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+        <li><strong><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html" class="menu-item">Music Genre Classification&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html"  class="menu-item">Text Analysis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Others/index.html" class="menu-item">Others&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
     </div>
 </ol>
+
 
 ---
 <h3 id="machine-learning-section"></h3>

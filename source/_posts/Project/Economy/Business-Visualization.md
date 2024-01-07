@@ -66,7 +66,15 @@ I focused particularly on the disruptive impact of technologies like genetic eng
     <img src="https://s2.loli.net/2024/01/05/w9lSQCxdGRfvhN4.png" style="width: 50%; height: auto;">
 </div>
 
-### 3. [Website](https://www.founderjar.com/best-data-visualization-tools/)
+### 3. Python
+Here I used applied R on cluster to do the customer profile engineering job and make suggestions to the medicine sales
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="https://s2.loli.net/2024/01/07/hTAWm43S7daYowL.jpg" style="max-width: 50%; height: auto;">
+</div>
+
+> Project [Code](https://drive.google.com/file/d/113H0X4zxGXa93fTv2rb60Ar2lkD9SN-s/view?usp=sharing)
+
+### 4. [Website](https://www.founderjar.com/best-data-visualization-tools/)
 You could refer to my [tutorial](/2023/09/11/Interview/CS-Tutorial/index.html) where I included 3 different ways to do about website visualization in python 
 
 
