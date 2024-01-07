@@ -3,7 +3,6 @@ title: 👋Hello Everyone
 date: 2023-09-02 10:15:38
 ---
 
-
 <style>
 .shake-image:hover {
   animation: shake 2s; /* 增加动画持续时间 */
@@ -50,7 +49,9 @@ date: 2023-09-02 10:15:38
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        text-align: left; /* Changed from center to left */
     }
+
     .bubble {
         display: inline-block;
         padding: 10px;
@@ -166,16 +167,16 @@ class Me:
         <title>Contact</title>
     </head>
     <body>
-        <img src="/picture/mail.png" width = "20" height = "20"/>
-        <a href="mailto:vickydu1213@gmail.com">- vickydu1213@gmail.com</a>
-        <br />
-        <img src="/picture/github.png" width = "20" height = "20"/>
-        <a href="https://github.com/Viiiikedy">- Github</a>
-        <br />
-        <img src="/picture/ins.png" width = "20" height = "20"/>
-        <a href="https://www.instagram.com/viii.iiicky/">- Instagram</a>
-         <br />
-        <img src="/picture/bachelor-cap.png" width = "20" height = "20"/>
-        <a href="https://viiiikedy-academy.vercel.app/">- Academic Website</a>
+        <img src="/picture/mail.png" width="20" height="20" style="float: left;"/>
+        <a href="mailto:vickydu1213@gmail.com">vickydu1213@gmail.com</a>
+        <br/>
+        <img src="/picture/github.png" width="20" height="20" style="float: left;"/>
+        <a href="https://github.com/Viiiikedy">Github</a>
+        <br/>
+        <img src="/picture/ins.png" width="20" height="20" style="float: left;"/>
+        <a href="https://www.instagram.com/viii.iiicky/">Instagram</a>
+        <br/>
+        <img src="/picture/bachelor-cap.png" width="20" height="20" style="float: left;"/>
+        <a href="https://viiiikedy-academy.vercel.app/">Academic Website</a>
     </body>
 </html>
