@@ -61,7 +61,7 @@ Here I will cover the principle of this project here,for more detailed informati
 
 > - BigDog Metaverse Proposal:[here](/pdf/Big-Dog-Metaverse-Proposal.pdf)
 > - Island Craft Deck V3:[here](/pdf/Island-Craft-DECK-V3.pdf)
-> - Bigdog Deck V4:[here](/pdf/Bigdog-Deck-V4.pdf)
+> - Bigdog Deck V4:[here](https://drive.google.com/file/d/1zkDGM3B_VSrFiGzIZiuT5BOheWIESNnP/view?usp=sharing)
 > - GameFi Web:[here](https://doggame.net/)
 > - NFT Web:[here](https://doggo-nfts.com/)
 > - Social Media:[Youtube](https://www.youtube.com/watch?v=WmO4I-_g07U);[Twitter](https://twitter.com/Big_Dog_Token);[Telegram](https://t.me/bigdogofficial)
