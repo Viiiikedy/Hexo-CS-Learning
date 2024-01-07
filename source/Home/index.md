@@ -54,7 +54,7 @@ date: 2023-09-02 10:15:38
         padding: 10px;
         margin: 5px;
         border-radius: 50%;
-        background-color: rgba(240, 240, 255, 0.8);
+        background-color: rgba(0, 100, 200, 0.8);
         color: white; /* Changed from black to white */
         text-decoration: none;
         font-size: 14px;
