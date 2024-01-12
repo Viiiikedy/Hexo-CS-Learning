@@ -88,7 +88,6 @@ date: 2023-09-02 10:15:38
   <br>
   <strong><font size=5>Self-Introduction</font></strong>
   <br>
-  <strong><font size=6>自我介绍</font></strong>
 </div>
 
 <br>
