@@ -116,7 +116,7 @@ class Me:
 ```
 <p align="center">&#8595;</p>
 
-## Background
+## Technical Background
 📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), and [R](https://www.rstudio.com/categories/rstudio-ide/)
 🖨️- The software I use includes [Office](https://www.office.com/), [STATA](https://www.stata.com/), [Anaconda](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), and [Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
 🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [Pytorch](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
