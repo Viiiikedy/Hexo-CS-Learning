@@ -84,14 +84,24 @@ date: 2023-09-02 10:15:38
 </script>
 
 <div align=center>
-  <img src="/picture/author.jpg" width = "350" height = "350" class="shake-image"/>  
+  <img src="https://s2.loli.net/2024/01/12/MhqePj7W8pO3Jm5.png" width = "350" height = "350" class="shake-image"/>  
   <br>
   <strong><font size=5>Self-Introduction</font></strong>
   <br>
   <strong><font size=6>自我介绍</font></strong>
 </div>
 
+<br>
+
+<div align=center>
+The girl major in <strong>finance</strong> and <strong>business</strong> but with strong passion 
+to apply <strong>data-driven</strong> solutions to solve more general social issues.
+</div>
+
+
 ***
+
+
 ```python
 class Me:
     def __init__(self):
@@ -109,8 +119,8 @@ class Me:
 
 ## Background
 📟- My expertise in languages includes [Python](https://www.w3schools.com/python/), [My SQL](https://www.mysql.com/), [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [Javascript](https://www.w3schools.com/js/DEFAULT.asp), [Matlab](https://www.mathworks.com/products/matlab.html), and [R](https://www.rstudio.com/categories/rstudio-ide/)
-🖨️- The software I use includes [Office Three Piece Set](https://www.office.com/), [STATA](https://www.stata.com/), [Anaconda](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), and [Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
-🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Pytorch](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
+🖨️- The software I use includes [Office](https://www.office.com/), [STATA](https://www.stata.com/), [Anaconda](https://www.anaconda.com/), [Visual Studio Code](https://code.visualstudio.com/), and [Figma](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1)
+🖱️- The frameworks I am familiar with include [Deep Learning](https://en.wikipedia.org/wiki/Deep_learning), [Node.js](https://nodejs.org/en), [Pytorch](https://pytorch.org/), [Numpy](https://numpy.org/), and [UIUX](https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804%3A4364&mode=design&t=q6iCQUZ0eeZdljTU-1).
 📈- I'm familiar with applying data science techniques to fix real-world problems in economy and social science.
 🎮- I'm recently learning game design [Unity](https://unity.com/) and IOS software development [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language))
 💻- My commonly used computer is the Windows [HP](https://www.hp.com/ca-en/home.html) series

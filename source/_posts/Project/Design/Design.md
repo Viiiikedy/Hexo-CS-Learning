@@ -61,6 +61,7 @@ date: 2023-09-11 10:15:38
     
 </style>
 
+This is like my garden to explore a larger world. I always find it necessary to do something and influence the community around me.
 
 ### Column:
 <div style="text-align: center;">

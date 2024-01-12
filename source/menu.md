@@ -1,12 +1,6 @@
 
 # [About](/About/index.html)
 
-##### Note
-
-- [Web Development](/2023/09/11/Note/Web-Development/index.html)
-- [Game Design](/2023/09/11/Note/Game-Design/index.html)
-- [APP Development](/2023/09/11/Note/APP-Development/index.html)
-- [CS Basic Knowledge](/2023/09/11/Note/CS-Basic-Knowledge/index.html)
 
 ##### Project
 
@@ -17,9 +11,16 @@
 
 ##### Interview 
 
+- [Quanttitative Finance Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)
 - [CS Tutorial](/2023/09/11/Interview/CS-Tutorial/index.html)
-- [Quant Tutorial](/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html)
 
+
+##### Note
+
+- [Web Development](/2023/09/11/Note/Web-Development/index.html)
+- [Game Design](/2023/09/11/Note/Game-Design/index.html)
+- [APP Development](/2023/09/11/Note/APP-Development/index.html)
+- [CS Basic Knowledge](/2023/09/11/Note/CS-Basic-Knowledge/index.html)
 
 
 ##### Post

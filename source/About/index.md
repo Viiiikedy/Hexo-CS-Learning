@@ -29,20 +29,20 @@ date: 2023-09-02 10:15:38
 
 
 <div align=center>
-  <img src="/picture/homepage.png" width = "300" height = "300" class="shake-image"/>  
+  <img src="https://s2.loli.net/2024/01/12/MhqePj7W8pO3Jm5.png" width = "300" height = "300" class="shake-image"/>  
 </div>
 
 ## Preview 
 👋Hello everyone.  
-🌐This [site](#note) is created by me,one university student🎓to record the CS learning. 
+🌐This [site](#note) is created by me,one university student🎓to record the data-application in business,social sicence and entrepreneurship. 
 
-🌊The initial intention of starting this department website was to feel that the knowledge around me was really scattered. Every time I wanted to obtain a professional answer, I had to spend a lot of time searching for information, judging and filtering the correctness of the information, and further searching through the waves of information. I did not truly and systematically form my own knowledge system, so I started this journey
+🌊The initial intention of starting this department website was to feel that the knowledge around me was really scattered. Every time I wanted to obtain a professional answer, I had to spend a lot of time searching for information, judging and filtering the correctness of the information, and further searching through the waves of information. I did not truly and systematically form my own knowledge system.
 
 ⚠️This site <span class="highlight-on-hover">shouldn't be</span> used for business purpose.
 
 ## Content
-😃I will share 1️⃣notes,completed 2️⃣projects,the 3️⃣interview tutorial and other related 4️⃣posts when I learn Computer Science here.
-💕My major in the university isn't computer sience.However it doesn't stop my passion to learn.So I hope this smal site could become your power to concistently walk on your own way.
+😃I will share 1️⃣notes,completed 2️⃣projects,the 3️⃣interview tutorial and other related 4️⃣posts when I learn here.
+💕I hope this small site could become your power to concistently walk on your own way.
 
 ☀️Wish you guys a good day today.
 

@@ -135,6 +135,8 @@ date: 2023-09-11 10:15:38
 
 *<small>[Home](/Home/index.html) > [Project](/tags/Project/index.html) > **[Social Science](/2023/09/11/Project/Social-Science/Social-Science/index.html)</small>***
 
+Social Science is closely related with the collecting,training and predicting process.Here let's expore more.
+
 ## Projects
 
 <div style="display: flex; position: relative;">

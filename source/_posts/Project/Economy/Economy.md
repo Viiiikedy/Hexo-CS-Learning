@@ -159,6 +159,8 @@ date: 2023-09-11 10:15:38
 
 </style>
 
+Here I view from the perspecitve of business analysts.By using quantitative tools to mine the most important factors to make decisions.
+
 ## Projects
 <div class="image-container">
     <div class="image-box">
