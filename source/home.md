@@ -93,7 +93,7 @@ date: 2023-09-02 10:15:38
 <br>
 
 <div align=center>
-The girl major in <strong>finance</strong> and <strong>business</strong> but with strong passion 
+Wenke Du major in <strong>finance</strong> and <strong>business</strong> but with strong passion 
 to apply <strong>data-driven</strong> solutions to solve more general social issues.
 </div>
 

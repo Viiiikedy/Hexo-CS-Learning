@@ -34,7 +34,7 @@ date: 2023-09-02 10:15:38
 
 ## Preview 
 👋Hello everyone.  
-🌐This [site](#note) is created by me,one university student🎓to record the data-application in business,social sicence and entrepreneurship. 
+🌐This [site](#note) is created by Wenke Du,one university student🎓to record the data-application in business,social sicence and entrepreneurship. 
 
 🌊The initial intention of starting this department website was to feel that the knowledge around me was really scattered. Every time I wanted to obtain a professional answer, I had to spend a lot of time searching for information, judging and filtering the correctness of the information, and further searching through the waves of information. I did not truly and systematically form my own knowledge system.
 
