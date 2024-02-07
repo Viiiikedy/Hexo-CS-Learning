@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Handwritten Digit Recognition - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Social-Science/Scoial-Science/index.html">Social Science</a> &gt; <a href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html">Machine Learning</a> &gt; <strong><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Others/index.html">Others</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html" class="menu-item">Music Genre Classification&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html"  class="menu-item">Text Analysis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><strong><a href="/2023/09/11/Project/Social-Science/Machine-Learning/Others/index.html" class="menu-item">Others&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong></li>
+    </div>
+</ol>
+
+
+<hr>
+<p>In my past year, I also exercised on some foundamental datasets</p>
+<h3 id="Project-1-Handwritten-Digit-Recognition"><a href="#Project-1-Handwritten-Digit-Recognition" class="headerlink" title="Project 1:Handwritten Digit Recognition"></a>Project 1:Handwritten Digit Recognition</h3><ol>
+<li>Dataset:<strong>MNIST</strong></li>
+</ol>
+<ul>
+<li>70,000 images of handwritten digits: 60,000 for training and 10,000 for testing. </li>
+<li>The images are in grayscale, 28x28 pixels, and are centered to reduce preprocessing and speed up operations.</li>
+</ul>
+<ol start="2">
+<li>Model:<strong>convolutional neural network</strong></li>
+</ol>
+<ul>
+<li>in PyTorch and train it to recognize handwritten digits using the MNIST dataset.</li>
+</ul>
+<blockquote>
+<p>Supported Code:<a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1Z-HiImmdSsFBaxXdVuQEJT5QSvueNj5J?usp=sharing">https://drive.google.com/drive/folders/1Z-HiImmdSsFBaxXdVuQEJT5QSvueNj5J?usp=sharing</a></p>
+</blockquote>
+<h3 id="Project-2-Twitter-Influencer-Analysis"><a href="#Project-2-Twitter-Influencer-Analysis" class="headerlink" title="Project 2:Twitter Influencer Analysis"></a>Project 2:Twitter Influencer Analysis</h3><p>In this study, we analyze the influence and correlation by scraping data such as posting frequency and likes from celebrities’ tweets on Twitter.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">getData</span>(<span class="params">key</span>):</span><br><span class="line">    options = webdriver.ChromeOptions()</span><br><span class="line">    options.add_argument(<span class="string">&#x27;--no-sandbox&#x27;</span>)</span><br><span class="line">    <span class="comment"># options.add_argument(&#x27;--headless&#x27;)  # 无头参数</span></span><br><span class="line">    options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)</span><br><span class="line">    <span class="comment"># 關閉瀏覽器左上角通知提示</span></span><br><span class="line">    prefs = &#123;</span><br><span class="line">        <span class="string">&#x27;profile.default_content_setting_values&#x27;</span>:</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="string">&#x27;notifications&#x27;</span>: <span class="number">2</span></span><br><span class="line">            &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    options.add_experimental_option(<span class="string">&#x27;prefs&#x27;</span>, prefs)</span><br><span class="line">    <span class="comment"># 關閉&#x27;chrome目前受到自動測試軟體控制&#x27;的提示</span></span><br><span class="line">    options.add_experimental_option(<span class="string">&#x27;useAutomationExtension&#x27;</span>, <span class="literal">False</span>)</span><br><span class="line">    options.add_experimental_option(<span class="string">&#x27;excludeSwitches&#x27;</span>, [<span class="string">&#x27;enable-automation&#x27;</span>])</span><br><span class="line">    driver = webdriver.Chrome(chrome_options=options) <span class="comment">#chrome_options=</span></span><br><span class="line">    driver.maximize_window()</span><br><span class="line"></span><br><span class="line">    url=<span class="string">f&#x27;https://twitter.com/<span class="subst">&#123;key&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line">    driver.get(url)</span><br><span class="line"></span><br><span class="line">    time.sleep(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">    js=<span class="string">&quot;var q=document.documentElement.scrollTop=0&quot;</span></span><br><span class="line">    driver.execute_script(js)</span><br><span class="line">    time.sleep(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">save</span>(<span class="params">data</span>):</span><br><span class="line">        file=<span class="built_in">open</span>(<span class="string">&#x27;dickc_year_Time.csv&#x27;</span>,<span class="string">&#x27;a+&#x27;</span>,newline=<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">        writer=csv.writer(file)</span><br><span class="line">        writer.writerow(data)</span><br><span class="line">        file.close()</span><br><span class="line">    T_div=driver.find_elements_by_xpath(<span class="string">&#x27;//*[@id=&quot;react-root&quot;]/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div[2]/section/div/div/div&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">len</span>(T_div))</span><br><span class="line">    T_time_A=<span class="string">&#x27;1&#x27;</span></span><br><span class="line">    k=<span class="number">1</span></span><br><span class="line">    y_2021=<span class="number">0</span></span><br><span class="line">    y_2020=<span class="number">0</span></span><br><span class="line">    y_2019=<span class="number">0</span></span><br><span class="line">    y_2018=<span class="number">0</span></span><br><span class="line">    y_2017=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">100</span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">100</span>):</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                T_time=driver.find_element_by_xpath(<span class="string">f&#x27;//*[@id=&quot;react-root&quot;]/div/div/div[2]/main//div[2]/div/div/div[2]/section/div/div/div[<span class="subst">&#123;i&#125;</span>]/div/div/article/div//a/time&#x27;</span>).text</span><br><span class="line">                T_time_B = driver.find_element_by_xpath(<span class="string">&#x27;//*[@id=&quot;react-root&quot;]/div/div/div[2]/main//div[2]/div/div/div[2]/section/div/div/div[2]/div/div/article/div//a/time&#x27;</span>).text</span><br><span class="line"></span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                js=<span class="string">&#x27;window.scrollTo(0,document.body.scrollHeight)&#x27;</span></span><br><span class="line">                driver.execute_script(js)</span><br><span class="line">                driver.implicitly_wait(<span class="number">10</span>)</span><br><span class="line">                time.sleep(<span class="number">1</span>)</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;正在下滑&#x27;</span>)</span><br><span class="line">                <span class="keyword">try</span>:</span><br><span class="line">                    T_time_A = driver.find_element_by_xpath(</span><br><span class="line">                        <span class="string">&#x27;//*[@id=&quot;react-root&quot;]/div/div/div[2]/main//div[2]/div/div/div[2]/section/div/div/div[2]/div/div/article/div//a/time&#x27;</span>).text</span><br><span class="line">                <span class="keyword">except</span>:</span><br><span class="line">                    <span class="keyword">pass</span></span><br><span class="line">                <span class="keyword">if</span> (T_time_A == T_time_B):</span><br><span class="line">                    k += <span class="number">1</span></span><br><span class="line">                k_num=<span class="number">0</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="built_in">str</span>(T_time)+<span class="string">&#x27;*******\n&#x27;</span>+<span class="built_in">str</span>(i))</span><br><span class="line">            <span class="keyword">if</span>(<span class="string">&#x27;2016&#x27;</span> <span class="keyword">in</span> <span class="built_in">str</span>(T_time)):</span><br><span class="line">                save([key,y_2021,y_2020,y_2019,y_2018,y_2017])</span><br><span class="line">                driver.close()</span><br><span class="line">                exit()</span><br><span class="line">            <span class="keyword">elif</span>(<span class="string">&#x27;2020&#x27;</span> <span class="keyword">in</span> <span class="built_in">str</span>(T_time)):</span><br><span class="line">                y_2020+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(<span class="string">&#x27;2019&#x27;</span> <span class="keyword">in</span> <span class="built_in">str</span>(T_time)):</span><br><span class="line">                y_2019+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(<span class="string">&#x27;2018&#x27;</span> <span class="keyword">in</span> <span class="built_in">str</span>(T_time)):</span><br><span class="line">                y_2018+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span>(<span class="string">&#x27;2017&#x27;</span> <span class="keyword">in</span> <span class="built_in">str</span>(T_time)):</span><br><span class="line">                y_2017+=<span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                y_2021 += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> (k&gt;<span class="number">3</span>):</span><br><span class="line">                save([key,y_2021,y_2020,y_2019,y_2018,y_2017])</span><br><span class="line">                driver.close()</span><br><span class="line">                <span class="keyword">return</span></span><br><span class="line">            <span class="built_in">print</span>(y_2021,y_2020,y_2019,y_2018,y_2017)</span><br><span class="line">            <span class="comment"># save([y_2021, y_2020, y_2019, y_2018, y_2017])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    driver.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    keys=<span class="string">&#x27;tonyhawk&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># year=&#x27;user 2021 2020 2019 2018 2017&#x27;</span></span><br><span class="line">    <span class="comment"># file = open(&#x27;dickc_year_Time.csv&#x27;, &#x27;a+&#x27;, newline=&#x27;&#x27;)</span></span><br><span class="line">    <span class="comment"># writer = csv.writer(file)</span></span><br><span class="line">    <span class="comment"># writer.writerow(year.split())</span></span><br><span class="line">    <span class="comment"># file.close()</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> keys.split():</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;正在采集--<span class="subst">&#123;key&#125;</span>&#x27;</span>)</span><br><span class="line">        getData(key)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;key&#125;</span>----------已完成！&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Social-Science-Machine-Learning/" rel="tag">#Social Science-Machine Learning</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

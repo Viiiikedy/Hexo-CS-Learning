@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          RPA(Robot Processing Automation) - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+   .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
+   .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Economy/Economy/index.html">Economy&amp;Business</a> &gt; <a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html">System Design</a> &gt; <strong><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html">RPA(Robot Processing Automation)</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><strong><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" class="menu-item">RPA(Robotic Process Automation)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
+        <a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/System-Design/Crawling-and-Updating/index.html" class="menu-item">Crawling & Updating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+    </div>
+</ol>
+
+<hr>
+<h3 id="Designing-Background"><a href="#Designing-Background" class="headerlink" title="Designing Background"></a>Designing Background</h3><p>I developed an <a target="_blank" rel="noopener" href="https://www.uipath.com/rpa/robotic-process-automation">automated process</a> to acquire and analyze financial data from annual reports and understand business operations. This process caters to the growing need for financial data processing and analysis in today’s digital and information-driven context.<br>It enables businesses to effectively gather and analyze financial data from the last three years. The process fetches annual report data, analyzes data, generates analytical reports, and computes financial figures.</p>
+<blockquote>
+<p>Github:<a target="_blank" rel="noopener" href="https://github.com/Viiiikedy/RPA">https://github.com/Viiiikedy/RPA</a><br>Financial Website:<a target="_blank" rel="noopener" href="http://www.cninfo.com.cn/new/index">http://www.cninfo.com.cn/new/index</a></p>
+</blockquote>
+<h3 id="Designing-Procedure"><a href="#Designing-Procedure" class="headerlink" title="Designing Procedure"></a>Designing Procedure</h3><p align="center">
+  <img src="https://s2.loli.net/2024/01/05/qHsTQK6Na8vBzWy.png">
+</p>
+#### 1.	Annual Report Download
+Access the annual report download page by logging into the Juchao website and selecting the appropriate time, report type, etc. Based on URL analysis, the reports are efficiently and accurately downloaded locally through HTTP requests.
+#### 2.	Data Acquisition
+The annual reports are in editable PDF format, allowing for direct text extraction for processing. This involves using a suitable PDF parsing library to extract text from PDF files, which can be achieved by loading the PDFs into memory and utilizing specific functions or methods.
+#### 3.	Financial Statement Data Extraction
+Considering potential inconsistencies, missing values, and anomalies in annual report formats, it's essential to analyze the text format of the reports. The goal is to locate the compelling text "Section II, Financial Statements" and remove irrelevant text from the beginning and end of the reports using substring and split functions.
+#### 4.	Financial Analysis
+The extracted financial statement data is cleaned using functions like substring and split. This cleaned data is then used for calculations and written into Word.
+#### 5.	Email Sending
+The final step involves sending emails using the SMTP protocol.
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/05/mPQeWRx5sNwjoBI.png">
+</p>
+
+
+
+
+<h3 id="Designing-Execution"><a href="#Designing-Execution" class="headerlink" title="Designing Execution"></a>Designing Execution</h3><ol>
+<li><p>   Open the software, select “project.json,” and install the extension for Edge in the tools section.</p>
+</li>
+<li><p>   Delete the already executed .docx, .pdf, and .xlsx files for Shanghai Airport, 2022, and Fujian Expressway. The specific company codes can be found in the “企业列表.xlsx” (Company List.xlsx) file, formatted as follows:</p>
+</li>
+<li><p>   Select the “Main. xaml” file and click “run the file.” The annual report download data source is the Juchao website, and the data template is located in “word模板.docx” (word template.docx), formatted as follows: </p>
+<table>
+<thead>
+<tr>
+<th>Company Code</th>
+<th>Company Name</th>
+<th>Quick Ratio</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[Company Code]</td>
+<td>[Company Name]</td>
+<td>[Quick Ratio]</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>   Start the process; below is a screenshot of part of the running code.</p>
+<div style="display: flex; position: relative;">
+<div class="image-container">
+  <img src="https://s2.loli.net/2024/01/05/eFlHxzZ9Kmgwih1.png" style="width: 100%; height: auto;" />
+</div>
+<div class="image-container">
+  <img src="https://s2.loli.net/2024/01/05/y8FabYXPEvlwdZx.png" style="width: 100%; height: auto;" />
+</div>
+<div class="image-container">
+  <img src="https://s2.loli.net/2024/01/05/5mtwq1JUc9rOaGR.png" style="width: 100%; height: auto;" />
+</div>
+<div class="image-container">
+  <img src="https://s2.loli.net/2024/01/05/x9GRYpN3TH47Z1Q.png" style="width: 100%; height: auto;" />
+</div>
+</div></li>
+</ol>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/System-Design/" rel="tag">#System Design</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

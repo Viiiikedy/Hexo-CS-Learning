@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Web Development - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Note/index.html">Note</a> &gt; <strong><a href="/2023/09/11/Note%E7%AC%94%E8%AE%B0/Web-Development/index.html">Web Development</a></small></strong></em></p>
+<h2 id="Web-Development-Method"><a href="#Web-Development-Method" class="headerlink" title="Web Development Method"></a>Web Development Method</h2><h3 id="1-Github-Page"><a href="#1-Github-Page" class="headerlink" title="1. Github Page"></a>1. <a target="_blank" rel="noopener" href="https://github.com/">Github Page</a></h3><h3 id="1-1-Choose-Github-Page-as-the-Targeted-Page"><a href="#1-1-Choose-Github-Page-as-the-Targeted-Page" class="headerlink" title="1.1 Choose Github Page as the Targeted Page"></a>1.1 Choose <a target="_blank" rel="noopener" href="https://pages.github.com/"><em>Github Page</em></a> as the Targeted Page</h3><p>(1) Create a repository with name following your username</p>
+<ul>
+<li>eg. with my username as <u>Viiiikey</u>,the repository name must be <u>Viiiikey.github.io</u></li>
+</ul>
+<p>(2) If you prefer git push instead of the local <a target="_blank" rel="noopener" href="https://desktop.github.com/">github app</a>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*cd to folder &#x27;123&#x27;</span><br><span class="line">cd 123 </span><br><span class="line">git add .</span><br><span class="line">git commit -m 123</span><br><span class="line"></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h3 id="1-2-Github-Only-Works-as-A-Host"><a href="#1-2-Github-Only-Works-as-A-Host" class="headerlink" title="1.2  Github Only Works as A Host"></a>1.2  Github Only Works as A Host</h3><p>(1) Name your new repository randomly without Readme.md<br>(2) copy url to local Github app<br>(3) push in the github app directly<br>(4) Delpy the repository to the third party like <a target="_blank" rel="noopener" href="https://vercel.com/dashboard">Vercel</a> and <a target="_blank" rel="noopener" href="https://www.netlify.com/">Netlify</a></p>
+<blockquote>
+<p><em>Note: Other Platforms like <a target="_blank" rel="noopener" href="https://www.aapanel.com/new/index.html">aaPanel</a> work the same way</em></p>
+</blockquote>
+<h3 id="2-Python-Web-Development-Methods"><a href="#2-Python-Web-Development-Methods" class="headerlink" title="2. Python Web Development Methods"></a>2. <a target="_blank" rel="noopener" href="https://realpython.com/tutorials/web-dev/">Python Web Development Methods</a></h3><h4 id="2-1-Streamlit"><a href="#2-1-Streamlit" class="headerlink" title="2.1 Streamlit"></a>2.1 <a target="_blank" rel="noopener" href="https://streamlit.io/">Streamlit</a></h4><p>It only takes a few lines of code to create an interactive,visual dashboard.<br><strong>(1) Case 1:Simple Uploading Files and Inputting Content</strong><br>Run it in Anaconda Prompt</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`streamlit run C:/Users/hp/Main-Streamlit-Page.py`</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.loli.net/2023/09/11/bcjdNFzMhY6aEUS.png" alt="1" style="zoom:50%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">import streamlit as st</span><br><span class="line">import tempfile</span><br><span class="line">import os</span><br><span class="line">import io</span><br><span class="line">from Bio import SeqIO</span><br><span class="line">import subprocess</span><br><span class="line">from Bio.Blast import NCBIXML</span><br><span class="line">import pandas as pd</span><br><span class="line"></span><br><span class="line">st.title(&quot;Learn how to build web blast app using streamlit&quot;)</span><br><span class="line">you need to change this path to you own</span><br><span class="line"></span><br><span class="line">blastn = &quot;D:/Biotools/blast/ncbiblast/bin/blastn&quot;</span><br><span class="line">db = &#x27;D:/Bioinformatics_Intro/streamlit/uploadfiles/blastdb/cpvirus&#x27;</span><br><span class="line">tempfile.tempdir = &quot;D:/Bioinformatics_Intro/streamlit/uploadfiles/temp&quot;</span><br><span class="line"></span><br><span class="line">fasta = st.text_area(label=&quot;you can paste your fasta here&quot;,</span><br><span class="line">             value=&quot;&gt;seq1\nATCGA&quot;,</span><br><span class="line">             height=400)</span><br><span class="line"></span><br><span class="line">runblastn = st.button(&quot;run blastn&quot;)</span><br><span class="line"></span><br><span class="line">names = &quot;qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore&quot;.split()</span><br><span class="line"></span><br><span class="line">if runblastn:</span><br><span class="line">    tmp = tempfile.NamedTemporaryFile(suffix=&quot;.fasta&quot;,delete=False)</span><br><span class="line">    st.write(tmp.name)</span><br><span class="line">tmp.write(bytes(fasta,&#x27;utf-8&#x27;))</span><br><span class="line">tmp.seek(0)</span><br><span class="line">for rec in SeqIO.parse(tmp.name,&#x27;fasta&#x27;):</span><br><span class="line">    st.write(rec.id)</span><br><span class="line">    </span><br><span class="line">cmd = [blastn,&#x27;-db&#x27;,db,&#x27;-query&#x27;,tmp.name,&#x27;-evalue&#x27;,&#x27;0.0001&#x27;,&#x27;-outfmt&#x27;,&#x27;6&#x27;]</span><br><span class="line">process = subprocess.Popen(cmd,stdout=subprocess.PIPE,</span><br><span class="line">                           stderr=subprocess.PIPE,</span><br><span class="line">                           universal_newlines=True)</span><br><span class="line">stdout,stderr = process.communicate()</span><br><span class="line"></span><br><span class="line">df = pd.read_csv(io.StringIO(stdout),sep=&quot;\t&quot;,header=None,names=names)</span><br><span class="line">st.dataframe(df)</span><br><span class="line">tmp.close()</span><br><span class="line">os.unlink(tmp.name)</span><br><span class="line"></span><br><span class="line">uploaded_file = st.file_uploader(&quot;or upload your fasta file here&quot;)</span><br><span class="line"></span><br><span class="line">if uploaded_file is not None:</span><br><span class="line">    bytes_data = uploaded_file.getvalue()</span><br><span class="line">    #print(type(bytes_data))</span><br><span class="line">    #st.write(bytes_data)</span><br><span class="line">    tmp = tempfile.NamedTemporaryFile(suffix=&quot;.fasta&quot;,delete=False)</span><br><span class="line">    st.write(tmp.name)</span><br><span class="line">    try:</span><br><span class="line">        tmp.write(bytes_data)</span><br><span class="line">        tmp.seek(0)</span><br><span class="line">        with open(tmp.name,&#x27;r&#x27;) as fr:</span><br><span class="line">            for line in fr:</span><br><span class="line">                if line.startswith(&quot;&gt;&quot;):</span><br><span class="line">                    st.write(&quot;input seq id is: %s&quot;%(line.strip().replace(&quot;&gt;&quot;,&quot;&quot;)))</span><br><span class="line">                </span><br><span class="line">        cmd = [blastn,&#x27;-db&#x27;,db,&#x27;-query&#x27;,tmp.name,&#x27;-evalue&#x27;,&#x27;0.0001&#x27;,&#x27;-outfmt&#x27;,&#x27;6&#x27;]</span><br><span class="line">        process = subprocess.Popen(cmd,stdout=subprocess.PIPE,</span><br><span class="line">                                stderr=subprocess.PIPE,</span><br><span class="line">                                universal_newlines=True)</span><br><span class="line">        stdout,stderr = process.communicate()</span><br><span class="line">        # for record in NCBIXML.parse(io.StringIO(stdout)):</span><br><span class="line">        #     st.write(record.query)</span><br><span class="line">        </span><br><span class="line">        df = pd.read_csv(io.StringIO(stdout),sep=&quot;\t&quot;,header=None,names=names)</span><br><span class="line">        st.dataframe(df)</span><br><span class="line">    finally:</span><br><span class="line">        tmp.close()</span><br><span class="line">        os.unlink(tmp.name)      </span><br></pre></td></tr></table></figure>
+<p><strong>(2) Case 2:Webpage for Conversational Chat by the <a target="_blank" rel="noopener" href="https://openai.com/blog/introducing-chatgpt-and-whisper-apis">ChatGPT API</a></strong><br><img src="https://s2.loli.net/2023/09/11/quOT7o9EKevDU4S.png" alt="2" style="zoom: 67%;" /></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">import streamlit as st</span><br><span class="line">import openai</span><br><span class="line"># Set Title and Communicate with Each Other</span><br><span class="line"></span><br><span class="line">st.title(&quot;Chat with ChatGPT&quot;)</span><br><span class="line">st.sidebar.header(&quot;Function Introduction&quot;)</span><br><span class="line">st.sidebar.info(</span><br><span class="line">    &#x27;&#x27;&#x27;This is a web application that enables interactive chatting through the OpenAI API and the ChatGPT model. Enter your questions in the text box, press Enter to query, and receive responses from ChatGPT.&#x27;&#x27;&#x27;</span><br><span class="line">)</span><br><span class="line"># Set Model and Key</span><br><span class="line"></span><br><span class="line">model_engine = &quot;text-davinci-003&quot;</span><br><span class="line">openai.api_key = &quot;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&quot;</span><br><span class="line"></span><br><span class="line">def ChatGPT(user_query):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    Generate answers using the OpenAI API, select models, and configure parameters.</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    # Use OpenAI API to Generate the Answer</span><br><span class="line">    completion = openai.Completion.create(</span><br><span class="line">        engine=model_engine,</span><br><span class="line">        prompt=user_query,</span><br><span class="line">        max_tokens=1024,</span><br><span class="line">        n=1,</span><br><span class="line">        temperature=0.5,</span><br><span class="line">    )</span><br><span class="line">    response = completion.choices[0].text</span><br><span class="line">    return response</span><br><span class="line">    </span><br><span class="line">def main():</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    Get user input, submit it to ChatGPT, and print the output.</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    # Get Question Information</span><br><span class="line">    user_query = st.text_input(&quot;Input your question here, press Enter to query.&quot;, &quot;What is Python？&quot;)</span><br><span class="line">    if user_query != &quot;:q&quot; or user_query != &quot;&quot;:</span><br><span class="line">        # Give the Question to ChatGPT, Return the Results</span><br><span class="line">        response = ChatGPT(user_query)</span><br><span class="line">        return st.write(f&quot;&#123;response&#125;&quot;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.Case 3:Random ForestIris</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">import streamlit as st</span><br><span class="line">import pandas as pd</span><br><span class="line">from sklearn import datasets</span><br><span class="line">from sklearn.ensemble import RandomForestClassifier</span><br><span class="line"></span><br><span class="line"># Users input data:</span><br><span class="line">def user_input_features():</span><br><span class="line">    sepal_length = st.sidebar.slider(&#x27;Sepal length&#x27;, 4.3, 7.9, 5.4)</span><br><span class="line">    sepal_width = st.sidebar.slider(&#x27;Sepal width&#x27;, 2.0, 4.4, 3.4)</span><br><span class="line">    petal_length = st.sidebar.slider(&#x27;Petal length&#x27;, 1.0, 6.9, 1.3)</span><br><span class="line">    petal_width = st.sidebar.slider(&#x27;Petal width&#x27;, 0.1, 2.5, 0.2)</span><br><span class="line">    data = &#123;&#x27;sepal_length&#x27;: sepal_length, &#x27;sepal_width&#x27;: sepal_width,</span><br><span class="line">            &#x27;petal_length&#x27;: petal_length, &#x27;petal_width&#x27;: petal_width&#125;</span><br><span class="line">    features = pd.DataFrame(data, index=[0])</span><br><span class="line">    return features</span><br><span class="line">df = user_input_features()</span><br><span class="line"></span><br><span class="line"># Load Iris Set and Train the Model</span><br><span class="line"></span><br><span class="line">iris = datasets.load_iris()</span><br><span class="line">X = iris.data</span><br><span class="line">Y = iris.target</span><br><span class="line">clf = RandomForestClassifier()</span><br><span class="line">clf.fit(X, Y)</span><br><span class="line"># Categorize and display input data.</span><br><span class="line">prediction = clf.predict(df)</span><br><span class="line">prediction_proba = clf.predict_proba(df)</span><br><span class="line">st.write(&#x27;Categorization Results：&#x27; + iris.target_names[prediction][0])</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.loli.net/2023/09/11/fwORnaNHQ25GJ71.png" alt="3" style="zoom:50%;" />
+
+<blockquote>
+<p><em>Others:</em></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://pynecone.app/">Pynecone</a> </li>
+<li><a target="_blank" rel="noopener" href="https://pywebio.readthedocs.io/en/latest/guide.html">PyWebIO</a></li>
+</ul>
+</blockquote>
+<h3 id="3-Other-Open-Source-Web-Development-Tools"><a href="#3-Other-Open-Source-Web-Development-Tools" class="headerlink" title="3. Other Open Source Web Development Tools"></a>3. Other Open Source Web Development Tools</h3><h4 id="3-1-NotionNext"><a href="#3-1-NotionNext" class="headerlink" title="3.1 NotionNext"></a>3.1 <a target="_blank" rel="noopener" href="https://github.com/for-1-big-picture/NotionNext/blob/main/README_EN.md">NotionNext</a></h4><ul>
+<li><a target="_blank" rel="noopener" href="https://vicky-post-site.vercel.app/">Personal Website in Chinese</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.tangly1024.com/article/notion-next-themes">Tutorial</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Viiiikedy/NotionNext/blob/main/blog.config.js">Repository</a></li>
+<li>Template:example,fukasawa,heo,matery,medium,next,nobelium,simple,plog,heo,nexo,landing,gitbook<br>We could also deploy it on <a target="_blank" rel="noopener" href="https://www.4everland.org/">4everland</a>,one web3 cloud platform.</li>
+</ul>
+<h4 id="3-2-Hugo-Go"><a href="#3-2-Hugo-Go" class="headerlink" title="3.2 Hugo(Go)"></a>3.2 Hugo(Go)</h4><p>Visit Locally:<br>(1) Create a Folder <u>“hugo”</u>,put <u>hugo.exe</u> into it.<br>(2) Input <u>cmd</u> at the folder path where folder <u>hugo</u> is,input <u>hugo site new site</u>,put the targeted template in the <u>theme</u> folder in the new established <u>site</u></p>
+<blockquote>
+<p>Note：when <u>git clone</u> the online template,you should choose the ones with <u>exampleSite</u></p>
+</blockquote>
+<p>(3) Open <u>examplesite</u>，copy all the files to the folder <u>site</u><br>(4) Delete the automatically generated <u>hugo.toml</u></p>
+<blockquote>
+<p>Otherwies, <em>page not found</em> will show up</p>
+</blockquote>
+<p>(5) Open <u>config.toml</u>,change the project name as the cloned theme name </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">theme=&quot; &quot;</span><br><span class="line"># you choose *wiki*,theme=&quot;wiki&quot;</span><br></pre></td></tr></table></figure>
+<p>(6) Back to the folder of <u>site</u>，<u>cmd</u>,input<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo serve</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>If error occurs, you might delete <u>xx.md</u> by searching <u>twitter</u>.<br>Then push it to cloud:</p>
+</blockquote>
+<p>(7) Continue in the folder of <u>site</u>，<u>cmd</u>,input</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hugo -D</span><br></pre></td></tr></table></figure>
+<p>(8) Open the newly generated <u>public</u> file in the <u>site</u> folder,copy it to the folder <u>xx.github.io</u></p>
+<blockquote>
+<p>there are only .git and <u>README</u> in the <u>xx.github.io</u> folder</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Commit to main,push origin</span><br></pre></td></tr></table></figure>
+<p>(9) refresh,wait,done! </p>
+<p>(10) You might choose the third party deployment after that.</p>
+<h4 id="3-3-Hexo-Node-js"><a href="#3-3-Hexo-Node-js" class="headerlink" title="3.3 Hexo(Node.js)"></a>3.3 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo(Node.js)</a></h4><p>(1) Create folder <u>blog</u>，under the <u>blog</u>,right-click to open <u>git bash</u>，input:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init，npm instal，hexo cl,hexo g,hexo s</span><br></pre></td></tr></table></figure>
+<p>(2) Clone template to the <u>theme</u> folder</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  https://github.com/PhosphorW/hexo-theme-academia</span><br></pre></td></tr></table></figure>
+<p>(3) install necessary packages </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br><span class="line">hexo cl,hexo g,hexo s</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>if the content of hexo is blanked,input:</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; hexo n post&quot;any title&quot;，hexo cl,hexo g,hexo s</span><br></pre></td></tr></table></figure>
+<p>(4) Deploy on github：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name&quot;viiiikedy&quot;</span><br><span class="line">git config --global user.email &quot;vickydu1213@gmail.com&quot;</span><br><span class="line">ssh-keygen -t rsa -C &quot;vickydu1213@gmail.com&quot;</span><br><span class="line">ssh -T git@github.com</span><br><span class="line">hexo d</span><br><span class="line">hexo cl,hexo g,hexo s</span><br></pre></td></tr></table></figure>
+<p>(5) Use txt to open <u>id_rsa</u> file to github and refine SSH<br>(6) Refine the local network address：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<h4 id="3-3-Jekyll-Ruby"><a href="#3-3-Jekyll-Ruby" class="headerlink" title="3.3 Jekyll(Ruby)"></a>3.3 <a target="_blank" rel="noopener" href="https://jekyllrb.com/">Jekyll(Ruby)</a></h4><p>(1) Download the latest edition of Ruby+Devkit officially<br>(2) Input <u>ruby -v</u> and <u>gem -v</u> to check whether the installment is successful<br>(3) Install Jekyll 和 Bundler gems:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">put gem install jekyll bundler 来安装</span><br></pre></td></tr></table></figure>
+<p>(4) Input <u>jekyll -v</u> and <u>bundle -v</u> to check<br>(5) Choose one empty folder to create new blog site:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">jekyll new myblog</span><br><span class="line">cd myblog</span><br><span class="line">bundle add webrick</span><br><span class="line">bundle exec jekyll serve </span><br></pre></td></tr></table></figure>
+<p>(6) Successful Address: <a target="_blank" rel="noopener" href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a> </p>
+<p>Use Template:<br>(1) Create one empty folder, <u>cmd</u>,input:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git clone https://github.com/cotes2020/</span><br></pre></td></tr></table></figure>
+<p>(2) Open the cloned template folder,input:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bundle install</span><br><span class="line">bundle exec jekyll serve</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-4-gitbook"><a href="#3-4-gitbook" class="headerlink" title="3.4 gitbook"></a>3.4 <a target="_blank" rel="noopener" href="https://www.gitbook.com/">gitbook</a></h4><blockquote>
+<p>You need to change the edition of nvm: node 14 for hexo,node 10 for gitbook:</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nvm install 14</span><br><span class="line">nvm use 14</span><br><span class="line">#or </span><br><span class="line">nvm install 14</span><br><span class="line">nvm use 14</span><br></pre></td></tr></table></figure>
+
+<h2 id="SEO-Follow-Up-Optimization"><a href="#SEO-Follow-Up-Optimization" class="headerlink" title="SEO Follow-Up Optimization"></a>SEO Follow-Up Optimization</h2><p>Source Code of <a target="_blank" rel="noopener" href="https://fusiedtech.com/">VIRA</a> Website</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;title&gt;VIRA | An Education Social Enterprise in China&lt;/title&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;!-- Meta Tags --&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;meta content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot; name=&quot;viewport&quot;&gt;</span><br><span class="line">    &lt;!-- Author --&gt;</span><br><span class="line">    &lt;meta name=&quot;author&quot; content=&quot;Themes Industry&quot;&gt;</span><br><span class="line">    &lt;!-- description --&gt;</span><br><span class="line">    &lt;meta name=&quot;description&quot; content=&quot;MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.&quot;&gt;</span><br><span class="line">    &lt;!-- keywords --&gt;</span><br><span class="line">    &lt;meta name=&quot;keywords&quot; content=&quot;Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq&quot;&gt;</span><br><span class="line">    &lt;!-- Page Title --&gt;</span><br><span class="line">    &lt;title&gt;VIRA | An Education Social Enterprise in China&lt;/title&gt;</span><br><span class="line">    &lt;!-- Favicon --&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/uploadfile/202205/d16b7ff08ea7eb.png&quot; rel=&quot;icon&quot; /&gt;</span><br><span class="line">    &lt;!-- Bundle --&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/bundle.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;!-- Plugin Css --&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/LineIcons.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/revolution-settings.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/jquery.fancybox.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/owl.carousel.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/cubeportfolio.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">    &lt;!-- Style Sheet --&gt;</span><br><span class="line">    &lt;link href=&quot;http://www.fusinnovations.com/static/skin/css/style.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h3><h4 id="1-Tools-for-Website-Developing"><a href="#1-Tools-for-Website-Developing" class="headerlink" title="1. Tools for Website Developing:"></a>1. Tools for Website Developing:</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.fit2cloud.com/index.html">Halo</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/36861553">Collection</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/JunyouYH/article/details/119215315">System Collection</a></li>
+</ul>
+<h4 id="2-Questions-Not-Solved"><a href="#2-Questions-Not-Solved" class="headerlink" title="2. Questions Not Solved"></a>2. Questions Not Solved</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://lizhening.github.io/posts/b467327c/">How to Configure Website Analytics</a></li>
+<li><a target="_blank" rel="noopener" href="https://embednotion.com/">Connect Notion Page with Current Web Page</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/">Style Extension:Minimalist</a></li>
+<li><a target="_blank" rel="noopener" href="https://cn.vuejs.org/guide/quick-start.html#using-vue-from-cdn">Vue Learning Address</a></li>
+</ul>
+<h3 id="My-simple-Project"><a href="#My-simple-Project" class="headerlink" title="My simple Project"></a>My simple Project</h3><blockquote>
+<p>Link:<a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1xQMxR7qYJCzHp7G-CDh55OyQKoC-eyPb?usp=sharing">here</a></p>
+</blockquote>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Note/" rel="tag">#Note</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

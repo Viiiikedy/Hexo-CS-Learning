@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          CS Basic Knowledge - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Note/index.html">Note</a> &gt; <strong><a href="/2023/09/11/Note%E7%AC%94%E8%AE%B0/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></small></strong></em></p>
+<h3 id="Useful-Tool-Plugins"><a href="#Useful-Tool-Plugins" class="headerlink" title="Useful Tool Plugins"></a>Useful Tool Plugins</h3><h4 id="1-Markdown-Editor-of-the-Public-Account"><a href="#1-Markdown-Editor-of-the-Public-Account" class="headerlink" title="1. Markdown Editor of the Public Account"></a>1. Markdown Editor of the <a target="_blank" rel="noopener" href="https://wechatwiki.com/wechat-resources/wechat-official-account-marketing-platform-epic-tutorial-guide/">Public Account</a></h4><ul>
+<li><a target="_blank" rel="noopener" href="https://md.openwrite.cn/">https://md.openwrite.cn/</a></li>
+<li><a target="_blank" rel="noopener" href="https://prod.zkqiang.cn/wxeditor/index.html">https://prod.zkqiang.cn/wxeditor/index.html</a></li>
+<li><a target="_blank" rel="noopener" href="http://md.aclickall.com/">http://md.aclickall.com/</a></li>
+<li><a target="_blank" rel="noopener" href="https://md.qikqiak.com/">https://md.qikqiak.com/</a></li>
+</ul>
+<h4 id="2-Use-Deform-under-Stable-Diffusion-to-generate-the-animination-video"><a href="#2-Use-Deform-under-Stable-Diffusion-to-generate-the-animination-video" class="headerlink" title="2. Use Deform under Stable Diffusion to generate the animination video"></a>2. Use <a target="_blank" rel="noopener" href="https://github.com/deforum-art/deforum-stable-diffusion">Deform</a> under <a target="_blank" rel="noopener" href="https://stablediffusionweb.com/">Stable Diffusion</a> to generate the <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/624487125">animination video</a></h4><p>Deforum has a JSON input format for prompts, featuring 4 separate scene descriptions. Each scene description is an independent prompt. </p>
+<blockquote>
+<p><span style="background-color:#e3f6f9;"> Our Team Explaniation: XA Capstone22 - <a target="_blank" rel="noopener" href="https://u0b0rmsz9b8.feishu.cn/file/T0pYbPPH0opGFxxSDKNcPYTbnxh?from=from_copylink">Invincible Abstract - Movie Design</a></span>.</p>
+</blockquote>
+<h4 id="3-Connect-Chatgpt-with-Wechat"><a href="#3-Connect-Chatgpt-with-Wechat" class="headerlink" title="3. Connect Chatgpt with Wechat"></a>3. Connect Chatgpt with Wechat</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. Open the directory at E:\github\chatgpt-on-wechat.</span><br><span class="line">2. Enter &quot;cmd&quot; in the command prompt.</span><br><span class="line">3. Type &quot;python app.py&quot;.</span><br><span class="line">4. Scan the WeChat QR code to log in.</span><br><span class="line">5. The bot will start, and you can begin chatting in the conversation window.</span><br></pre></td></tr></table></figure>
+<p><em>Note: To modify the API key, navigate to the “config.json” file located in E:\github\chatgpt-on-wechat.</em></p>
+<h3 id="Computer-Components"><a href="#Computer-Components" class="headerlink" title="Computer Components:"></a>Computer Components:</h3><ol>
+<li>GPU, Graphic Processing Unit: A dedicated graphics core processor. The GPU is the “brain” of a graphics card, determining its level and most of its performance. It is also the differentiating factor between 2D and 3D graphics cards.</li>
+<li>CPU, Central Processing Unit: The computational and control core of a computer. The CPU, internal memory, and input&#x2F;output devices are the three core components of an electronic computer.</li>
+<li>CMS, Content Management System: An abbreviation for “Content Management System.” An open-source CMS refers to a website content management system that is open-source.<ol>
+<li>Hardware<ol>
+<li>ALU (Arithmetic Logic Unit): Part of the CPU responsible for arithmetic and logic operations.</li>
+<li>Control Unit: The computer’s “brain” responsible for controlling operations.</li>
+<li>Memory: Includes RAM (temporary storage) and hard disk (permanent storage).</li>
+<li>Input Devices: Such as mice and keyboards.</li>
+<li>Output Devices: Such as monitors and printers.</li>
+</ol>
+</li>
+<li>Software<ol>
+<li>Category 1:System Software+Application Software</li>
+<li>Category 2:<ol>
+<li>C&#x2F;S: Client&#x2F;Server:Local client programs with remote server programs (e.g., QQ).</li>
+<li>B&#x2F;S: Browser&#x2F;Server:Requires only a web browser; users access different server-side programs through different URLs (e.g., Taobao&#x2F;Tmall).</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="Computer-Operation"><a href="#Computer-Operation" class="headerlink" title="Computer Operation:"></a>Computer Operation:</h3><ol>
+<li>Ctrl + C: Stops the backend program from running.</li>
+<li>When using Visual Studio, if you need to run “conda XX,” you should change it to “conda.bat XX.”</li>
+<li>Task Manager: You can use it to view CPU and GPU processes.</li>
+<li>Command Prompt: You can open it by pressing Win + R and typing “cmd.”</li>
+<li>“dir”: To view the contents of the current directory.</li>
+<li>“cls”: To clear the screen.</li>
+<li>“exit”: To exit the Command Prompt window.</li>
+<li>To open QQ, you can use the following command: “start D:”Program Files (x86)”\Tencent\QQ\Bin\QQ.exe”.</li>
+</ol>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Note/" rel="tag">#Note</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

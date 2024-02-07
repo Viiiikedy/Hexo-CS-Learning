@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Quantitative Portfolio Trading - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
+    .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Economy/Economy/index.html">Economy&amp;Business</a> &gt; <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html">Automatical Trading and Cryptocurrency</a> &gt; <strong><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html">Quantitative Portfolio Trading</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><strong><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong>
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+    </div>
+</ol>
+
+<hr>
+<h3 id="python-section">Project1: Quantitative Factor Mining, Tracking, and Prediction</h3>
+
+<p>In the fast-paced financial environment,quantitative analysis plays an important role on both <u>monitoring and predicting the timely data</u> from the secondary markets. Here I include 3 of my past projects on the related topics:</p>
+<blockquote>
+<ul>
+<li>Project 1:<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1BHi_7FbfDPFedQQLFEoSrbZ8DUURodWr/view?usp=sharing">Fundamental Market Forecast Using Talib</a></li>
+<li>Project 2:<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/12_vKPmFFMUEwPwJRzPLZxfWnLWUt9V4l/view?usp=sharing">Real Time Monitoring of Secondary Market Information</a></li>
+<li>Project 3:<a href="/pdf/Quants-in-Chinese.pdf">Factor-based Trading and Hedging on Quantitative Platforms</a></li>
+</ul>
+</blockquote>
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/06/NRwxXyhQ1AngIfp.png" width="40%" height="40%">
+    <img src="https://s2.loli.net/2024/01/06/Kue3R7ykWsiNvH9.png" width="40%" height="40%">
+</div>
+<h3 id="vba-section">Project2: Financial Valuation by VBA</h3>
+
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">VBA</a> is important particularly in linking multiple financial statements and conducting valuations involving a series of formulas, such as DCF, LBO, and M&amp;A, familiarity with Excel programs and functions can significantly enhance efficiency.</p>
+<blockquote>
+<p>Project Address:<a href="/zip/Full-Financial-Model.xls">here</a></p>
+</blockquote>
+<h3 id="Project3-JP-Morgan-Private-Bank-Quantitaive-Asset-Allocation-Strategy"><a href="#Project3-JP-Morgan-Private-Bank-Quantitaive-Asset-Allocation-Strategy" class="headerlink" title="Project3: JP Morgan Private Bank:Quantitaive Asset Allocation Strategy"></a>Project3: JP Morgan Private Bank:Quantitaive Asset Allocation Strategy</h3><p>We applied statistical analysis, risk management techniques, and portfolio optimization models. Utilizing algorithms, macroeconomic analysis, and asset class research, we made informed investment decisions, adhering to legal and regulatory standards.</p>
+<blockquote>
+<p>Project Report:<a href="/pdf/Asset-Allocation-Proposal-JP-Private-Bank-Competition.pdf">here</a><br>Project Code:<a target="_blank" rel="noopener" href="https://colab.research.google.com/drive/1qvlPVViL0AX2eK774DtjTbQNB9IRThCL?usp=sharing">here</a></p>
+</blockquote>
+<ul>
+<li>Strategic Allocation</li>
+<li>Tactical Allocation</li>
+<li>Scenario Analysis</li>
+<li>Investment Implementation</li>
+<li>Requirements Achievement</li>
+</ul>
+<h3 id="Project4-Pair-Trading-Strategy"><a href="#Project4-Pair-Trading-Strategy" class="headerlink" title="Project4:Pair Trading Strategy"></a>Project4:Pair Trading Strategy</h3><p>This is a market-neutral trading strategy that involves matching a long position with a short position in two stocks with a high correlation. The following is used in my past research for tthis strategy.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> jqdata <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line"><span class="comment"># Industry ID</span></span><br><span class="line">instruments_code_bank = get_industry_stocks(<span class="string">&#x27;I64&#x27;</span>)[<span class="number">0</span>:<span class="number">15</span>]</span><br><span class="line">prices_temp = pd.DataFrame()</span><br><span class="line">start_date = <span class="string">&#x27;2020-01-01&#x27;</span></span><br><span class="line">end_date = <span class="string">&#x27;2022-04-29&#x27;</span></span><br><span class="line"><span class="keyword">for</span> c <span class="keyword">in</span> instruments_code_bank:</span><br><span class="line">    c_daily = get_price(c, start_date, end_date)</span><br><span class="line">    c_daily[<span class="string">&#x27;code&#x27;</span>] = c</span><br><span class="line">    prices_temp = pd.concat([prices_temp, c_daily])</span><br><span class="line"></span><br><span class="line">prices_temp_code_close = prices_temp[[<span class="string">&#x27;code&#x27;</span>, <span class="string">&#x27;close&#x27;</span>]]</span><br><span class="line"><span class="comment"># prices_temp_code_close</span></span><br><span class="line">mode_num = np.argmax(np.bincount([<span class="built_in">len</span>(i) <span class="keyword">for</span> i <span class="keyword">in</span> [prices_temp_code_close[prices_temp_code_close.code == c] <span class="keyword">for</span> c <span class="keyword">in</span> instruments_code_bank]]))</span><br><span class="line"><span class="comment"># Create a dictionary to index the closing price of this year by ts_code</span></span><br><span class="line">price_dict_all = <span class="built_in">dict</span>(<span class="built_in">list</span>(prices_temp_code_close.groupby(<span class="string">&#x27;code&#x27;</span>)[<span class="string">&#x27;close&#x27;</span>]))</span><br><span class="line"><span class="comment"># Filter out the stocks in the dictionary whose trading dates equal the mode number, so as to analyze more pairs with high correlation in the stock pool</span></span><br><span class="line">price_dict = <span class="built_in">dict</span>(<span class="built_in">filter</span>(<span class="keyword">lambda</span> x: <span class="built_in">len</span>(x[<span class="number">1</span>]) == mode_num, price_dict_all.items()))</span><br><span class="line">instruments_code = <span class="built_in">list</span>(price_dict.keys())</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> statsmodels.api <span class="keyword">as</span> sm</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"></span><br><span class="line"><span class="comment"># Calculate correlation</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_pearson_r</span>(<span class="params">price_dict</span>):</span><br><span class="line">    n = <span class="built_in">len</span>(price_dict)</span><br><span class="line">    keys = <span class="built_in">list</span>(price_dict.keys())</span><br><span class="line">    r_matrix = np.ones((n, n))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        stock1 = price_dict[keys[i]]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>, n):</span><br><span class="line">            stock2 = price_dict[keys[j]]</span><br><span class="line">            r = stock1.corr(stock2)</span><br><span class="line">            r_matrix[i, j] = r</span><br><span class="line">    <span class="keyword">return</span> r_matrix</span><br><span class="line"></span><br><span class="line"><span class="comment"># Input is a price_dict, each column is the price of a stock on each day</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">find_cointegrated_pairs</span>(<span class="params">price_dict</span>):</span><br><span class="line">    <span class="comment"># Get the length of price_dict</span></span><br><span class="line">    n = <span class="built_in">len</span>(price_dict)</span><br><span class="line">    <span class="comment"># Initialize the p-value matrix</span></span><br><span class="line">    pvalue_matrix = np.ones((n, n))</span><br><span class="line">    <span class="comment"># Extract column names</span></span><br><span class="line">    keys = <span class="built_in">list</span>(price_dict.keys())</span><br><span class="line">    mode_num = np.argmax(np.bincount([<span class="built_in">len</span>(i) <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">list</span>(price_dict.values())]))</span><br><span class="line">    <span class="comment"># print(&quot;keys:&quot;,keys)</span></span><br><span class="line">    <span class="comment"># Initialize strong cointegration group</span></span><br><span class="line">    pairs = []</span><br><span class="line">    <span class="comment"># For every i</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="comment"># For j greater than i</span></span><br><span class="line">        stock1 = price_dict[keys[i]]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(stock1) != mode_num:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i+<span class="number">1</span>, n):</span><br><span class="line">            <span class="comment"># Get the price Series of the respective two stocks</span></span><br><span class="line">            stock2 = price_dict[keys[j]]</span><br><span class="line">            <span class="keyword">if</span> <span class="built_in">len</span>(stock2) != mode_num:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="comment"># Analyze their cointegration relationship</span></span><br><span class="line">            result = sm.tsa.stattools.coint(stock1, stock2)</span><br><span class="line">            <span class="comment"># Extract and record the p-value</span></span><br><span class="line">            pvalue = result[<span class="number">1</span>]</span><br><span class="line">            pvalue_matrix[i, j] = pvalue</span><br><span class="line">            <span class="comment"># If the p-value is less than 0.05</span></span><br><span class="line">            <span class="keyword">if</span> pvalue &lt; <span class="number">0.05</span>:</span><br><span class="line">                <span class="comment"># Record the stock pair and the corresponding p-value</span></span><br><span class="line">                pairs.append((keys[i], keys[j], pvalue))</span><br><span class="line">    <span class="comment"># Return the result</span></span><br><span class="line">    <span class="keyword">return</span> pvalue_matrix, pairs</span><br><span class="line"></span><br><span class="line">pvalues, pairs = find_cointegrated_pairs(price_dict)</span><br><span class="line">pairs_df = pd.DataFrame(pairs, index=<span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(pairs)), columns=<span class="built_in">list</span>([<span class="string">&#x27;comp1&#x27;</span>, <span class="string">&#x27;comp2&#x27;</span>, <span class="string">&#x27;pvalue&#x27;</span>]))</span><br><span class="line"><span class="comment"># The smaller the pvalue, the greater the correlation, ranking by ascending pvalue gets the stock pairs with high correlation from high to low</span></span><br><span class="line">pairs_df = pairs_df.sort_values(by=<span class="string">&#x27;pvalue&#x27;</span>)</span><br><span class="line">pairs_df</span><br><span class="line"></span><br><span class="line"><span class="comment"># %matplotlib inline</span></span><br><span class="line">plt.rcParams[<span class="string">&#x27;figure.figsize&#x27;</span>] = [<span class="number">15</span>, <span class="number">8</span>]</span><br><span class="line">sns.heatmap(<span class="number">1</span>-pvalues, xticklabels=instruments_code, yticklabels=instruments_code, cmap=<span class="string">&#x27;RdYlGn_r&#x27;</span>, mask=(pvalues == <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># The redder in the heatmap, the higher the correlation, indicating the smaller the p-value.</span></span><br><span class="line"></span><br><span class="line">company_choose = [pairs_df.iloc[<span class="number">0</span>].comp1, pairs_df.iloc[<span class="number">0</span>].comp2]</span><br><span class="line"><span class="built_in">print</span>(company_choose)</span><br><span class="line">x = price_dict[company_choose[<span class="number">0</span>]]</span><br><span class="line">y = price_dict[company_choose[<span class="number">1</span>]]</span><br><span class="line">x = np.log(x)</span><br><span class="line">X = sm.add_constant(x)</span><br><span class="line">y = np.log(y)</span><br><span class="line">result = (sm.OLS(y, X)).fit()</span><br><span class="line">result.summary()</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">p1 = get_price(<span class="string">&#x27;000676.XSHE&#x27;</span>, start_date, end_date, fields=<span class="string">&#x27;close&#x27;</span>)</span><br><span class="line"><span class="comment"># Drawing the fitting line:</span></span><br><span class="line"></span><br><span class="line">st = np.log(y) - np.log(x) * <span class="number">1.3584</span>    </span><br><span class="line">fig, ax = plt.subplots(figsize=(<span class="number">8</span>,<span class="number">6</span>))</span><br><span class="line">ax.plot(x, y, <span class="string">&#x27;o&#x27;</span>, label=<span class="string">&quot;data&quot;</span>)</span><br><span class="line">ax.plot(x, result.fittedvalues, <span class="string">&#x27;r&#x27;</span>, label=<span class="string">&quot;OLS&quot;</span>)</span><br><span class="line">ax.legend(loc=<span class="string">&#x27;best&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Set the thresholds for opening and closing positions, here using multiples of standard deviation as an example</span></span><br><span class="line">open_num = <span class="number">1.5</span> <span class="comment"># Opening threshold, open positions when the residual is more than 1.5 standard deviations above the mean</span></span><br><span class="line">close_num = <span class="number">0.5</span> <span class="comment"># Closing threshold, close positions when the residual is less than 0.5 standard deviations below the mean</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Determine trading signals based on the residual series and record daily position and profit situations</span></span><br><span class="line">position = <span class="number">0</span> <span class="comment"># Initial position is 0, indicating no holdings; a position of 1 indicates going long on x and short on y; a position of -1 indicates going short on x and long on y.</span></span><br><span class="line">capital = <span class="number">1000000</span> <span class="comment"># Initial capital of 1 million</span></span><br><span class="line">fee_rate = <span class="number">0.0005</span> <span class="comment"># Transaction fee rate of 0.0005</span></span><br><span class="line"></span><br><span class="line">trade_log = [] <span class="comment"># Record trade log</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(resid)):</span><br><span class="line">    <span class="keyword">if</span> position == <span class="number">0</span>: <span class="comment"># When there are no holdings, determine whether to open positions</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> resid[i] &gt; mean + open_num * std: <span class="comment"># If the residual is above the upper limit, go short on x and long on y</span></span><br><span class="line">            </span><br><span class="line">            position = -<span class="number">1</span> <span class="comment"># Position changes to -1</span></span><br><span class="line">            </span><br><span class="line">            x_price = x[i] * (<span class="number">1</span> + fee_rate) <span class="comment"># Calculate the purchase price of x (considering transaction fees)</span></span><br><span class="line">            y_price = y[i] * (<span class="number">1</span> - fee_rate) <span class="comment"># Calculate the selling price of y (considering transaction fees)</span></span><br><span class="line">            </span><br><span class="line">            x_amount = capital / <span class="number">2</span> / x_price <span class="comment"># Calculate the quantity of x to buy</span></span><br><span class="line">            y_amount = capital / <span class="number">2</span> / y_price <span class="comment"># Calculate the quantity of y to sell</span></span><br><span class="line">            </span><br><span class="line">            trade_log.append([i, <span class="string">&#x27;Open&#x27;</span>, -<span class="number">1</span>, x_price, y_price, x_amount, y_amount]) <span class="comment"># Record trade log</span></span><br><span class="line">            </span><br><span class="line">        <span class="keyword">elif</span> resid[i] &lt; mean - open_num * std: <span class="comment"># If the residual is below the lower limit, go long on x and short on y</span></span><br><span class="line">            </span><br><span class="line">            position = <span class="number">1</span> <span class="comment"># Position changes to 1</span></span><br><span class="line">            </span><br><span class="line">            x_price = x[i] * (<span class="number">1</span> - fee_rate) <span class="comment"># Calculate the selling price of x (considering transaction fees)</span></span><br><span class="line">            y_price = y[i] * (<span class="number">1</span> + fee_rate) <span class="comment"># Calculate the purchase price of y (considering transaction fees)</span></span><br><span class="line">            </span><br><span class="line">            x_amount = capital / <span class="number">2</span> / x_price <span class="comment"># Calculate the quantity of x to sell</span></span><br><span class="line">            y_amount = capital / <span class="number">2</span> / y_price <span class="comment"># Calculate the quantity of y to buy</span></span><br><span class="line">            </span><br><span class="line">            trade_log.append([i, <span class="string">&#x27;Open&#x27;</span>, <span class="number">1</span>, x_price, y_price, x_amount, y_amount]) <span class="comment"># Record trade log</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">elif</span> position == -<span class="number">1</span>: <span class="comment"># When short on x and long on y, determine whether to close positions</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> resid[i] &lt; mean + close_num * std: <span class="comment"># If the residual is below the closing threshold, close positions</span></span><br><span class="line">            </span><br><span class="line">            position = <span class="number">0</span> <span class="comment"># Position changes to 0</span></span><br><span class="line">            </span><br><span class="line">            x_price = x[i] * (<span class="number">1</span> - fee_rate) <span class="comment"># Calculate the selling price of x (considering transaction fees)</span></span><br><span class="line">            y_price = y[i] * (<span class="number">1</span> + fee_rate) <span class="comment"># Calculate the purchase price of y (considering transaction fees)</span></span><br><span class="line">            </span><br><span class="line">            trade_log.append([i, <span class="string">&#x27;Close&#x27;</span>, <span class="number">0</span>, x_price, y_price]) <span class="comment"># Record trade log</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">elif</span> position == <span class="number">1</span>: <span class="comment"># When long on x and short on y, determine whether to close positions</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> resid[i] &gt; mean - close_num * std: <span class="comment"># If the residual is above the closing threshold, close positions</span></span><br><span class="line">            </span><br><span class="line">            position = <span class="number">0</span> <span class="comment"># Position changes to 0</span></span><br><span class="line">            </span><br><span class="line">            x_price = x[i] * (<span class="number">1</span> + fee_rate) <span class="comment"># Calculate the purchase price of x (considering transaction fees)</span></span><br><span class="line">            y_price = y[i] * (<span class="number">1</span> - fee_rate) <span class="comment"># Calculate the selling price of y (considering transaction fees)</span></span><br><span class="line">            </span><br><span class="line">            trade_log.append([i, <span class="string">&#x27;Close&#x27;</span>, <span class="number">0</span>, x_price, y_price]) <span class="comment"># Record trade log</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Convert the trade log into DataFrame format and calculate the profit and cumulative profit for each transaction</span></span><br><span class="line">trade_log = pd.DataFrame(trade_log, columns=[<span class="string">&#x27;Date&#x27;</span>, <span class="string">&#x27;Operation&#x27;</span>, <span class="string">&#x27;Position&#x27;</span>, <span class="string">&#x27;x Price&#x27;</span>, <span class="string">&#x27;y Price&#x27;</span>, <span class="string">&#x27;x Quantity&#x27;</span>, <span class="string">&#x27;y Quantity&#x27;</span>])</span><br><span class="line">trade_log[<span class="string">&#x27;Profit&#x27;</span>] = <span class="number">0</span></span><br><span class="line">trade_log[<span class="string">&#x27;Cumulative Profit&#x27;</span>] = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="built_in">len</span>(trade_log)):</span><br><span class="line">    <span class="keyword">if</span> trade_log.loc[i, <span class="string">&#x27;Operation&#x27;</span>] == <span class="string">&#x27;Close&#x27;</span>:</span><br><span class="line">        trade_log.loc[i, <span class="string">&#x27;Profit&#x27;</span>] = (trade_log.loc[i-<span class="number">1</span>, <span class="string">&#x27;x Price&#x27;</span>] - trade_log.loc[i, <span class="string">&#x27;x Price&#x27;</span>]) * trade_log.loc[i-<span class="number">1</span>, <span class="string">&#x27;x Quantity&#x27;</span>] + (trade_log.loc[i, <span class="string">&#x27;y Price&#x27;</span>] - trade_log.loc[i-<span class="number">1</span>, <span class="string">&#x27;y Price&#x27;</span>]) * trade_log.loc[i-<span class="number">1</span>, <span class="string">&#x27;y Quantity&#x27;</span>]</span><br><span class="line">        trade_log.loc[i, <span class="string">&#x27;Cumulative Profit&#x27;</span>] = trade_log.loc[i-<span class="number">1</span>, <span class="string">&#x27;Cumulative Profit&#x27;</span>] + trade_log.loc[i, <span class="string">&#x27;Profit&#x27;</span>]</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        trade_log.loc[i, <span class="string">&#x27;Cumulative Profit&#x27;</span>] = trade_log.loc[i-<span class="number">1</span>, <span class="string">&#x27;Cumulative Profit&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print trade log</span></span><br><span class="line"><span class="built_in">print</span>(trade_log)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plotting Cumulative Return Curve</span></span><br><span class="line">plt.plot(trade_log[<span class="string">&#x27;Date&#x27;</span>], trade_log[<span class="string">&#x27;Cumulative Profit&#x27;</span>])</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Date&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Cumulative Return&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Market Neutral Strategy&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h3 id="Quantitative-Trading-Platform-Recommendation"><a href="#Quantitative-Trading-Platform-Recommendation" class="headerlink" title="Quantitative Trading Platform Recommendation"></a>Quantitative Trading Platform Recommendation</h3><p>Here I will recommend some quant platforms that I always use:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.portfolio123.com/">Portfolio123</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ricequant.com/welcome/">Ricequant</a></li>
+<li><a target="_blank" rel="noopener" href="https://bigquant.com/">Bigquant</a></li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Automatic-Trading-Cryptocurrency/" rel="tag">#Automatic Trading & Cryptocurrency</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

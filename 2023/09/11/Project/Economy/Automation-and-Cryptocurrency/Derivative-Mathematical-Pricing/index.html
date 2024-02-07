@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Derivative Mathematical Pricing - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+        hover ~ img {
+        filter: blur(100000px); /* 鼠标碰到按钮后，图片变模糊 */
+        }
+    }
+    .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Economy/Economy/index.html">Economy&amp;Business</a> &gt; <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html">Automatical Trading and Cryptocurrency</a> &gt; <strong><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html">Derivative Mathematical Pricing</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+    </div>
+</ol>
+
+<hr>
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<h3 id="matlab-section">Plain Vanilla</h3>
+I took the related exercising for this pricing [here](https://colab.research.google.com/drive/18y8GSmrwECzgv3c385CnVVefUjEXtWaj?usp=sharing).
+
+<h3 id="2-Barrier-Option-Return-Strategy"><a href="#2-Barrier-Option-Return-Strategy" class="headerlink" title="2. Barrier Option Return Strategy"></a>2. Barrier Option Return Strategy</h3><p>It’s a type of exotic option where the payoff depends on whether the underlying asset’s price reaches a certain level, or barrier, during its life. For this internship exercise, here I will cover the mathematical Principles, for detailed algorithm structure, refer to my GitHub Repository</p>
+<blockquote>
+<p>Github: <a target="_blank" rel="noopener" href="https://github.com/Viiiikedy/Barrier-option-returns-issue">https://github.com/Viiiikedy/Barrier-option-returns-issue</a></p>
+</blockquote>
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/06/FVxCeRfK4zSpjNs.png" style="width: 30%; height: auto;">
+    <img src="https://s2.loli.net/2024/01/06/SA9FNqhtyzVafGv.png" style="width: 30%; height: auto;">
+    <img src="https://s2.loli.net/2024/01/06/lHg8AWBTh1C9Uwf.png" style="width: 30%; height: auto;">
+</div>
+
+
+<h4 id="2-1-Basic-Steps-for-Exotic-Option-Pricing"><a href="#2-1-Basic-Steps-for-Exotic-Option-Pricing" class="headerlink" title="2.1 Basic Steps for Exotic Option Pricing"></a>2.1 Basic Steps for Exotic Option Pricing</h4><ol>
+<li>Start with some financial product</li>
+<li>Model asset prices involved (SDEs)</li>
+<li>Calibrate the model to market data (numerics, optimization)</li>
+<li>Model product price correspondingly (P(I)DE or integral)</li>
+<li>Price the derivative product of interest (numerics, MC)</li>
+<li>Set up a hedge to remove the risk to the derivative product (optimization)</li>
+</ol>
+<h4 id="2-2-Mathematical-Deduction"><a href="#2-2-Mathematical-Deduction" class="headerlink" title="2.2 Mathematical Deduction"></a>2.2 Mathematical Deduction</h4><body>
+    <p>
+       European Down and In Call (Under the condition of GBM)
+        \[
+        c = S \exp^{-q(T-t)} \left( \frac{H}{S} \right)^{2 \lambda} N(y) - X \exp^{-r(T-t)} \left( \frac{H}{S} \right)^{2 \lambda - 2} N(y - \sigma \sqrt{T-t})
+        \]
+        European Up and In Put:
+        $$
+        p=X\exp^{-r(T-t)}(H/S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H/S)^{2\lambda}N(-y)
+        $$
+
+<p>whereas r is market return, q is dividend rate and r_f is risk free rate. And:<br>$$<br>\lambda &#x3D; \frac{r-r_f+\sigma^2&#x2F;2}{\sigma^2}<br>$$<br>$$<br>y &#x3D; \frac{\log{[H^2&#x2F;(SX)]}}{\sigma \sqrt{T-t}} + \lambda \sigma \sqrt{T-t}<br>$$</p>
+<p><strong>Theorem</strong></p>
+<blockquote>
+<p>Down: H &lt; S<br>Up: H&gt;S</p>
+</blockquote>
+<p>For the original case, S &lt; K &lt; H, up and in put option the formula is:</p>
+<p>$$<br>p&#x3D;K\exp^{-r(T-t)}(H&#x2F;S)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S \exp^{-q(T-t)}(H&#x2F;S)^{2\lambda}N(-y)<br>$$</p>
+<p>using the common formalism. If we assume the underlying asset does not pay dividends we can a simplification:</p>
+<p>$$<br>p&#x3D;K\exp^{-r(T-t)}(H&#x2F;S_0)^{2\lambda-2}N(-y+\sigma \sqrt{T-t}) - S_0 (H&#x2F;S_0)^{2\lambda}N(-y)<br>$$<br>where<br>$$<br>\lambda &#x3D; \frac{r+\sigma^2&#x2F;2}{\sigma^2}<br>$$<br>$$<br>y &#x3D; \frac{\log{[H^2&#x2F;(S_0K)]}}{\sigma \sqrt{T-t}} + \lambda \sigma \sqrt{T-t}<br>$$</p>
+<p>We will do <strong>Jump Diffusion model</strong></p>
+<p>$$<br>dS_t &#x3D; (r-r_J)S_t dt + \sigma S_t dZ_t +J_tS_tdN_t<br>$$</p>
+<p>Here, S_t is the spot price at t; r_t is constant short rate; r_J is drift correction term of the jump; Z_t Wiener process; J_t jump magnitude, it follows a normal distribution of $$N(\mu, \delta^2)$$ N_t is Poisson process $$\sim P(\lambda)$$</p>
+<p>Needless to say, the Poisson process isn’t correlated with the Wiener process. To simulate such a price dynamic, the Euler discretization:</p>
+<p>$$<br>S_t &#x3D; S_{t-\Delta t}\Big( e^{(r-r_J-\sigma^2&#x2F;2)\Delta t+\sigma \sqrt{\Delta t}z_t^1}+\Big(e^{\mu_J+\delta z_t^2}-1\Big)\Big)<br>$$</p>
+<p>$$<br>r_J \equiv \lambda\Big(e^{\mu_J+\delta^2&#x2F;2}-1\Big)<br>$$</p>
+<h3 id="3-Extension"><a href="#3-Extension" class="headerlink" title="3. Extension"></a>3. Extension</h3><p>You could aslo refer to my <a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">tutorial</a> where I introduced more based on the most classical books in the financial engineering.<br>    </p></p>
+</body>
+</html>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Automatic-Trading-Cryptocurrency/" rel="tag">#Automatic Trading & Cryptocurrency</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

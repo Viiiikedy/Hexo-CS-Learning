@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Logic Reasoning - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Interview/index.html">Interview</a> &gt; <a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quant Tutorial</a> &gt; <strong><a href="/2023/09/11/Interview/Quant-Tutorial/Logic-and-Reasoning/index.html">Logic and Reasoning</a></small></strong></em></p>
+<head>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+
+<h3 id="Glass-balls"><a href="#Glass-balls" class="headerlink" title="Glass balls"></a>Glass balls</h3><p>You are holding two glass balls in a 100-story building. If a ball is thrown out of the window, it will not break if the floor number is less than X, and it will always break if the floor number is equal to or greater than X, You would like to determine X. What is the strategy that will minimize the number of drops for the worst case scenario?10<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/BefxRvr81Xk4jEs.png">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P19</a></p>
+<h3 id="P65-P67"><a href="#P65-P67" class="headerlink" title="P65-P67"></a>P65-P67</h3><h4 id="1-Poker-hands"><a href="#1-Poker-hands" class="headerlink" title="1. Poker hands"></a>1. Poker hands</h4><p>Poker is a card game in which each player gets a hand of 5 cards. There are 52 cards in a deck. Each card has a value and belongs to a suit. There are 13 values,What are the probabilities of getting hands with four-of-a-kind (four of the five cards with the same value)? Hands with a full house (three cards of one value and two cards of another value)? Hands with two pairs?</p>
+<h4 id="2-Hopping-rabbit"><a href="#2-Hopping-rabbit" class="headerlink" title="2. Hopping rabbit"></a>2. Hopping rabbit</h4><p>A rabbit sits at the bottom of a staircase with n stairs. The rabbit can hop up only one or two stairs at a time. How many different ways are there for the rabbit to ascend to the top of the stairs?3</p>
+<h4 id="3-Screwy-pirates-2"><a href="#3-Screwy-pirates-2" class="headerlink" title="3. Screwy pirates 2"></a>3. Screwy pirates 2</h4><p>Having peacefully divided the loot (in chapter 2), the pirate team goes on for more looting and expands the group to 11 pirates. To protect their hard-won treasure, they gather together to put all the loot in a safe. Still being a democratic bunch, they decide that only a majority- any majority - of them(≥6) together can open the safe. So they ask a locksmith to put a certain number of locks on the safe. To access the treasure,<br>every lock needs to be opened. Each lock can have multiple keys; but each key only opens one lock. The locksmith can give more than one key to each pirate. What is the smallest number of locks needed? And how many keys must each pirate carry?</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/TzBjN1IM6m342Uc.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P65-67</a></p>
+<h3 id="Chess-Tournament"><a href="#Chess-Tournament" class="headerlink" title="Chess Tournament"></a>Chess Tournament</h3><p>A chess toumament has 2” players with skills 1&gt;2&gt;·&gt;2”. It is organized as a knockout tournament, so that after each round only the winner proceeds to the next round. Except for the final, opponents in each round are drawn at random. Let’s also assume that when two players meet in a game, the player with better skills always wins, What’s the probability that players 1 and 2 will meet in the final??<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/oGZzaeSmfptRnOi.png">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P68</a></p>
+<h3 id="Application-Letters"><a href="#Application-Letters" class="headerlink" title="Application Letters"></a>Application Letters</h3><p>You’re sending job applications to 5 firms: Morgan Stanley, Lehman Brothers, UBS,Goldman Sachs, and Merrill Lynch. You have 5 envelopes on the table neatly typed with names and addresses of people at these 5 firms. You even have 5 cover letters personalized to each of these firms. Your 3-year-old tried to be helpful and stuffed each cover letter into each of the envelopes for you. Unfortunately she randomly put letters into envelopes without realizing that the letters are personalized. What is the probability that all 5 cover letters are mailed to the wrong firms?”*<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/sGnmy1cqxHQpYhw.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P69</a></p>
+<h3 id="100th-digit"><a href="#100th-digit" class="headerlink" title="100th digit"></a>100th digit</h3><p>What is the 100th digit to the right of the decimal point in the decimal representation of $$(1+\sqrt{2})^{3000}$$<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/JpfsKzMPjY346OZ.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P71</a></p>
+<h3 id="P71-P72"><a href="#P71-P72" class="headerlink" title="P71-P72"></a>P71-P72</h3><h4 id="1-Birthday-Problem"><a href="#1-Birthday-Problem" class="headerlink" title="1.Birthday Problem"></a>1.Birthday Problem</h4><p>How many people do we need in a class to make the probability that two people have the same birthday more than 1&#x2F;2?(For simplicity, assume 365 days a year.)</p>
+<h4 id="2-Cubic-of-integer"><a href="#2-Cubic-of-integer" class="headerlink" title="2.Cubic of integer"></a>2.Cubic of integer</h4><p>Let x be an integer between 1 and 10’2, what is the probability that the cubic of x ends with 11?*<br>(*Hint: The last two digils of x3 only depend on the last two digits of x.)<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/fDI3pd526MQljb9.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P71-P72</a></p>
+<h3 id="P73-P75"><a href="#P73-P75" class="headerlink" title="P73-P75"></a>P73-P75</h3><h4 id="1-Boys-and-girls"><a href="#1-Boys-and-girls" class="headerlink" title="1.Boys and girls"></a>1.Boys and girls</h4><p>Part A. A company is holding a dinner for working mothers with at least one son. Ms.Jackson, a mother with two children, is invited. What is the probability that both children are boys?</p>
+<h4 id="All-gIrl-world"><a href="#All-gIrl-world" class="headerlink" title="All-gIrl world?"></a>All-gIrl world?</h4><p>In a primitive society, every couple prefers to have a baby girl. There is a 50% that each child they have is a girl, and the genders of their children are mutually independent. If each couple insists on having more children until they get a girl and once they have a girl they will stop having more children, what will eventually happen to the fraction of girls in this society?</p>
+<h4 id="Unfair-coin"><a href="#Unfair-coin" class="headerlink" title="Unfair coin"></a>Unfair coin</h4><p>You are given 1000 coins. Among them, 1 coin has heads on both sides. The other 999 coins are fair coins. You randomly choose a coin and toss it 10 times. Each time, the coin tumns up heads. What is the probability that the coin you choose is the unfair one?</p>
+<h4 id="Fair-probability-from-an-unfair-coin"><a href="#Fair-probability-from-an-unfair-coin" class="headerlink" title="Fair probability from an unfair coin"></a>Fair probability from an unfair coin</h4><p>If you have an unfair coin, which may bias toward either heads or tails at an unknown probability, can you generate even odds using this coin?</p>
+<h4 id="Dart-game"><a href="#Dart-game" class="headerlink" title="Dart game"></a>Dart game</h4><p>Jason throws two darts at a dartboard, aiming for the center. The second dart lands farther from the center than the first. If Jason throws a third dart aiming for the center, what is the probability that the third throw is farther from the center than the first?Assume Jason’s skillfulness is constant.</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/liNwaPLWUZEM85c.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P73-75</a></p>
+<h3 id="birthday-line"><a href="#birthday-line" class="headerlink" title="birthday line"></a>birthday line</h3><p>At a movie theater, a whimsical manager announces that she will give a free ticket to the first person in line whose birthday is the same as someone who has already bought a ticket. You are given the opportunity to choose any position in line. Assuming that you don’t know anyone else’s birthday and all birthdays are distributed randomly throughout the year (assuming 365 days in a year), what position in line gives you the largest chance of getting the free ticket?<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/tJ7OfyY8PI3SUjN.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P76</a></p>
+<h3 id="P78"><a href="#P78" class="headerlink" title="P78"></a>P78</h3><h4 id="1-Monty-Hall-problem"><a href="#1-Monty-Hall-problem" class="headerlink" title="1. Monty Hall problem"></a>1. Monty Hall problem</h4><p>We throw 3 dice one by one. What is the probability that we obtain 3 points in strictly increasing order?*<br>(*Hint:To oblain 3 points in strictly increasing order, the 3 poins musl be differenl, For 3 different poinis in a sequence, strictly increasing order is one of the possible permutations.)</p>
+<h4 id="2-Monty-Hall-Problem"><a href="#2-Monty-Hall-Problem" class="headerlink" title="2. Monty Hall Problem"></a>2. Monty Hall Problem</h4><p>Monty Hall problem is a probability puzzle based on an old American show Let’s Make a Deal. The problem is named after the show’s host. Suppose you’re on the show now,and you’re given the choice of 3 doors. Behind one door is a car; behind the other two,goats. You don’t know ahead of time what is behind each of the doors.You pick one of the doors and announce it. As soon as you pick the door, Monty opensone of the other two doors that he knows has a goat behind it. Then he gives you theo ption to either keep your original choice or switch to the third door. Should you switch?<br>What is the probability of winning a car if you switch?</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/21Ly6XzSqZm5NQO.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P78</a></p>
+<h3 id="P79"><a href="#P79" class="headerlink" title="P79"></a>P79</h3><h4 id="1-Amoeba-population"><a href="#1-Amoeba-population" class="headerlink" title="1. Amoeba population"></a>1. Amoeba population</h4><p>There is a one amoeba in a pond. After every minute the amoeba may die, stay the same,split into two or split into three with equal probability. All its offspring, if it has any, will bebave the same(and independent of other amoebas). What is the probability the amoeba population will die out?</p>
+<h4 id="2-Candies-in-a-jar"><a href="#2-Candies-in-a-jar" class="headerlink" title="2. Candies in a jar"></a>2. Candies in a jar</h4><p>You are taking out candies one by one from a jar that has 10 red candies, 20 blue candies,and 30 green candies in it. What is the probability that there are at least 1 blue candy and 1 green candy lef in the jar when you have taken out all the red candies?</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/Xh2QTsqCIMUcbrp.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P79</a></p>
+<h3 id="P80"><a href="#P80" class="headerlink" title="P80"></a>P80</h3><h4 id="1-Coin-toss-game"><a href="#1-Coin-toss-game" class="headerlink" title="1. Coin toss game"></a>1. Coin toss game</h4><p>Two players,A and B, altematively toss a fair coin (A tosses the coin first, then B tosses the coin, then A, then B..). The sequence of heads and tails is recorded. If there is a head followed by a tail (HT subsequence), the game ends and the person who tosses the tail wins. What is the probability that A wins the game?*<br>(*Hint:condiion on the result of A’s first toss and use symmelry)</p>
+<h4 id="2-Russian-Roulette-Series"><a href="#2-Russian-Roulette-Series" class="headerlink" title="2. Russian Roulette Series"></a>2. Russian Roulette Series</h4><p>Let’s play a traditional version of Russian roulette. A single bullet is put into a 6-chamber revolver. The barrel is randomly spun so that each chamber is equally likely to be under the hammer. Two players take tums to pull the trigger—with the gun unfortunately pointing at one’s own head—without further spinning until the gun goes off and the person who gets killed loses. If you, one of the players, can choose to go first or second, how will you choose? And what is your probability of loss</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/28/lC9t8NYSjWnfBMa.jpg">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P80</a></p>
+<h3 id="P82-83"><a href="#P82-83" class="headerlink" title="P82-83"></a>P82-83</h3><h4 id="1-ACEs"><a href="#1-ACEs" class="headerlink" title="1. ACEs"></a>1. ACEs</h4><p>You have 100 noodles in your soup bowl. Being blindfolded, you are told to take two ends of some noodles (each end on any noodle has the same probability of being chosen) in your bowl and connect them. You continue until there are no free ends. The number of loops formed by the noodles this way is stochastic. Calculate the expected number of circles.</p>
+<h4 id="2-Gambler’s-Ruin-Problem"><a href="#2-Gambler’s-Ruin-Problem" class="headerlink" title="2. Gambler’s Ruin Problem"></a>2. Gambler’s Ruin Problem</h4><p>A gambler starts with an initial fortune of i dollars. On each successive game, the gambler wins l with probability p,0&lt; p&lt; 1,or loses 1 with probability q&#x3D;1-p.He will stop if he either accumulates N dollars or loses all his money. What is the<br>probability that he will end up with N dollars?</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/29/pGEy73LioKO2kb5.png">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P93</a></p>
+<h3 id="Connecting-Noodles"><a href="#Connecting-Noodles" class="headerlink" title="Connecting Noodles"></a>Connecting Noodles</h3><p>You have 100 noodles in your soup bowl. Being blindfolded, you are told to take two ends of some noodles (each end on any noodle has the same probability of being chosen) in your bowl and connect them. You continue until there are no free ends. The number of loops formed by the noodles this way is stochastic. Calculate the expected number of circles.</p>
+<p>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/29/5GWaQLeX3ZSBsx1.png">Click here to see the my solution</a><br>– Source:<a href="/pdf/A-Practical-Guide-to-Quantitative-Finance-Interviews.pdf">Green Book P93</a></p>
+<h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><h4 id="Coin-Question"><a href="#Coin-Question" class="headerlink" title="Coin Question"></a>Coin Question</h4><p>– Probability of getting at least 3 consecutive heads when tossing a coin 10 times.<br>– For a fair coin, how many times should you toss it to get 2 consecutive heads?<br>– <a target="_blank" rel="noopener" href="https://s2.loli.net/2023/09/29/dmC3YiSa92WgbDw.png">Click here to see the my solution</a></p>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Quant-Tutorial/" rel="tag">#Quant-Tutorial</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

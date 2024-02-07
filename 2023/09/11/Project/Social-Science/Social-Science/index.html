@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Social Science - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .menu-item {
+        /* existing styles */
+    }
+    .menu-item:hover {
+        /* existing styles */
+    }
+    .menu-item::before {
+        /* existing styles */
+    }
+    .menu-list {
+        /* existing styles */
+    }
+    .menu-list div {
+        /* existing styles */
+    }
+
+    /* Updated and added styles */
+    .image-link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white; /* Set text color to white */
+        background: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        text-decoration: none;
+        transition: font-size 0.3s, font-weight 0.3s;
+    }
+    .image-link span {
+        color: white; /* Set text color to white */
+        transition: color 0.3s ease; /* Smooth transition for color */
+    }
+    .image-link:hover {
+    font-size: 110%;
+    font-weight: bold;
+    }
+        /* Ensure the text color remains white on hover */
+    .image-container:hover .image-link span {
+        color: white;
+    }
+
+    .image-container img {
+        transition: filter 0.3s ease;
+    }
+
+    .image-container:hover img {
+        filter: blur(4px);
+    }
+
+    .image-container {
+        width: 47.5%;
+        position: relative;
+        margin-right: 5%;
+    }
+
+    /* 经济论文标题的样式 */
+    .papers-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* 对齐到左边 */
+    }
+
+    .paper-box-with-buttons {
+        display: flex;
+        align-items: center; /* 按钮与长方形垂直居中对齐 */
+        margin-bottom: 20px; /* 底部间距 */
+    }
+
+    .paper-box {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin-left: 10px; /* 长方形与按钮之间的间距 */
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .paper-button {
+        background-color: white;
+        color: black;
+        padding: 5px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-right: 10px; /* 按钮之间的间距 */
+        transition: background-color 0.3s;
+    }
+
+    .paper-button:hover {
+        background-color: lightgrey;
+    }
+    /*白色方框*/
+
+    .contract {
+      display: none;
+      position: fixed;
+      left: 20%;
+      right: 20%;
+      top: 40%;
+      margin: auto;
+      background: rgba(255, 255, 255, .97);
+      border: 1px solid lightgrey;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, .5);
+    }
+    .contract:target {
+      display: block;
+    }
+    .contract-close {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      width: 25px;
+      height: 25px;
+      background: black;
+      text-align: center;
+      color: white!important;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      box-shadow: 1px 1px 3px rgba(255, 255, 255, .5);
+    }
+    .contract-close:hover {
+      text-decoration: none!important;
+    }
+
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <strong><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></small></strong></em></p>
+<p>Social Science is closely related with the collecting,training and predicting process.Here let’s expore more.</p>
+<h2 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h2><div style="display: flex; position: relative;">
+  <div class="image-container">
+    <img src="https://s2.loli.net/2024/01/05/jgQ7kof6xbC5Rqc.webp" style="width: 100%; height: auto;" />
+    <a class="image-link" href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html">
+      <span>Machine Learning</span>
+    </a>
+  </div>
+  <div class="image-container" style="width: 52.5%;">
+    <img src="https://s2.loli.net/2024/01/05/IFJZ8l2yebunfdB.png" style="width: 100%; height: auto;" />
+    <a class="image-link" href="/2023/09/11/Project/Social-Science/General-Application/Gender-Difference-on-Family-Satisfaction/index.html">
+      <span>General Application</span>
+    </a>
+  </div>
+</div>
+
+<h2 id="Publication"><a href="#Publication" class="headerlink" title="Publication"></a>Publication</h2><div class="papers-container">
+    <div class="paper-box-with-buttons">
+        <a href="/pdf/Social.pdf" class="paper-button">PDF</a>
+        <a href="#tokyo-contract" class="paper-button">Abstract</a>
+        <div id="tokyo-contract" class="contract">
+            <div class="contract-content">The COVID-19 has caused widespread community seclusion and public concern. This paper focuses on how to focus on the existing problems of bullying, stratification, and discrimination in the current uncertain society and how to use the three major paradigms of social psychology to explain the human response mechanism to lay the groundwork for the future stability of society. Most predecessors explored variables such as happiness and anxiety using experimental data, which has significant limitations. This social experiment was made possible because of COVID-19. Field interviews were conducted to collect the opinions of front-line experts, apply open heat data, adopt scientific sensitivity testing methods, complete the quantitative and qualitative expression of psychological migration and social future changes, and contribute to the formulation of public policies in the future world through data mining of the new normal of society that differs from the past.
+            </div>
+            <a class="contract-close" href="#publication">x</a>
+        </div>
+        <div class="paper-box">
+            <div class="paper-title">Application of Three Social Psychological Models in Post-epidemic, Based on Statistical Science Summary Test</div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Project/" rel="tag">#Project</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

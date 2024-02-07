@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Game Design - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Note/index.html">Note</a> &gt; <strong><a href="/2023/09/11/Note%E7%AC%94%E8%AE%B0/Game-Design/index.html">Game Design</a></small></strong></em></p>
+<p>Here I will record my understanding and designing project of game.</p>
+<h1 id="1-Knowledge"><a href="#1-Knowledge" class="headerlink" title="1. Knowledge"></a>1. Knowledge</h1><h2 id="1-1-Design-Learning"><a href="#1-1-Design-Learning" class="headerlink" title="1.1 Design Learning"></a>1.1 Design Learning</h2><h3 id="1-1-1-3D-Model-Design：Spline"><a href="#1-1-1-3D-Model-Design：Spline" class="headerlink" title="1.1.1 3D Model Design：Spline"></a>1.1.1 3D Model Design：Spline</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://my.spline.design/untitled-526254d973b4730b56354faf2d6996f8/">My first 3D Website</a></li>
+<li><a target="_blank" rel="noopener" href="https://my.spline.design/librarycarrot-ae614eef77fd5934bfb2b03e30a6ceaa/">One carrot in Spline</a></li>
+</ul>
+<h3 id="1-1-2-Computer-Science-Programming-Design"><a href="#1-1-2-Computer-Science-Programming-Design" class="headerlink" title="1.1.2 Computer Science Programming Design:"></a>1.1.2 Computer Science Programming Design:</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://motioncanvas.io/docs/quickstart">MotionCanvas</a></li>
+</ul>
+<h2 id="1-2-Development-Learning"><a href="#1-2-Development-Learning" class="headerlink" title="1.2. Development Learning"></a>1.2. Development Learning</h2><h3 id="1-2-1-Game-Concept-Design"><a href="#1-2-1-Game-Concept-Design" class="headerlink" title="1.2.1 Game Concept Design"></a>1.2.1 Game Concept Design</h3><ul>
+<li>Rigidbody: allows a game object to move under the control of the physics system. It can accept external forces and torque to ensure that the game object moves as if in the real world. Only game objects with a Rigidbody component will be affected by gravity.</li>
+<li>Collider: a type of physics component that needs to be added to a game object along with a Rigidbody to trigger collisions. When two Rigidbodies collide, the physics engine calculates the collision only if both objects have Colliders. In the absence of Colliders, Rigidbodies will pass through each other.</li>
+<li>Asset: refers to any resource used in a Unity project, such as models, textures, sound files, etc. In Unity, resources are managed and used in the form of Assets.<ul>
+<li>Model: Three-dimensional model files, such as characters, environments, and props.</li>
+<li>Texture: Image files used to color the surfaces of models or scenes, such as skin, wood, or brick wall textures.</li>
+<li>Material: Defines the visual properties of a model or scene’s surface, such as glossiness, color, or transparency.</li>
+<li>Audio: Audio files used for adding sound effects or music.</li>
+<li>Script: Code files for writing game logic.</li>
+<li>Animation: Used to define the animation behavior of objects in models or scenes.</li>
+<li>Scene: Files that contain game levels or scenes, including all game objects and settings.Materials, Textures, Terrain, Lighting, Skeletal Animation.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><em>Note:Git Management for <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/116100408">Unity</a></em></p>
+</blockquote>
+<h1 id="2-Projects"><a href="#2-Projects" class="headerlink" title="2. Projects"></a>2. Projects</h1><ul>
+<li>Survival Building Sandbox Game: <a target="_blank" rel="noopener" href="https://itch.io/jam/gameforgoodgamejam2023/rate/2234031">Online</a>；<a target="_blank" rel="noopener" href="https://wwlx.lanzoul.com/ivusS16p8daj">Source Code</a></li>
+<li>Hold On: A local cooperative disaster relief 3D game. <a target="_blank" rel="noopener" href="https://guinytime.itch.io/hold-on-h5ver">H5 online trial version</a>; <a target="_blank" rel="noopener" href="https://hollyby.itch.io/hold-on">Original version</a></li>
+<li><a target="_blank" rel="noopener" href="https://itch.io/jam/gameforgoodgamejam2023/rate/2237167">Dice Rolling Game</a></li>
+<li><a target="_blank" rel="noopener" href="https://itch.io/jam/gameforgoodgamejam2023/rate/2237251">Heart City Game</a></li>
+<li><a target="_blank" rel="noopener" href="https://po-1.itch.io/firerescue">Fire Rescue Game</a></li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Note/" rel="tag">#Note</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

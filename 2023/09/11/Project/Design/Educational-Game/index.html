@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Educational Game - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Design/Design/index.html">Design</a> &gt; <strong><a href="/2023/09/11/Project/Design/Educational-Game/index.html">Educational Game</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><a href="/2023/09/11/Project/Design/System-Design/index.html" class="menu-item">System Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <strong><a href="/2023/09/11/Project/Design/Educational-Game/index.html" class="menu-item">Educational Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong><a href="/2023/09/11/Project/Design/Art-Design/index.html"  class="menu-item">Art Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+    </div>
+</ol>
+
+<hr>
+<h3 id="Project-1"><a href="#Project-1" class="headerlink" title="Project 1:"></a>Project 1:</h3><p>In the game, players take on the role of an internet moderator, combating language violence, gore, and explicit content represented as barrage, enemies, and bosses online. The gameplay and narrative are designed to impart an understanding of the challenges faced by internet moderators, fostering empathy for their life and work.</p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/jiSuN2rF3sUtch9.png" width="50%" height="auto"/>
+</div>
+
+<blockquote>
+<p>Github <a target="_blank" rel="noopener" href="https://github.com/Viiiikedy/Educational-Game2">https://github.com/Viiiikedy/Educational-Game2</a></p>
+</blockquote>
+<h3 id="unity-section">Project 2：O-HEXs</h3>
+The game aims to critique the over-simplification of mental health treatment and corporate overreach, using a narrative where a character, forced into brain-machine interface surgery, discovers a reality controlled by the company, echoing Kafka's absurd commitment to work in "The Metamorphosis." It features puzzle-solving gameplay intertwined with paranoia, influenced by the color-changing perspectives of "Hue," to encourage reflection on technology's duality, the caution against capital intervention, and empathy towards depression sufferers.
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/eXr4HwMalFpizhR.png" width="50%" height="auto"/>
+</div>
+
+<blockquote>
+<p>Github:<a target="_blank" rel="noopener" href="https://github.com/Viiiikedy/Educational-Game1">https://github.com/Viiiikedy/Educational-Game1</a></p>
+</blockquote>
+<h3 id="html-section">Project 3: Vira</h3>
+
+<p>Vira is one interactive offline and online studing community</p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/2qUuxR49OapwMzK.png" width="50%" height="auto"/>
+</div>
+
+<ul>
+<li>Vira <a target="_blank" rel="noopener" href="https://modao.cc/proto/wLn2WIGs4hh1nSrxXEXR/sharing?view_mode=read_only&screen=rbpTwGWgXXryAghv5&canvasId=rcTwGWgXZDqg313i">Demo</a></li>
+<li>Vira <a href="/pdf/FUSI-Pitch-Deck.pdf">Deck</a></li>
+<li>Vira <a target="_blank" rel="noopener" href="https://wereus.space/">website</a>(back-line)</li>
+<li>Vira <a target="_blank" rel="noopener" href="https://fusiedtech.com/">website</a>(front-line)</li>
+</ul>
+<h3 id="figma-section"></h3>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FkYNeCJDXcqEotttprq7fXL%2F8.11-X-TERMINAL-HERE!!%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DTnoNKQayioMvbmuE-1" allowfullscreen></iframe>
+
+<h3 id="More"><a href="#More" class="headerlink" title="More"></a>More</h3><ol>
+<li>For more on my past education entrepreneurship, you may refer to this:<a target="_blank" rel="noopener" href="https://viiiikedy-academy.vercel.app/Activity/index.html">Vicky Academy</a></li>
+<li>For more on my Game Designing,you may also refer to (1) my <a href="/2023/09/11/Interview/CS-Tutorial/index.html">tutorial</a> where I cover something about the game design tricks;(2)my <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Excahnge/index.html">BigDog</a> project which is the decentralized game stimulation platform.</li>
+</ol>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Design/" rel="tag">#Design</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

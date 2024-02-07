@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          RPA(Robot Processing Automation) - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+   .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
+   .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Economy/Economy/index.html">Economy&amp;Business</a> &gt; <a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html">System Design</a> &gt; <strong><a href="/2023/09/11/Project/Economy/System-Design/Crawling-and-Updating/index.html">Crawling &amp; Updating</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><a href="/2023/09/11/Project/Economy/System-Design/RPA(Robot-Processing-Automation)/index.html" class="menu-item">RPA(Robotic Process Automation)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/System-Design/ERP(Enterprise-Resource-Planning)-Software/index.html" class="menu-item">ERP(Enterprise Resource Planning) Software&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <strong><a href="/2023/09/11/Project/Economy/System-Design/Crawling-and-Updating/index.html" class="menu-item">Crawling & Updating&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></strong></li>
+    </div>
+</ol>
+
+<hr>
+<h2 id="Project-1-News-Automatically-Crawling-and-Categorization"><a href="#Project-1-News-Automatically-Crawling-and-Categorization" class="headerlink" title="Project 1: News Automatically Crawling and Categorization"></a>Project 1: News Automatically Crawling and Categorization</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.gov.cn/">China Government</a> News-Headline</p>
+</blockquote>
+<h3 id="Step-1-Package-Importing"><a href="#Step-1-Package-Importing" class="headerlink" title="Step 1: Package Importing"></a>Step 1: Package Importing</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(title)):</span><br><span class="line">    db = pymysql.connect(host=<span class="string">&#x27;localhost&#x27;</span>, port=<span class="number">3306</span>, user=<span class="string">&#x27;root&#x27;</span>, password=<span class="string">&#x27;&#x27;</span>, database=<span class="string">&#x27;pachong&#x27;</span>, charset=<span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    cur = db.cursor()</span><br><span class="line">    sql = <span class="string">&#x27;INSERT INTO 要闻(title, href, date,classname,score) VALUES (%s,%s,%s,%s,%s)&#x27;</span></span><br><span class="line">    cur.execute(sql, (title[i], href[i], date[i],industry_pro[i],score_pro[i]))</span><br><span class="line">    db.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    db.close()</span><br></pre></td></tr></table></figure>
+<h3 id="Step-2-Crawling"><a href="#Step-2-Crawling" class="headerlink" title="Step 2:Crawling"></a>Step 2:Crawling</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"></span><br><span class="line">headers = &#123;<span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36&#x27;</span>&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Chrome headless mode</span></span><br><span class="line">chrome_options = webdriver.ChromeOptions()</span><br><span class="line">chrome_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>) </span><br><span class="line">browser = webdriver.Chrome(options=chrome_options)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">getData</span>(<span class="params">url</span>):</span><br><span class="line">    <span class="comment"># Declare global variables</span></span><br><span class="line">    <span class="keyword">global</span> title</span><br><span class="line">    <span class="keyword">global</span> href</span><br><span class="line">    <span class="keyword">global</span> date</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Open the webpage and get the source code, Selenium seems to provide more accurate and easier to handle source code</span></span><br><span class="line">    browser.get(url)</span><br><span class="line">    data = browser.page_source</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Find title, URL, and date</span></span><br><span class="line">    ptitle = re.findall(<span class="string">&#x27;&lt;h4&gt;.*?&lt;a href=.*?&gt;(.*?)&lt;/a&gt;&#x27;</span>, data, re.S)</span><br><span class="line">    phref = re.findall(<span class="string">&#x27;&lt;h4&gt;.*?&lt;a href=&quot;(.*?)&quot;&gt;&#x27;</span>, data, re.S)</span><br><span class="line">    pdate = re.findall(<span class="string">&#x27;&lt;span class=&quot;date&quot;&gt;(.*?)&lt;/span&gt;&#x27;</span>, data, re.S)</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Clean up the dates</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(pdate)):</span><br><span class="line">        pdate[i] = pdate[i].strip()</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Store the titles, URLs, and dates as global variables</span></span><br><span class="line">    title = title + ptitle</span><br><span class="line">    href = href + phref</span><br><span class="line">    date = date + pdate</span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Clear the data of the first page</span></span><br><span class="line">title = []</span><br><span class="line">href = []</span><br><span class="line">date = []</span><br><span class="line"></span><br><span class="line"><span class="comment"># Collect data from the first five pages</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    url = <span class="string">&#x27;http://sousuo.gov.cn/column/31421/&#x27;</span> + <span class="built_in">str</span>(i) + <span class="string">&#x27;.htm&#x27;</span></span><br><span class="line">    getData(url)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create a DataFrame</span></span><br><span class="line">pd2 = pd.DataFrame()</span><br><span class="line">pd2[<span class="string">&#x27;Title&#x27;</span>] = title</span><br><span class="line">pd2[<span class="string">&#x27;URL&#x27;</span>] = href</span><br><span class="line">pd2[<span class="string">&#x27;Date&#x27;</span>] = date</span><br></pre></td></tr></table></figure>
+<p align="center">
+  <img src="https://s2.loli.net/2024/01/07/8aLvb1BqhJV2iE7.png" style="width: 800px; height: 500px;">
+</p>
+
+
+<h3 id="Step-3-Categorization"><a href="#Step-3-Categorization" class="headerlink" title="Step 3:Categorization"></a>Step 3:Categorization</h3><p><strong>1. Key words</strong><br>Consumer Discretionary,Consumer Staples,Energy,Materials,Finance,Industry,Healthcare,Information Technology,Telecom Services,Utilities,Real Estate——Based on the Global Industry Classification Standard (GICS) </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">score = []</span><br><span class="line">Energy_key= [<span class="string">&#x27;能源&#x27;</span>,<span class="string">&#x27;冶炼&#x27;</span>,<span class="string">&#x27;石油&#x27;</span>,<span class="string">&#x27;天然气&#x27;</span>,<span class="string">&#x27;开采&#x27;</span>,<span class="string">&#x27;风能&#x27;</span>,<span class="string">&#x27;煤炭&#x27;</span>,<span class="string">&#x27;减排&#x27;</span>,<span class="string">&#x27;低碳&#x27;</span>,<span class="string">&#x27;化石能源&#x27;</span>,<span class="string">&#x27;减排&#x27;</span>,<span class="string">&#x27;电价&#x27;</span>,<span class="string">&#x27;核燃料&#x27;</span>,<span class="string">&#x27;燃料&#x27;</span>,<span class="string">&#x27;装机&#x27;</span>,<span class="string">&#x27;碳达峰&#x27;</span>,<span class="string">&#x27;碳中和&#x27;</span>,<span class="string">&#x27;有色&#x27;</span>,<span class="string">&#x27;绿色&#x27;</span>，<span class="string">&#x27;降碳&#x27;</span>，<span class="string">&#x27;二氧化碳&#x27;</span>，<span class="string">&#x27;太阳能发电&#x27;</span>，<span class="string">&#x27;节能&#x27;</span>，<span class="string">&#x27;储能&#x27;</span>，<span class="string">&#x27;再生资源&#x27;</span>，<span class="string">&#x27;氢能&#x27;</span>，<span class="string">&#x27;碳排放&#x27;</span>]</span><br><span class="line">Macroecon_key=[<span class="string">&#x27;财政收入&#x27;</span>,<span class="string">&#x27;经济增长&#x27;</span>,<span class="string">&#x27;宏观调控&#x27;</span>,<span class="string">&#x27;物价&#x27;</span>,<span class="string">&#x27;汇率&#x27;</span>,<span class="string">&#x27;总需求&#x27;</span>,<span class="string">&#x27;通货膨胀&#x27;</span>,<span class="string">&#x27;总供给&#x27;</span>,<span class="string">&#x27;货币政策&#x27;</span>,<span class="string">&#x27;税收&#x27;</span>,<span class="string">&#x27;央行&#x27;</span>,<span class="string">&#x27;供应链&#x27;</span>,<span class="string">&#x27;产业链&#x27;</span>,<span class="string">&#x27;宏观&#x27;</span>,<span class="string">&#x27;RCEP&#x27;</span>,<span class="string">&#x27;贸易&#x27;</span>，<span class="string">&#x27;生产经营&#x27;</span>，<span class="string">&#x27;金融政策&#x27;</span>，<span class="string">&#x27;经济圈&#x27;</span>，<span class="string">&#x27;商业特许经营&#x27;</span>，<span class="string">&#x27;企业法人&#x27;</span>，<span class="string">&#x27;市场监督&#x27;</span>，<span class="string">&#x27;市场主体&#x27;</span>，<span class="string">&#x27;个体工商户&#x27;</span>，<span class="string">&#x27;市场监管总局&#x27;</span>，<span class="string">&#x27;财政部&#x27;</span>，<span class="string">&#x27;经济体系&#x27;</span>，<span class="string">&#x27;城乡融合发展&#x27;</span>，<span class="string">&#x27;国民收入&#x27;</span>，<span class="string">&#x27;经济周期&#x27;</span>，<span class="string">&#x27;经济政策&#x27;</span>，<span class="string">&#x27;通货紧缩&#x27;</span>]</span><br><span class="line">MFG_key=[<span class="string">&#x27;制造业&#x27;</span>,<span class="string">&#x27;食品加工&#x27;</span>,<span class="string">&#x27;酒&#x27;</span>,<span class="string">&#x27;饮料&#x27;</span>,<span class="string">&#x27;茶&#x27;</span>,<span class="string">&#x27;烟草&#x27;</span>,<span class="string">&#x27;纺织&#x27;</span>,<span class="string">&#x27;服装&#x27;</span>,<span class="string">&#x27;服饰&#x27;</span>,<span class="string">&#x27;皮革&#x27;</span>,<span class="string">&#x27;毛皮&#x27;</span>,<span class="string">&#x27;鞋&#x27;</span>,<span class="string">&#x27;木材&#x27;</span>,<span class="string">&#x27;家具&#x27;</span>,<span class="string">&#x27;造纸&#x27;</span>,<span class="string">&#x27;汽车&#x27;</span>,<span class="string">&#x27;建材&#x27;</span>，<span class="string">&#x27;钢铁&#x27;</span>，<span class="string">&#x27;石化化工&#x27;</span>、<span class="string">&#x27;煤炭开采&#x27;</span>、<span class="string">&#x27;冶金&#x27;</span>、<span class="string">&#x27;化纤&#x27;</span>，<span class="string">&#x27;建设工程&#x27;</span>，<span class="string">&#x27;农产品&#x27;</span>，<span class="string">&#x27;养殖&#x27;</span>，<span class="string">&#x27;电商&#x27;</span>，<span class="string">&#x27;通用设备&#x27;</span>，<span class="string">&#x27;专用设备&#x27;</span>，<span class="string">&#x27;交通运输设备&#x27;</span>]</span><br><span class="line">Edu_key=[<span class="string">&#x27;教育&#x27;</span>,<span class="string">&#x27;招生&#x27;</span>,<span class="string">&#x27;教育机构&#x27;</span>,<span class="string">&#x27;培训&#x27;</span>,<span class="string">&#x27;进修&#x27;</span>,<span class="string">&#x27;研修&#x27;</span>,<span class="string">&#x27;辅导&#x27;</span>,<span class="string">&#x27;减负&#x27;</span>,<span class="string">&#x27;网课&#x27;</span>,<span class="string">&#x27;职业院校&#x27;</span>，<span class="string">&#x27;职业教育&#x27;</span>，<span class="string">&#x27;办学&#x27;</span>，<span class="string">&#x27;招生&#x27;</span>，<span class="string">&#x27;课程&#x27;</span>，<span class="string">&#x27;学分&#x27;</span>，<span class="string">&#x27;产教融合&#x27;</span>，<span class="string">&#x27;教学&#x27;</span>，<span class="string">&#x27;教师队伍&#x27;</span>，<span class="string">&#x27;育人机制&#x27;</span>，<span class="string">&#x27;留学&#x27;</span>，<span class="string">&#x27;奖学金&#x27;</span>，<span class="string">&#x27;学费&#x27;</span>，<span class="string">&#x27;职称评审&#x27;</span>，<span class="string">&#x27;技能人才&#x27;</span>，<span class="string">&#x27;学术发展&#x27;</span>，<span class="string">&#x27;作业&#x27;</span>]</span><br><span class="line">Medical_key=[<span class="string">&#x27;医疗保险&#x27;</span>,<span class="string">&#x27;救助制度&#x27;</span>,<span class="string">&#x27;疫情&#x27;</span>,<span class="string">&#x27;防疫&#x27;</span>,<span class="string">&#x27;疫苗&#x27;</span>,<span class="string">&#x27;医药&#x27;</span>,<span class="string">&#x27;门诊&#x27;</span>,<span class="string">&#x27;医保&#x27;</span>,<span class="string">&#x27;健康&#x27;</span>，<span class="string">&#x27;医疗&#x27;</span>，<span class="string">&#x27;疾病&#x27;</span>，<span class="string">&#x27;大病保险&#x27;</span>，<span class="string">&#x27;药品&#x27;</span>，<span class="string">&#x27;医疗救助&#x27;</span>，<span class="string">&#x27;就医负担&#x27;</span>，<span class="string">&#x27;看病&#x27;</span>，<span class="string">&#x27;创新药&#x27;</span>，<span class="string">&#x27;病种&#x27;</span>，<span class="string">&#x27;零售药店&#x27;</span>，<span class="string">&#x27;医用耗材&#x27;</span>，<span class="string">&#x27;康复&#x27;</span>，<span class="string">&#x27;护理&#x27;</span>，<span class="string">&#x27;电子处方&#x27;</span>，<span class="string">&#x27;银保监&#x27;</span>，<span class="string">&#x27;药监&#x27;</span>]</span><br><span class="line">all_keys= <span class="built_in">dict</span>(能源=Energy_key,宏观经济=Macroecon_key,制造业=MFG_key,教育=Edu_key,医疗=Medical_key)</span><br></pre></td></tr></table></figure>
+<p><strong>2. Matching</strong><br>Match the news title and content with the key word.IF matched,the related industry receive 5 score.In this way,we get the final score for every news,such as[5,15,20,5,0]</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">industry_name = [<span class="string">&#x27;Energy&#x27;</span>, <span class="string">&#x27;Macroeconomics&#x27;</span>, <span class="string">&#x27;Manufacturing&#x27;</span>, <span class="string">&#x27;Education&#x27;</span>, <span class="string">&#x27;Healthcare&#x27;</span>]</span><br><span class="line">industry_pro = []</span><br><span class="line">score_pro = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(title)):   </span><br><span class="line">    score = []</span><br><span class="line">    industry = []   </span><br><span class="line">    <span class="keyword">try</span>:     <span class="comment"># Fetch the specific content of each news article</span></span><br><span class="line">        article = requests.get(href[item], headers=headers, timeout=<span class="number">10</span>).text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        article = <span class="string">&#x27;Failed to fetch&#x27;</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;Failed to fetch&#x27;</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        article = article.encode(<span class="string">&#x27;ISO-8859-1&#x27;</span>).decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            article = article.encode(<span class="string">&#x27;ISO-8859-1&#x27;</span>).decode(<span class="string">&#x27;gbk&#x27;</span>)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            article = article</span><br><span class="line">    p_article = <span class="string">&#x27;&lt;p&gt;(.*?)&lt;/p&gt;&#x27;</span></span><br><span class="line">    article_main = re.findall(p_article, article)  <span class="comment"># Get the main text information inside &lt;p&gt; tags</span></span><br><span class="line">    article = <span class="string">&#x27;&#x27;</span>.join(article_main)  <span class="comment"># Convert the list to a string</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> all_keys:   </span><br><span class="line">        num = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> e <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(c[i])):   </span><br><span class="line">            a = c[i][e]</span><br><span class="line">            <span class="keyword">if</span> (a <span class="keyword">in</span> article) <span class="keyword">or</span> (a <span class="keyword">in</span> title[item]):  <span class="comment"># If there&#x27;s a match, add points</span></span><br><span class="line">                num += <span class="number">5</span></span><br><span class="line">        score.append(num)   <span class="comment"># Sum up each score as the total score for that industry</span></span><br><span class="line">    score_pro.append(<span class="built_in">max</span>(score))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">max</span>(score) == <span class="number">0</span>:      <span class="comment"># If the news doesn&#x27;t have any keywords from any industry, categorize as &#x27;Others&#x27;</span></span><br><span class="line">        industry_pro.append(<span class="string">&#x27;Others&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">for</span> o <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(score)):    </span><br><span class="line">            <span class="keyword">if</span> score[o] == <span class="built_in">max</span>(score):</span><br><span class="line">                industry.append(d[o])</span><br><span class="line">        z = <span class="string">&#x27;、&#x27;</span>.join(industry)   <span class="comment"># If multiple industries have the highest score, categorize as &#x27;Energy, Manufacturing&#x27;, etc.</span></span><br><span class="line">        industry_pro.append(z)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/07/tlQVIBwk3CcAXNg.png" style="width: 500px; height: 300px;">
+    <img src="https://s2.loli.net/2024/01/07/SbJXRqvMijl5HzD.png" style="width: 700px; height: 280px;">
+</div>
+
+<blockquote>
+<p>Categorized Data <a href="/zip/.Categoized-Headline.xlsx">Sample</a></p>
+</blockquote>
+<h2 id="Project-2-Automatically-Transfer-PPT-to-Word"><a href="#Project-2-Automatically-Transfer-PPT-to-Word" class="headerlink" title="Project 2: Automatically Transfer PPT to Word"></a>Project 2: Automatically Transfer PPT to Word</h2><h3 id="1-Extract-only-the-text-and-images-from-the-PPT"><a href="#1-Extract-only-the-text-and-images-from-the-PPT" class="headerlink" title="1. Extract only the text and images from the PPT."></a>1. Extract only the text and images from the PPT.</h3><p>Use a for loop to iterate through each shape in the PPT, first check if the shape contains a text box, and if so, extract the text within it. All information in computers is stored in binary form (1010), including images. When reading files, the character stream automatically encodes these binaries using a character encoding table, but images are already binary files and don’t need to be encoded.<br>Based on this principle, retrieve the binary stream of each page in the PPT, determine if it is an image based on the file extension, and if it is, extract and save it as an image, then insert it into a Word document.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. Import necessary libraries and functions</span></span><br><span class="line"><span class="keyword">from</span> pptx <span class="keyword">import</span> Presentation</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> docx</span><br><span class="line"><span class="keyword">from</span> docx.shared <span class="keyword">import</span> RGBColor</span><br><span class="line"><span class="keyword">from</span> docx.shared <span class="keyword">import</span> Inches</span><br><span class="line"><span class="keyword">from</span> docx.shared <span class="keyword">import</span> Pt</span><br><span class="line"><span class="keyword">from</span> docx.enum.text <span class="keyword">import</span> WD_ALIGN_PARAGRAPH</span><br><span class="line"><span class="keyword">from</span> docx.oxml.ns <span class="keyword">import</span> qn</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. Create a blank Word document and set the font</span></span><br><span class="line">wordfile = docx.Document()</span><br><span class="line"><span class="comment"># Can be replaced with any font in Word</span></span><br><span class="line">wordfile.styles[<span class="string">&#x27;Normal&#x27;</span>].font.name = <span class="string">u&#x27;Dengxian&#x27;</span> </span><br><span class="line">wordfile.styles[<span class="string">&#x27;Normal&#x27;</span>]._element.rPr.rFonts.<span class="built_in">set</span>(qn(<span class="string">&#x27;w:eastAsia&#x27;</span>), <span class="string">u&#x27;Dengxian&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. Specify the path of the ppt file</span></span><br><span class="line">filepath = <span class="string">r&#x27;C:\Users\lenovo\Desktop\1.pptx&#x27;</span></span><br><span class="line">pptx = Presentation(filepath)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. Iterate through all slides in the ppt file</span></span><br><span class="line"><span class="keyword">for</span> slide <span class="keyword">in</span> pptx.slides:</span><br><span class="line">    <span class="comment"># Iterate through all shapes in the slide</span></span><br><span class="line">    <span class="keyword">for</span> obj <span class="keyword">in</span> slide.shapes:</span><br><span class="line">        <span class="comment"># Check if the shape contains a text box, if so, execute the code in order</span></span><br><span class="line">        <span class="keyword">if</span> obj.has_text_frame:</span><br><span class="line">            <span class="comment"># Get the text box</span></span><br><span class="line">            text_frame = obj.text_frame</span><br><span class="line">            <span class="comment"># Iterate through all paragraphs in the text box</span></span><br><span class="line">            <span class="keyword">for</span> paragraph <span class="keyword">in</span> text_frame.paragraphs:</span><br><span class="line">                <span class="comment"># Write the paragraph to the Word document</span></span><br><span class="line">                wordfile.add_paragraph(paragraph.text)</span><br><span class="line">                <span class="comment"># Save the Word document</span></span><br><span class="line">                wordfile.save(<span class="string">r&#x27;C:\Users\lenovo\Desktop\2.docx&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="comment"># Use try/except because non-image elements do not have an Image method and will throw an exception</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                <span class="comment"># Get binary character stream</span></span><br><span class="line">                imdata = obj.image.blob</span><br><span class="line"></span><br><span class="line">                <span class="comment"># Determine the file suffix type, the content-type of the image should be image/jpg</span></span><br><span class="line">                imagetype = obj.image.content_type</span><br><span class="line"></span><br><span class="line">                <span class="comment"># In string, find() returns the position (index) of the letter in the string, </span></span><br><span class="line">                <span class="comment"># if not found, it returns a special marker npos</span></span><br><span class="line">                typekey = imagetype.find(<span class="string">&#x27;/&#x27;</span>) + <span class="number">1</span></span><br><span class="line">                imtype = imagetype[typekey:]</span><br><span class="line"></span><br><span class="line">                <span class="comment"># Create an image folder to save the extracted images</span></span><br><span class="line">                path = <span class="string">&quot;./image/&quot;</span></span><br><span class="line">                <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(path):</span><br><span class="line">                    os.makedirs(path)</span><br><span class="line"></span><br><span class="line">                <span class="comment"># Image generation</span></span><br><span class="line">                image_file = path + obj.name + <span class="string">&quot;.&quot;</span> + imtype</span><br><span class="line"></span><br><span class="line">                <span class="comment"># Insert the generated image into the Word document</span></span><br><span class="line">                wordfile.add_picture(image_file, width=Inches(<span class="number">4</span>), height=Inches(<span class="number">3</span>))</span><br><span class="line">                wordfile.save(<span class="string">r&#x27;C:\Users\lenovo\Desktop\2.docx&#x27;</span>)</span><br><span class="line">            <span class="keyword">except</span>:</span><br><span class="line">                <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/07/3a1K46kOWHN72fl.png" style="width: 500px; height: 300px;">
+    <img src="https://s2.loli.net/2024/01/07/K9VEWfg1GYlBajw.png" style="width: 600px; height: 280px;">
+</div>
+
+<h3 id="2-Extract-the-title-of-the-PPT"><a href="#2-Extract-the-title-of-the-PPT" class="headerlink" title="2. Extract the title of the PPT."></a>2. Extract the title of the PPT.</h3><p>The main difficulty here is that the titles in the PPT are not actually formatted as proper titles, but rather the body content with enlarged and bolded fonts. However, we can observe that all the titles follow a similar format like “1-1,” which is “number-number text.” Based on this, we can determine if a paragraph is a title in the PPT by checking if it matches this specific format.</p>
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/07/vDemoqz5QnIFlAw.png" style="width: 500px; height: 300px;">
+    <img src="https://s2.loli.net/2024/01/07/dAHeIJ24xbiDBOG.png" style="width: 500px; height: 300px;">
+</div>
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/System-Design/" rel="tag">#System Design</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

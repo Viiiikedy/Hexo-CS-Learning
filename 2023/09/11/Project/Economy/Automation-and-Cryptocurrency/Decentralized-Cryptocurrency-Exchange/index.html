@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          Decentralized Exchange - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
+    .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Economy/Economy/index.html">Economy&amp;Business</a> &gt; <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html">Automatical Trading and Cryptocurrency</a> &gt; <strong><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Excahnge/index.html">Decentralized Cryptocurrency Excahnge</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html" class="menu-item">Quantitative Portfolio Trading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange/index.html" class="menu-item">Decentralized CryptoCurrency Exchange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a><a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html" class="menu-item">Derivative Mathematical Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a></li>
+    </div>
+</ol>
+
+<hr>
+<p>I established Bigdog with Joy, who currently lives in New York.We led the team,hoping to experiement how technology like AI can revolutionize the current market.This project combines my passion for <u>finance, data-driven solution and designing</u> together.<br>Here I will cover the principle of this project here,for more detailed information, refer to the following link:</p>
+<blockquote>
+<ul>
+<li>BigDog Metaverse Proposal:<a href="/pdf/Big-Dog-Metaverse-Proposal.pdf">here</a></li>
+<li>Island Craft Deck V3:<a href="/pdf/Island-Craft-DECK-V3.pdf">here</a></li>
+<li>Bigdog Deck V4:<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1zkDGM3B_VSrFiGzIZiuT5BOheWIESNnP/view?usp=sharing">here</a></li>
+<li>GameFi Web:<a target="_blank" rel="noopener" href="https://doggame.net/">here</a></li>
+<li>NFT Web:<a target="_blank" rel="noopener" href="https://doggo-nfts.com/">here</a></li>
+<li>Social Media:<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=WmO4I-_g07U">Youtube</a>;<a target="_blank" rel="noopener" href="https://twitter.com/Big_Dog_Token">Twitter</a>;<a target="_blank" rel="noopener" href="https://t.me/bigdogofficial">Telegram</a></li>
+<li>Bigdog White Paper:<a target="_blank" rel="noopener" href="https://ojfjyn2myz.feishu.cn/docx/P9EQdEtBNoPErHxFrp4c9pdjnbc?from=from_copylink">here</a></li>
+<li>Bigdog Demo Game:<a target="_blank" rel="noopener" href="https://ojfjyn2myz.feishu.cn/docx/P9EQdEtBNoPErHxFrp4c9pdjnbc#CQQSdacMYoSmECx8VQUckLGongQ">here</a></li>
+</ul>
+</blockquote>
+<div class="image-container">
+    <img src="https://s2.loli.net/2024/01/05/auYjBOGRCVDS74N.png" width="40%" height="40%">
+    <img src="https://s2.loli.net/2024/01/06/pEoMkC7IcurBhxz.png" width="50%" height="50%">
+</div>
+
+<h3 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=BrKZnWZ3BCo">Introduction</a></h3><p>Island Craft is a community-driven decentralized Gamefi2.0 aggregator that increases user engagement and entertainment through token incentives. We have created a new NFT+token economic system that nicely combines the best of DeFi and NFT, using financial mechanisms and game systems to empower users and developers</p>
+<h3 id="2-Structure"><a href="#2-Structure" class="headerlink" title="2. Structure"></a>2. Structure</h3><p><strong>2.1 Decentralized Structure</strong></p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/F9rxQg7Wpzl4OJn.jpg" style="width: 50%; height: auto;"/>
+</div>
+
+<p><strong>2.2 Product Structure</strong></p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/rNqAKVXcGlHoMbg.jpg" style="width: 70%; height: auto;"/>
+</div>
+
+<p><strong>2.3 Project Structure</strong></p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/xJNdqTw2fuZBMAo.jpg" style="width: 80%; height: auto;"/>
+</div>
+
+<h3 id="3-Model"><a href="#3-Model" class="headerlink" title="3. Model"></a>3. Model</h3><p>The value of all Island Craft activity will be reflected in the fully diluted market value of the DAOGO token governance.<br><strong>3.1 Economic Model</strong></p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/xM7S9kNDGeLzuPX.jpg" style="width: 70%; height: auto;"/>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Toke Name</th>
+<th>DAO Token</th>
+<th>DAO Doggo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Token Symbol</td>
+<td>DAOT</td>
+<td>DAOGO</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>consumption token</td>
+<td>governance token</td>
+</tr>
+<tr>
+<td>Initial supply</td>
+<td>1,000,000,000,000</td>
+<td>100,000,000</td>
+</tr>
+<tr>
+<td>Max supply</td>
+<td>1,000,000,000</td>
+<td>10,000,000</td>
+</tr>
+<tr>
+<td>Value trend</td>
+<td>Absolute deflation</td>
+<td>Trend-decaying inflation</td>
+</tr>
+<tr>
+<td>Whether to issue additional</td>
+<td>Dynamic additions or destruction</td>
+<td>No</td>
+</tr>
+<tr>
+<td>CUBE address</td>
+<td>&#x2F;</td>
+<td>&#x2F;</td>
+</tr>
+</tbody></table>
+<p><em><strong>Example</strong></em><br>Three token model application scenarios and value capture model in Millionaire</p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/ZR3jr8x6aKF1sYS.jpg" style="width: 70%; height: auto;"/>
+</div>
+
+<p><strong>3.2 Trading System</strong></p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Percents</th>
+<th>Release rule</th>
+<th>Quantity</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ecosystem</td>
+<td>15%</td>
+<td>TGE20% with the remainder unlocked linearly monthly for 12 months</td>
+<td>15000000</td>
+</tr>
+<tr>
+<td>Team</td>
+<td>10%</td>
+<td>TGE10% with the remainder unlocked linearly monthly for 18 months</td>
+<td>10000000</td>
+</tr>
+<tr>
+<td>Private Funding</td>
+<td>20%</td>
+<td>TGE30% with the remainder unlocked linearly monthly for 12 months</td>
+<td>20000000</td>
+</tr>
+<tr>
+<td>Consulting Team</td>
+<td>10%</td>
+<td>TGE10% with the remainder unlocked linearly monthly for 24 months</td>
+<td>10000000</td>
+</tr>
+<tr>
+<td>Play-to-earn</td>
+<td>25%</td>
+<td>TGE0% with the remainder unlocked linearly monthly for 24 months</td>
+<td>25000000</td>
+</tr>
+<tr>
+<td>Public Funding</td>
+<td>5%</td>
+<td>TGE100%</td>
+<td>5000000</td>
+</tr>
+<tr>
+<td>Staking</td>
+<td>5%</td>
+<td>TGE0% with the remainder unlocked linearly monthly for 12 months</td>
+<td>5000000</td>
+</tr>
+<tr>
+<td>Liquidity</td>
+<td>5%</td>
+<td>TGE100%</td>
+<td>5000000</td>
+</tr>
+<tr>
+<td>Reserve warehouse</td>
+<td>5%</td>
+<td>Lock for one year with the remainder unlocked linearly monthly for 24 months</td>
+<td>5000000</td>
+</tr>
+<tr>
+<td>In Total</td>
+<td>100%</td>
+<td></td>
+<td>200000000</td>
+</tr>
+</tbody></table>
+<p><strong>3.3 Business Model</strong></p>
+<div align="center">
+    <img src="https://s2.loli.net/2024/01/06/d1OJmj3nPNEybKq.jpg" style="width: 70%; height: auto;"/>
+</div>
+
+<ul>
+<li>Direct or indirect use of NFT&#x2F;FT assets owned by Island Craft to generate revenue through Defi’s series of protocols, leases&#x2F;pledges&#x2F;liquidity mining, etc.</li>
+<li>Support more high-quality Gamefi2.0 projects to get more user resources and information resources, and grow together with the projects to gain revenue.</li>
+<li>NFT ownership will benefit from an increase in the economic value of in-game assets and be reflected in the value of native homogenized tokens (FTs) on the public market.</li>
+</ul>
+<p><strong>3.4 Profit Model</strong></p>
+<ul>
+<li>Revenues generated from virtual assets (NFT &#x2F; FT) within the asset pool through Defi.</li>
+<li>% of APY token revenue generated from liquidity mining.</li>
+<li>assistance in managing and improving collaborative projects (economic model building &#x2F; smart contract structuring).</li>
+<li>revenue generated from sponsorship&#x2F;support activities (AMA &#x2F; INO &#x2F; IGO &#x2F; Airdrop).</li>
+<li>Revenue generated from DAO’s ongoing regular output of relevant research reports&#x2F;articles, subscriptions.</li>
+<li>Revenue generated from NFT &#x2F; FT sales.</li>
+</ul>
+<p><strong>3.4 Launch Model</strong><br>With the development of the Gamefi 2.0 model, Island Craft’s portfolio will be expanded to include additional games that satisfy the criteria and revenue requirements outlined by the DAO.</p>
+<ul>
+<li>Millionaire (MOBA) by Doggo Metaverse.</li>
+<li>Big Dog Metaverse (Minecraft + Animal Cross), produced by Doggo Metaverse</li>
+<li>Walk My Dog (X to Earn), supported by SIG (the largest investor in Bytedance)</li>
+</ul>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Automatic-Trading-Cryptocurrency/" rel="tag">#Automatic Trading & Cryptocurrency</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

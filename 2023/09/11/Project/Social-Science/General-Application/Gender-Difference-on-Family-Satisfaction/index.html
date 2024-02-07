@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          General Application - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+    .image-container {
+        display: flex;
+        justify-content: space-between; /* 让图片均匀分布在一行中 */
+        position: relative;
+    }
+    .menu-item {
+        display: inline-block; /* Ensure elements are horizontally aligned */
+        margin-right: 20px;
+        position: relative;
+        padding: 5px;
+        color: grey;
+        text-decoration: none;
+        font-size: 90%; /* Reduce font size */
+    }
+    .menu-item:hover {
+        font-weight: bold;
+        color: grey !important;
+    }
+    .menu-item::before {
+        content: counter(item) " ";
+        counter-increment: item;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        margin-right: 1px;
+        color: grey;
+    }
+    .menu-list {
+        list-style: none; 
+        counter-reset: item;
+        padding: 0; /* Remove default padding */
+    }
+    .menu-list div {
+        white-space: nowrap; /* Prevent wrapping of list items */
+    }
+</style>
+
+<p><em><small><a href="/Home/index.html">Home</a> &gt; <a href="/tags/Project/index.html">Project</a> &gt; <a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a> &gt; <a href="/2023/09/11/Project/Social-Science/General-Application/Gender-Difference-on-Family-Satisfaction/index.html">General Application</a> &gt; <strong><a href="/2023/09/11/Project/Social-Science/General-Application/Chinese-Political-and-Diplomatic-Dynamics-Analysis/index.html">Chinese Political and Diplomatic Dynamics Analysis</a></small></strong></em></p>
+<ol class="menu-list">
+    <div>
+        <li><strong><a href="/2023/09/11/Project/Social-Science/General-Application/Gender-Difference-on-Family-Satisfaction/index.html" class="menu-item">Gender Difference on Family Satisfaction&nbsp</a></strong><a href="/2023/09/11/Project/Social-Science/General-Application/Chinese-Political-and-Diplomatic-Dynamics-Analysis/index.html" class="menu-item">Chinese Political and Diplomatic Dynamics Analysis&nbsp</a><a href="/2023/09/11/Project/Social-Science/General-Application/Housing-Policy&Talent-Capability/index.html" class="menu-item">Housing Policy&Talent Capability&nbsp</a></li>
+    </div>
+</ol>
+
+<hr>
+<h3 id="stata-section"></h3>
+
+<h3 id="1-Abstract"><a href="#1-Abstract" class="headerlink" title="1. Abstract"></a>1. Abstract</h3><p>Based on Chen and Hu’s (2021) research, exploring the impact of traditional gender perspectives on marital and personal satisfaction. Research has found that in traditional marriage, gender division of labor and gender attitudes have an impact on the satisfaction of both spouses. By studying the behavioral outcomes of wives who earn more than their husbands, researchers found that traditional gender attitudes have an impact on the marital satisfaction of both spouses. The wife is more concerned about her husband’s economic contribution than his household contribution, while the husband is the opposite. In addition, when the wife’s income is higher compared to the husband, the husband is often more dissatisfied with the marriage, while the wife’s marital satisfaction is not affected by income differences. This indicates that other factors in the marriage allow wives to maintain a satisfactory attitude towards marriage even if they break traditional gender norms.</p>
+<h3 id="2-Data-Processing"><a href="#2-Data-Processing" class="headerlink" title="2. Data Processing"></a>2. Data Processing</h3><p>Utilizing the original dataset from the research and the CFPS 2014 dataset, which includes information about adults, family relationships, and household economics.</p>
+<blockquote>
+<p>Data Address:<a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1GXpJa1XN2CGR2pLfJG-Ht2wONfk5kA11?usp=sharing">here</a><br>Project Report Address(word):<a href="/zip/Gender.docx">here</a><br>Project Report Address(pdf):<a href="/zip/Gender.pdf">here</a></p>
+</blockquote>
+<h3 id="3-Results-Brief"><a href="#3-Results-Brief" class="headerlink" title="3. Results Brief"></a>3. Results Brief</h3><table>
+<thead>
+<tr>
+<th>lag</th>
+<th>LL</th>
+<th>LR</th>
+<th>df</th>
+<th>p</th>
+<th>FPE</th>
+<th>AIC</th>
+<th>HQIC</th>
+<th>SBIC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>-193.635</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.40E+08</td>
+<td>2.16E+01</td>
+<td>2.16E+01</td>
+<td>21.6755</td>
+</tr>
+<tr>
+<td>1</td>
+<td>-138.277</td>
+<td>110.72*</td>
+<td>1</td>
+<td>0</td>
+<td>344324</td>
+<td>15.5863</td>
+<td>15.5999</td>
+<td>15.6852*</td>
+</tr>
+<tr>
+<td>2</td>
+<td>-136.933</td>
+<td>2.6865</td>
+<td>1</td>
+<td>0.101</td>
+<td>332175*</td>
+<td>15.5482*</td>
+<td>15.5686*</td>
+<td>15.6966</td>
+</tr>
+<tr>
+<td>3</td>
+<td>-136.817</td>
+<td>0.23254</td>
+<td>1</td>
+<td>0.63</td>
+<td>368063</td>
+<td>15.6463</td>
+<td>15.6736</td>
+<td>15.8442</td>
+</tr>
+<tr>
+<td>4</td>
+<td>-136.223</td>
+<td>1.1892</td>
+<td>1</td>
+<td>0.275</td>
+<td>387900</td>
+<td>15.6914</td>
+<td>15.7255</td>
+<td>15.9387</td>
+</tr>
+</tbody></table>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-11</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/Social-Science/" rel="tag">#Social Science</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

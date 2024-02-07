@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    
+      <link rel="icon" href="/picture/favicon.png" />
+    
+
+    <title>
+        
+          👋Hello Everyone - |  Vicky MiniMart
+        
+    </title>
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/picture/favicon.png">
+    <span>|  VICKY MINIMART</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <h1 id="About"><a href="#About" class="headerlink" title="About"></a><a href="/About/index.html">About</a></h1><h5 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h5><ul>
+<li><a href="/2023/09/11/Project/Economy/Economy/index.html">Economy Business</a></li>
+<li><a href="/2023/09/11/Project/Social-Science/Social-Science/index.html">Social Science</a></li>
+<li><a href="/2023/09/11/Project/Design/Design/index.html">Design</a></li>
+</ul>
+<h5 id="Interview"><a href="#Interview" class="headerlink" title="Interview"></a>Interview</h5><ul>
+<li><a href="/2023/09/11/Interview/Quant-Tutorial/Quant-Tutorial/index.html">Quanttitative Finance Tutorial</a></li>
+<li><a href="/2023/09/11/Interview/CS-Tutorial/index.html">CS Tutorial</a></li>
+</ul>
+<h5 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h5><ul>
+<li><a href="/2023/09/11/Note/Web-Development/index.html">Web Development</a></li>
+<li><a href="/2023/09/11/Note/Game-Design/index.html">Game Design</a></li>
+<li><a href="/2023/09/11/Note/APP-Development/index.html">APP Development</a></li>
+<li><a href="/2023/09/11/Note/CS-Basic-Knowledge/index.html">CS Basic Knowledge</a></li>
+</ul>
+<h5 id="Post"><a href="#Post" class="headerlink" title="Post"></a>Post</h5><ul>
+<li><a href="/2023/09/11/Post/Young/index.html">Young</a></li>
+<li><a href="/2023/09/11/Post/Middle-Aged/index.html">Middle-Aged</a></li>
+<li><a href="/2023/09/11/Post/Old/index.html">Old</a></li>
+</ul>
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <style>
+.shake-image:hover {
+  animation: shake 2s; /* 增加动画持续时间 */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-2deg); }
+  20% { transform: translate(-4px, 0px) rotate(2deg); }
+  30% { transform: translate(4px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 4px) rotate(-2deg); }
+  60% { transform: translate(-4px, 2px) rotate(0deg); }
+  70% { transform: translate(4px, 2px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 4px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-2deg); }
+}
+.button-container {
+  text-align: center; /* Center aligns the contents */
+}
+
+.button {
+  background-color: black;
+  border: 1px solid transparent;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 15px;
+  display: inline-block;
+  font-size: 17px;
+  color: white !important;
+  text-decoration: none;
+  margin: 15px; /* Increased margin */
+}
+
+.button:hover {
+        background-color: rgba(0, 100, 200, 0.8);
+        color: white;
+    }
+
+    .bubble-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        text-align: left; /* Changed from center to left */
+    }
+
+    .bubble {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: rgba(0, 100, 200, 0.8);
+        color: white; /* Changed from black to white */
+        text-decoration: none;
+        font-size: 14px;
+        transition: transform 0.3s;
+    }
+    .bubble:hover {
+        transform: scale(1.2);
+        animation: shake 1s;
+    }
+    /* You can add specific styles for each bubble to vary their sizes */
+    #python {
+        font-size: 16px; /* Larger font size for larger bubble */
+    }
+</style>
+<script>
+  document.querySelectorAll('.bubble').forEach(bubble => {
+      bubble.addEventListener('mouseenter', () => {
+          bubble.classList.add('shake');
+      });
+      bubble.addEventListener('mouseleave', () => {
+          bubble.classList.remove('shake');
+      });
+  });
+</script>
+
+<div align=center>
+  <img src="https://s2.loli.net/2024/01/12/MhqePj7W8pO3Jm5.png" width = "350" height = "350" class="shake-image"/>  
+  <br>
+  <strong><font size=5>Self-Introduction</font></strong>
+  <br>
+</div>
+
+<br>
+
+<div align=center>
+Wenke Du major in <strong>finance</strong> and <strong>business</strong> but with strong passion 
+to apply <strong>data-driven</strong> solutions to solve more general social issues.
+</div>
+
+
+<hr>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Me</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.name = <span class="string">&quot;Wenke Du&quot;</span></span><br><span class="line">        self.prefer_name = <span class="string">&quot;Vicky&quot;</span></span><br><span class="line">        self.born_year = <span class="number">2001</span></span><br><span class="line">        self.MBTI = <span class="string">&quot;ENTJ&quot;</span></span><br><span class="line">        self.hometown = <span class="string">&quot;Kaizhou, Chongqing, CN&quot;</span></span><br><span class="line">        self.curr_location = <span class="string">&quot;Haidian, Beijing, CN&quot;</span></span><br><span class="line">        self.grad_school = <span class="string">&quot;Universidad Isabel I, Big Data and Intelligence&quot;</span></span><br><span class="line">        self.undergrad_school = <span class="string">&quot;Maine, Management Information System&quot;</span></span><br><span class="line">        self.undergrad_school = <span class="string">&quot;RUC, Intelligent Accounting&quot;</span></span><br></pre></td></tr></table></figure>
+<p align="center">&#8595;</p>
+
+<h2 id="Technical-Background"><a href="#Technical-Background" class="headerlink" title="Technical Background"></a>Technical Background</h2><p>📟- My expertise in languages includes <a target="_blank" rel="noopener" href="https://www.w3schools.com/python/">Python</a>, <a target="_blank" rel="noopener" href="https://www.mysql.com/">My SQL</a>, <a target="_blank" rel="noopener" href="https://www.w3schools.com/html/">HTML</a>, <a target="_blank" rel="noopener" href="https://www.w3schools.com/Css/">CSS</a>, <a target="_blank" rel="noopener" href="https://www.w3schools.com/js/DEFAULT.asp">Javascript</a>, <a target="_blank" rel="noopener" href="https://www.mathworks.com/products/matlab.html">Matlab</a>, and <a target="_blank" rel="noopener" href="https://www.rstudio.com/categories/rstudio-ide/">R</a><br>🖨️- The software I use includes <a target="_blank" rel="noopener" href="https://www.office.com/">Office</a>, <a target="_blank" rel="noopener" href="https://www.stata.com/">STATA</a>, <a target="_blank" rel="noopener" href="https://www.anaconda.com/">Anaconda</a>, <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>, and <a target="_blank" rel="noopener" href="https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804:4364&mode=design&t=q6iCQUZ0eeZdljTU-1">Figma</a><br>🖱️- The frameworks I am familiar with include <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Deep_learning">Deep Learning</a>, <a target="_blank" rel="noopener" href="https://nodejs.org/en">Node.js</a>, <a target="_blank" rel="noopener" href="https://pytorch.org/">Pytorch</a>, <a target="_blank" rel="noopener" href="https://numpy.org/">Numpy</a>, and <a target="_blank" rel="noopener" href="https://www.figma.com/file/Tdf7OnEMmbOljZPTxINAOB/Social-Media-Ui-KIT?type=design&node-id=14804:4364&mode=design&t=q6iCQUZ0eeZdljTU-1">UIUX</a>.<br>📈- I’m familiar with applying data science techniques to fix real-world problems in economy and social science.<br>🎮- I’m recently learning game design <a target="_blank" rel="noopener" href="https://unity.com/">Unity</a> and IOS software development <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Swift_(programming_language)">Swift</a><br>💻- My commonly used computer is the Windows <a target="_blank" rel="noopener" href="https://www.hp.com/ca-en/home.html">HP</a> series</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Bubbles</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="bubble-container">
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html#python-section" class="bubble" id="python">Python</a>
+        <a href="/2023/09/11/Project/Design/System-Design/index.html#my-sql-section" class="bubble" id="my-sql">My SQL</a>        
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Decentralized-Cryptocurrency-Exchange/index.html#c++-section" class="bubble" id="c++">C++</a>
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Derivative-Mathematical-Pricing/index.html#matlab-section" class="bubble" id="matlab">MATLAB</a>
+        <a href="/2023/09/11/Project/Social-Science/General-Application/index.html#stata-section" class="bubble" id="stata">STATA</a>        
+        <a href="/2023/09/11/Project/Social-Science/Machine-Learning/Text-Analysis/index.html#r-section" class="bubble" id="r">R</a>     
+        <a href="/2023/09/11/Project/Design/System-Design/index.html#java-section" class="bubble" id="java">Java</a>
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html#html-section" class="bubble" id="html">HTML</a>        
+        <a href="/2023/09/11/Project/Design/Art-Design/index.html#css-section" class="bubble" id="css">CSS</a>
+        <a href="/2023/09/11/Note/Web-Development/index.html#javascript-section" class="bubble" id="javascript">Javascript</a>
+        <a href="/2023/09/11/Project/Economy/Business-Visualization/index.html#thinkcell-section" class="bubble" id="thinkcell">Thinkcell</a>        
+        <a href="/2023/09/11/Project/Economy/Automation-and-Cryptocurrency/Quantitative-Portfolio-Trading/index.html#vba-section" class="bubble" id="vba">VBA</a>   
+        <a href="/2023/09/11/Project/Economy/Business-Visualization/index.html#tableau-section" class="bubble" id="tableau">Tableau</a>
+        <a href="/2023/09/11/Project/Economy/Business-Visualization/index.html#power-bi-section" class="bubble" id="power-bi">Power BI</a>        
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html#figma-section" class="bubble" id="figma">Figma</a>
+        <a href="/2023/09/11/Project/Design/Educational-Game/index.html#unity-section" class="bubble" id="unity">Unity</a>
+        <a href="/2023/09/11/Interview/CS-Tutorial/index.html#swfit-section" class="bubble" id="swift">Swift</a>        
+        <a href="/2023/09/11/Post/Young/index.html#visual-studio-code-section" class="bubble" id="visual-studio-code">Visual Studio Code</a>     
+        <a href="/2023/09/11/Project/Social-Science/Machine-Learning/Music-Genre-Classification/index.html#machine-learning-section" class="bubble" id="machine-learning">Machine Learning</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<h2 id="Other-Website"><a href="#Other-Website" class="headerlink" title="Other Website"></a>Other Website</h2><div class="button-container">
+  <a target="_blank" rel="noopener" href="https://vicky-post-site.vercel.app/" class="button">My Chinese Finance Blog</a>
+  <a target="_blank" rel="noopener" href="https://jekyll-typing-artist.vercel.app/" class="button">My Art Design Website</a>
+  <a target="_blank" rel="noopener" href="https://korean-book.netlify.app" class="button">My Korean Learning Book</a>
+  <a target="_blank" rel="noopener" href="https://viiiikedy-academy.vercel.app/" class="button">My Academic Site</a>
+  <a target="_blank" rel="noopener" href="https://vicky-youtube-video.netlify.app" class="button">My Video Site</a>
+</div>
+
+<hr>
+<h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h2><html>
+    <head>
+        <title>Contact</title>
+    </head>
+    <body>
+        <img src="/picture/mail.png" width="20" height="20" style="float: left;"/>
+        <a href="mailto:vickydu1213@gmail.com">vickydu1213@gmail.com</a>
+        <br/>
+        <img src="/picture/github.png" width="20" height="20" style="float: left;"/>
+        <a target="_blank" rel="noopener" href="https://github.com/Viiiikedy">Github</a>
+        <br/>
+        <img src="/picture/ins.png" width="20" height="20" style="float: left;"/>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/viii.iiicky/">Instagram</a>
+        <br/>
+        <img src="/picture/bachelor-cap.png" width="20" height="20" style="float: left;"/>
+        <a target="_blank" rel="noopener" href="https://viiiikedy-academy.vercel.app/">Academic Website</a>
+    </body>
+</html>
+
+</div>
+
+
+  <div class="book-comments">
+    
+<script src="https://utteranc.es/client.js"
+        repo="Viiiikedy/text-comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/picture/author.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Vicky Du</div>
+      <div>2023-09-02</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
+
+
+<script src="/js/book-toc.js"></script>
+
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>
